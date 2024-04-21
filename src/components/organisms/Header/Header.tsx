@@ -3,15 +3,11 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <Navbar fluid rounded>
+    <Navbar fluid rounded className=" bg-violet-500 bg-opacity-5">
       <Navbar.Brand as={Link} href="https://flowbite-react.com">
-        <img
-          src="/vite.svg"
-          className="mr-3 h-6 sm:h-9"
-          alt="Flowbite React Logo"
-        />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          Flowbite React
+        <img src="/avataaars3.png" className="mr-3 h-6 sm:h-9" alt="avatar" />
+        <span className="self-center whitespace-nowrap text-xl font-semibold text-white">
+          Portfolio
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
@@ -41,21 +37,21 @@ export const Header = () => {
         </Dropdown>
         <Navbar.Toggle />
       </div>
-      <Navbar.Collapse>
-        <Navbar.Link href="#" active className="text-[20px]">
-          Home
+      <Navbar.Collapse className=" z-10">
+        <Navbar.Link href="#" className="text-[20px] text-white">
+          Accueil
         </Navbar.Link>
-        <Navbar.Link as={Link} href="#" className="text-[20px]">
-          About
+        <Navbar.Link as={Link} href="#" className="text-[20px] text-white">
+          Entreprise
         </Navbar.Link>
-        <Navbar.Link href="#" className="text-[20px]">
-          Services
+        <Navbar.Link href="#" className="text-[20px] text-white">
+          Projets
         </Navbar.Link>
-        <Navbar.Link href="#" className="text-[20px]">
-          Pricing
+        <Navbar.Link href="#" className="text-[20px] text-white">
+          Veille
         </Navbar.Link>
-        <Navbar.Link href="#" className="text-[20px]">
-          Contact
+        <Navbar.Link href="#" className="text-[20px] text-white">
+          Bilan
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
