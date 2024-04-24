@@ -1,9 +1,45 @@
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 export const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState("");
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <Navbar fluid rounded className=" bg-violet-500 bg-opacity-5">
+    <Navbar
+      fluid
+      rounded
+      className={`sticky top-0 z-50 bg-violet-500 ${
+        isScrolled
+          ? "bg-violet-500 bg-opacity-40 backdrop-blur-lg"
+          : "bg-opacity-5"
+      }`}
+      style={{
+        backdropFilter: "blur(8px)",
+        WebkitBackdropFilter: "blur(8px)",
+      }}
+    >
       <Navbar.Brand as={Link} href="https://flowbite-react.com">
         <img src="/avataaars3.png" className="mr-3 h-6 sm:h-9" alt="avatar" />
         <span className="self-center whitespace-nowrap text-xl font-semibold text-white">
@@ -38,20 +74,63 @@ export const Header = () => {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse className=" z-10">
-        <Navbar.Link href="#" className="text-[20px] text-white">
-          Accueil
+        <Navbar.Link
+          to="/homepage"
+          as={Link}
+          className={`dark:hover:text-primary-500" text-[20px] text-white `}
+        >
+          <span
+            className={`${activeLink === "/homepage" ? "border-b-2 border-violet-300 hover:text-violet-500" : "hover:text-violet-500"} `}
+          >
+            Accueil
+          </span>
         </Navbar.Link>
-        <Navbar.Link as={Link} href="#" className="text-[20px] text-white">
-          Entreprise
+        <Navbar.Link
+          to="/entreprise"
+          as={Link}
+          className={`text-[20px] text-white`}
+        >
+          <span
+            className={`${activeLink === "/entreprise" ? "border-b-2 border-violet-300 hover:text-violet-500" : "hover:text-violet-500"} `}
+          >
+            Entreprise
+          </span>
         </Navbar.Link>
-        <Navbar.Link href="#" className="text-[20px] text-white">
-          Projets
+        <Navbar.Link
+          to="/Projets"
+          as={Link}
+          className={`text-[20px] text-white`}
+        >
+          <span
+            className={`${activeLink === "/Projets" ? "border-b-2 border-violet-300 hover:text-violet-500" : "hover:text-violet-500"} `}
+          >
+            Projets
+          </span>
         </Navbar.Link>
-        <Navbar.Link href="#" className="text-[20px] text-white">
-          Veille
+        <Navbar.Link
+          to="/veille"
+          as={Link}
+          className={`text-[20px] text-white `}
+          style={{
+            textDecorationColor: "currentColor",
+          }}
+        >
+          <span
+            className={`${activeLink === "/veille" ? "border-b-2 border-violet-300 hover:text-violet-500" : "hover:text-violet-500"} `}
+          >
+            Veille
+          </span>
         </Navbar.Link>
-        <Navbar.Link href="#" className="text-[20px] text-white">
-          Bilan
+        <Navbar.Link
+          to="/Bilan"
+          as={Link}
+          className={`text-[20px] text-white `}
+        >
+          <span
+            className={`${activeLink === "/Bilan" ? "border-b-2 border-violet-300 hover:text-violet-500" : "hover:text-violet-500"} `}
+          >
+            Bilan
+          </span>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
