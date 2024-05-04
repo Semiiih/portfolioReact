@@ -11,7 +11,7 @@ export function PublicLayout({ children }: PublicLayoutProps) {
     <div
       className="animated-bg flex min-h-screen w-full flex-col bg-white"
       style={{
-        backgroundImage: "url('@/../public/home-bg.jpg')",
+        backgroundImage: "url('@/../public/images/home-bg.jpg')",
         backgroundSize: "cover",
       }}
     >

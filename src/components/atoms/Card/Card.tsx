@@ -4,7 +4,7 @@ export const Cards = () => {
   return (
     <Card
       className="flex max-w-sm flex-col-reverse shadow-2xl shadow-white"
-      renderImage={() => <img src="/../../../../public/home-main.svg" />}
+      renderImage={() => <img src="/../../../../public/images/home-main.svg" />}
     >
       <div className="flex flex-row">
         <p className="border-4 border-violet-500 bg-violet-100 text-center text-[60px] font-bold text-[#455A63] ">

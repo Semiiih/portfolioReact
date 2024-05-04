@@ -6,8 +6,7 @@ import { Cards } from "@/components/atoms/Card/Card";
 
 export const HomePage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ["/avataaars2.png", "/avataaarsWinkT.png"];
-
+  const images = ["/images/avataaars2.png", "/images/avataaarsWinkT.png"];
   useEffect(() => {
     const changeImage = () => {
       const nextIndex = (currentImageIndex + 1) % images.length;

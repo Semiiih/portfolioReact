@@ -41,7 +41,11 @@ export const Header = () => {
       }}
     >
       <Navbar.Brand as={Link} href="https://flowbite-react.com">
-        <img src="/avataaars3.png" className="mr-3 h-6 sm:h-9" alt="avatar" />
+        <img
+          src="/images/avataaars3.png"
+          className="mr-3 h-6 sm:h-9"
+          alt="avatar"
+        />
         <span className="self-center whitespace-nowrap text-xl font-semibold text-white">
           Portfolio
         </span>
@@ -53,7 +57,7 @@ export const Header = () => {
           label={
             <Avatar
               alt="User settings"
-              img="/avataaars.png"
+              img="/images/avataaars.png"
               className="size-20"
               rounded
             />

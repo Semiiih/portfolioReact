@@ -17,13 +17,37 @@ export const Veille = () => {
           </p>
         </div>
         <div className="grid grid-cols-3 gap-20 rounded-xl bg-violet-400 bg-opacity-20 p-20">
-          <VeilleCard image="../../../../public/mac.jpg" />
-          <VeilleCard image="../../../../public/mac.jpg" />
-          <VeilleCard image="../../../../public/mac.jpg" />
+          <VeilleCard
+            image="../../../../public/images/mac.jpg"
+            title="Article "
+            description="aaaaaa"
+          />
+          <VeilleCard
+            image="../../../../public/images/mac.jpg"
+            title="Article "
+            description="aaaaaa"
+          />
+          <VeilleCard
+            image="../../../../public/images/mac.jpg"
+            title="Article "
+            description="aaaaaa"
+          />
 
-          <VeilleCard image="../../../../public/mac.jpg" />
-          <VeilleCard image="../../../../public/mac.jpg" />
-          <VeilleCard image="../../../../public/mac.jpg" />
+          <VeilleCard
+            image="../../../../public/images/mac.jpg"
+            title="Article"
+            description="aaaaaaa"
+          />
+          <VeilleCard
+            image="../../../../public/images/mac.jpg"
+            title="Article"
+            description="aaaaaaa"
+          />
+          <VeilleCard
+            image="../../../../public/images/mac.jpg"
+            title="Article"
+            description="aaaaaaa"
+          />
         </div>
       </main>
     </PublicLayout>
