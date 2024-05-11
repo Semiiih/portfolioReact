@@ -1,5 +1,4 @@
 import { PublicLayout } from "@/components/templates/PublicLayout";
-import { Link } from "react-router-dom";
 import "@/components/hooks/mainAnim.css";
 import { useEffect, useState } from "react";
 import { Cards } from "@/components/atoms/Card/Card";
