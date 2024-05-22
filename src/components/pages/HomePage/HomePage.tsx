@@ -2,6 +2,7 @@ import { PublicLayout } from "@/components/templates/PublicLayout";
 import "@/components/hooks/mainAnim.css";
 import { useEffect, useState } from "react";
 import { Cards } from "@/components/atoms/Card/Card";
+import { HoverButton } from "@/components/atoms/ButtonHover/ButtonHover";
 
 export const HomePage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -18,23 +19,38 @@ export const HomePage = () => {
   }, [currentImageIndex, images]);
 
   return (
-    <PublicLayout>
-      <main className="mx-auto max-w-screen-xl">
-        <div className="grid grid-cols-2 justify-items-center	 gap-4 pt-10">
-          <div>
-            <img
-              src={images[currentImageIndex].toString()}
-              alt="Avatar"
-              className="h-full w-full"
-            />
-          </div>
+    <>
+      <PublicLayout>
+        <main className="mx-auto max-w-screen-xl">
+          <div className="grid grid-cols-2 justify-items-center	 gap-4 pt-10">
+            <div>
+              <img
+                src={images[currentImageIndex].toString()}
+                alt="Avatar"
+                className="h-full w-full"
+              />
+            </div>
 
-          <div className="self-end text-right">
-            <Cards />
+            <div className="self-end text-right">
+              <Cards />
+            </div>
           </div>
-        </div>
-        <div className="h-[200PX] w-full border-4 shadow-2xl shadow-white"></div>
-      </main>
-    </PublicLayout>
+          <div className="h-[200PX] w-full border-4 shadow-2xl shadow-white"></div>
+          <HoverButton />
+        </main>
+        <section className="bg-slate-800">
+          <div className="flex justify-center pt-5 text-[30px] text-white">
+            Mon parcours
+          </div>
+          <div>aaa</div>
+          <div>aaa</div>
+          <div>aaa</div>
+          <div>aaa</div>
+          <div>aaa</div>
+          <div>aaa</div>
+          <div>aaa</div>
+        </section>
+      </PublicLayout>
+    </>
   );
 };
