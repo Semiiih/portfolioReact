@@ -40,17 +40,21 @@ export const Header = () => {
         WebkitBackdropFilter: "blur(8px)",
       }}
     >
-      <Navbar.Brand as={Link} href="https://flowbite-react.com">
+      <Navbar.Brand
+        as={Link}
+        href="https://flowbite-react.com"
+        className="hover:animate-rotate-x animate-duration-[1500ms] animate-ease-in-out h-21"
+      >
         <img
           src="/images/avataaars3.png"
-          className="mr-3 h-6 sm:h-9"
+          className=" mr-3 h-6 sm:h-9"
           alt="avatar"
         />
         <span className="self-center whitespace-nowrap text-xl font-semibold text-white">
           Portfolio
         </span>
       </Navbar.Brand>
-      <div className="flex md:order-2">
+      <div className="flex md:order-2 ">
         <Dropdown
           arrowIcon={false}
           inline
@@ -58,7 +62,7 @@ export const Header = () => {
             <Avatar
               alt="User settings"
               img="/images/avataaars.png"
-              className="size-20"
+              className="size-20 "
               rounded
             />
           }
@@ -81,10 +85,10 @@ export const Header = () => {
         <Navbar.Link
           to="/homepage"
           as={Link}
-          className={`dark:hover:text-primary-500" text-[20px] text-white `}
+          className={`dark:hover:text-primary-500" animate-duration-[1500ms] animate-ease-in-out text-[20px] text-white hover:animate-bounce`}
         >
           <span
-            className={`${activeLink === "/homepage" ? "border-b-2 border-violet-300 hover:text-violet-500" : "hover:text-violet-500"} `}
+            className={`${activeLink === "/homepage" ? "border-b-2 border-violet-300 hover:text-violet-500" : "hover:text-violet-500 "} `}
           >
             Accueil
           </span>
@@ -103,7 +107,7 @@ export const Header = () => {
         <Navbar.Link
           to="/Projets"
           as={Link}
-          className={`text-[20px] text-white`}
+          className={`animate-duration-[1500ms] animate-ease-in-out text-[20px] text-white hover:animate-bounce`}
         >
           <span
             className={`${activeLink === "/Projets" ? "border-b-2 border-violet-300 hover:text-violet-500" : "hover:text-violet-500"} `}
@@ -114,7 +118,7 @@ export const Header = () => {
         <Navbar.Link
           to="/veille"
           as={Link}
-          className={`text-[20px] text-white `}
+          className={`animate-duration-[1500ms] animate-ease-in-out text-[20px] text-white hover:animate-bounce `}
           style={{
             textDecorationColor: "currentColor",
           }}
@@ -128,7 +132,7 @@ export const Header = () => {
         <Navbar.Link
           to="/Bilan"
           as={Link}
-          className={`text-[20px] text-white `}
+          className={`animate-duration-[1500ms] animate-ease-in-out text-[20px] text-white hover:animate-bounce`}
         >
           <span
             className={`${activeLink === "/Bilan" ? "border-b-2 border-violet-300 hover:text-violet-500" : "hover:text-violet-500"} `}

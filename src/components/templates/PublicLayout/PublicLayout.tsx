@@ -9,10 +9,10 @@ interface PublicLayoutProps {
 export function PublicLayout({ children }: PublicLayoutProps) {
   return (
     <div
-      className="animated-bg flex min-h-screen w-full flex-col bg-white"
+      className="flex min-h-screen w-full flex-col bg-white"
       style={{
         backgroundImage: "url('@/../public/images/home-bg.jpg')",
-        backgroundSize: "cover",
+        backgroundSize: "",
       }}
     >
       <Particle />
