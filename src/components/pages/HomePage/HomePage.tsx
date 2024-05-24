@@ -6,6 +6,7 @@ import { HoverButton } from "@/components/atoms/ButtonHover/ButtonHover";
 import { TimeLine } from "@/components/atoms/TimeLine/TimeLine";
 import avataaars2 from "@/assets/avataaars2.png";
 import avataaarsWinkT from "@/assets/avataaarsWinkT.png";
+import homeBg from "@/assets/home-bg.jpg";
 
 export const HomePage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -27,7 +28,7 @@ export const HomePage = () => {
         <div
           className="animated-bg flex min-h-screen w-full flex-col bg-white"
           style={{
-            backgroundImage: "url('@/../public/images/home-bg.jpg')",
+            backgroundImage: `url(${homeBg})`,
             backgroundSize: "",
           }}
         >

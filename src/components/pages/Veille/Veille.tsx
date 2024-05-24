@@ -1,6 +1,7 @@
 import { PublicLayout } from "@/components/templates/PublicLayout";
 import "@/components/hooks/mainAnim.css";
 import { VeilleCard } from "@/components/atoms/VeilleCard/VeilleCard";
+import mac from "@/assets/mac.jpg";
 
 export const Veille = () => {
   return (
@@ -17,37 +18,13 @@ export const Veille = () => {
           </p>
         </div>
         <div className="grid grid-cols-3 gap-20 rounded-xl bg-violet-400 bg-opacity-20 p-20">
-          <VeilleCard
-            image="../../../../public/images/mac.jpg"
-            title="Article "
-            description="aaaaaa"
-          />
-          <VeilleCard
-            image="../../../../public/images/mac.jpg"
-            title="Article "
-            description="aaaaaa"
-          />
-          <VeilleCard
-            image="../../../../public/images/mac.jpg"
-            title="Article "
-            description="aaaaaa"
-          />
+          <VeilleCard image={mac} title="Article " description="aaaaaa" />
+          <VeilleCard image={mac} title="Article " description="aaaaaa" />
+          <VeilleCard image={mac} title="Article " description="aaaaaa" />
 
-          <VeilleCard
-            image="../../../../public/images/mac.jpg"
-            title="Article"
-            description="aaaaaaa"
-          />
-          <VeilleCard
-            image="../../../../public/images/mac.jpg"
-            title="Article"
-            description="aaaaaaa"
-          />
-          <VeilleCard
-            image="../../../../public/images/mac.jpg"
-            title="Article"
-            description="aaaaaaa"
-          />
+          <VeilleCard image={mac} title="Article" description="aaaaaaa" />
+          <VeilleCard image={mac} title="Article" description="aaaaaaa" />
+          <VeilleCard image={mac} title="Article" description="aaaaaaa" />
         </div>
       </main>
     </PublicLayout>

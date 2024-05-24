@@ -1,6 +1,8 @@
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import avataaars3 from "@/assets/avataaars3.png";
+import avataaars from "@/assets/avataaars.png";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,11 +47,7 @@ export const Header = () => {
         href="https://flowbite-react.com"
         className="hover:animate-rotate-x animate-duration-[1500ms] animate-ease-in-out h-21"
       >
-        <img
-          src="/images/avataaars3.png"
-          className=" mr-3 h-6 sm:h-9"
-          alt="avatar"
-        />
+        <img src={avataaars3} className=" mr-3 h-6 sm:h-9" alt="avatar" />
         <span className="self-center whitespace-nowrap text-xl font-semibold text-white">
           Portfolio
         </span>
@@ -61,7 +59,7 @@ export const Header = () => {
           label={
             <Avatar
               alt="User settings"
-              img="/images/avataaars.png"
+              img={avataaars}
               className="size-20 "
               rounded
             />
