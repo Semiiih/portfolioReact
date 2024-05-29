@@ -7,10 +7,22 @@ type VeilleCardProps = {
   description: string;
   image?: string;
   children?: React.ReactNode;
+  className?: string;
 };
-export const VeilleCard = ({ image, title, description }: VeilleCardProps) => {
+export const VeilleCard = ({
+  href,
+  image,
+  title,
+  description,
+  className,
+}: VeilleCardProps) => {
   return (
-    <div className="relative">
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`relative block ${className}`}
+    >
       <Card className="max-w-sm" imgSrc={image}>
         <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           {title}
@@ -20,8 +32,8 @@ export const VeilleCard = ({ image, title, description }: VeilleCardProps) => {
         </p>
       </Card>
       <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
-        <p className="text-lg font-bold text-white">Your Hover Content</p>
+        <p className="text-lg font-bold text-white">Voir l'article</p>
       </div>
-    </div>
+    </a>
   );
 };

@@ -17,7 +17,10 @@ export const TimeLine = () => {
       >
         <h3 className="vertical-timeline-element-title ">Général Option NSI</h3>
         <h4 className="vertical-timeline-element-subtitle">Avignon</h4>
-        <p>User Experience, Visual Design</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -29,8 +32,8 @@ export const TimeLine = () => {
         <h3 className="vertical-timeline-element-title">STI2D Option SIN</h3>
         <h4 className="vertical-timeline-element-subtitle">Avignon</h4>
         <p>
-          Creative Direction, User Experience, Visual Design, SEO, Online
-          Marketing
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
@@ -45,7 +48,7 @@ export const TimeLine = () => {
         <p>reperateur d'appareil éléctronique</p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        className="vertical-timeline-element--work  hover:animate-jump animate-duration-1000 animate-ease-in-out"
+        className="vertical-timeline-element--work  animate-duration-1000 animate-ease-in-out hover:animate-jump"
         contentStyle={{ background: "#8A53C7", color: "#fff" }}
         contentArrowStyle={{ borderRight: "7px solid  #fff" }}
         date="2023 - 2025 "
@@ -55,13 +58,13 @@ export const TimeLine = () => {
         <h3 className="vertical-timeline-element-title">Esiee-IT</h3>
         <h4 className="vertical-timeline-element-subtitle">Pontoise</h4>
         <p>
-          Creative Direction, User Experience, Visual Design, Project
-          Management, Team Leading
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
-        className="vertical-timeline-element--education hover:animate-jump animate-duration-[2000] animate-ease-in-out "
+        className="vertical-timeline-element--education animate-duration-[2000] animate-ease-in-out hover:animate-jump "
         contentStyle={{ background: "#8A53C7", color: "#fff" }}
         date="2023 - non défini"
         iconStyle={{ background: "#8A53C7", color: "#fff" }}
@@ -71,7 +74,10 @@ export const TimeLine = () => {
           alternance chez Snowpact
         </h3>
         <h4 className="vertical-timeline-element-subtitle">Osny</h4>
-        <p>Creative Direction, Visual Design</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}

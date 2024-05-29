@@ -7,6 +7,8 @@ import { TimeLine } from "@/components/atoms/TimeLine/TimeLine";
 import avataaars2 from "@/assets/avataaars2.png";
 import avataaarsWinkT from "@/assets/avataaarsWinkT.png";
 import homeBg from "@/assets/home-bg.jpg";
+import { TiltEffect } from "@/components/atoms/TiltEffect/TiltEffect";
+import FancyText from "@carefully-coded/react-text-gradient";
 
 export const HomePage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -38,10 +40,10 @@ export const HomePage = () => {
                 <img
                   src={images[currentImageIndex].toString()}
                   alt="Avatar"
-                  className="h-full w-full"
+                  className="h-full w-full animate-shake animate-duration-[1500ms] animate-ease-in-out"
                 />
               </div>
-              <div className="self-end text-right">
+              <div className="animate-fade-down self-end text-right animate-duration-[1500ms] animate-ease-in-out">
                 <Cards />
               </div>
             </div>
@@ -50,11 +52,18 @@ export const HomePage = () => {
           </main>
         </div>
         <section className="bg-slate-800">
-          <div className="mx-80 mb-20 flex justify-center border-b-2 pb-6 pt-10 text-[30px] text-white">
-            Mon parcours Technologiques
+          <div className="mx-80 mb-32 flex justify-center border-b-2 pb-6 pt-56 text-[30px] text-white ">
+            <FancyText
+              gradient={{ from: "#0f0f0f", to: "#e3e3e3", type: "linear" }}
+              animateTo={{ from: "#8a8a8a", to: "#bfbfbf" }}
+              animateDuration={2000}
+            >
+              MON PARCOURS TECHNOLOGIQUES
+            </FancyText>
           </div>
           <TimeLine />
         </section>
+        {/* <TiltEffect /> */}
       </PublicLayout>
     </>
   );
