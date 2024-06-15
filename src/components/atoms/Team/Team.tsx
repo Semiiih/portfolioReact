@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import React from "react";
-
 import { TeamMember, TeamMemberProps } from "./TeamMember";
 
 export type TeamProps = {
@@ -11,10 +10,10 @@ export type TeamProps = {
 export const Team = ({ items, vertical }: TeamProps) => {
   return (
     <div
-      className={clsx("flex md:p-2 ", [
-        !vertical && "flex-row flex-wrap justify-center",
-        vertical && "flex-col text-center",
-      ])}
+      className={clsx("flex md:p-2", {
+        "flex-row flex-wrap justify-center": !vertical,
+        "flex-col text-center": vertical,
+      })}
     >
       {items &&
         items.map((item, index) => (
@@ -25,6 +24,7 @@ export const Team = ({ items, vertical }: TeamProps) => {
             name={item.name}
             skills={item.skills}
             position={item.position}
+            stylePerso={item.stylePerso}
           />
         ))}
     </div>
