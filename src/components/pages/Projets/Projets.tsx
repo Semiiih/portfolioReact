@@ -4,6 +4,7 @@ import { ProjectCard } from "@/components/atoms/ProjectCard/ProjectCard";
 import logo from "@/assets/logo.png";
 import logoMSW from "@/assets/logoMSW.png";
 import logoMRH from "@/assets/logoMRH.jpg";
+import { SwitchButton } from "@/components/atoms/ProjectCard/switchButton";
 
 export const Projets = () => {
   const projects = [
@@ -36,6 +37,7 @@ export const Projets = () => {
           </p>
         </div>
 
+        <SwitchButton />
         <div className="flex flex-col gap-4">
           {projects.map((project) => (
             <ProjectCard

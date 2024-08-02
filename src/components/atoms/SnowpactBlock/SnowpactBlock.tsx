@@ -4,7 +4,7 @@ import MacSnow from "@/assets/MacSnow.png";
 
 export const SnowpactBlock = () => {
   return (
-    <div className="flex h-full animate-fade-down flex-row rounded-xl border-4 border-gray-400 bg-violet-400 bg-opacity-20 py-10 pb-10 animate-duration-[2500ms] animate-fill-backwards animate-once animate-ease-in-out">
+    <div className="flex h-full animate-fade-down flex-row rounded-xl border-4 border-gray-400 bg-violet-400 bg-opacity-20 py-10 pb-10 animate-duration-[2500ms] animate-fill-backwards animate-once animate-ease-in-out ">
       <div className="flex-1 flex-col items-center  self-center">
         <div className="flex flex-1 flex-col items-center py-4 ">
           <p className="text-[30px] text-white">Snowpact</p>

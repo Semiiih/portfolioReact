@@ -20,7 +20,11 @@ export default {
     "./src/ToggleSwitch.css", // Add this line
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
+    },
   },
   plugins: [flowbite.plugin(), require("tailwindcss-animated")],
 };
