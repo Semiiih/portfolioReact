@@ -24,6 +24,15 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      keyframes: {
+        rotBGimg: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
+      animation: {
+        rotBGimg: "rotBGimg 3s linear infinite",
+      },
     },
   },
   plugins: [flowbite.plugin(), require("tailwindcss-animated")],

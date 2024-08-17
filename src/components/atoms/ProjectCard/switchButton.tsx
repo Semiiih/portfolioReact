@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
-export const SwitchButton = () => {
+export const SwitchButton = ({ onToggle }) => {
   const [checked, setChecked] = useState(false);
 
   const handleToggle = () => {
     setChecked(!checked);
+    onToggle(); // Appel de la fonction onToggle passée en prop
   };
 
   return (
@@ -17,25 +18,23 @@ export const SwitchButton = () => {
           className="hidden"
         />
         <span
-          className={`duration-400 absolute bottom-0 left-0 right-0 top-0 cursor-pointer rounded-3xl bg-gray-800 transition-all ${
+          className={`absolute inset-0 cursor-pointer rounded-3xl bg-gray-800 transition-colors duration-500 ${
             checked ? "bg-purple-600" : ""
           }`}
         >
           <span
-            className={`duration-400 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform select-none font-semibold transition-all ${
-              checked ? "left-2/5" : ""
+            className={`absolute inset-y-0 left-1/2 flex transform items-center justify-center pl-4 transition-transform duration-500 ${
+              checked ? "-translate-x-10" : "-translate-x-1/2"
             }`}
           >
-            Play
+            {checked ? "Ecole" : "Entreprise"}
           </span>
           <span
-            className={`duration-400 absolute h-9 w-9 rounded-full bg-white transition-all ${
-              checked
-                ? "rotate-360 outline-6 left-9 transform shadow-none outline outline-white/40"
-                : "left-0.5"
+            className={`absolute left-0.5 top-0.5 h-9 w-9 transform rounded-full bg-white transition-transform duration-500 ${
+              checked ? "translate-x-28" : ""
             }`}
           >
-            <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform">
+            <span className="absolute inset-0 flex items-center justify-center">
               <svg
                 className="h-6 w-6 text-gray-800 dark:text-white"
                 aria-hidden="true"

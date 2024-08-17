@@ -48,7 +48,6 @@ export const HomePage = () => {
               </div>
             </div>
             <div className="h-[200PX] w-full border-4 shadow-2xl shadow-white"></div>
-            <HoverButton />
           </main>
         </div>
         <section className="bg-slate-800">
