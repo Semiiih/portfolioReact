@@ -48,7 +48,7 @@ export const TimeLine = () => {
         <p>reperateur d'appareil éléctronique</p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        className="vertical-timeline-element--work  animate-duration-1000 animate-ease-in-out hover:animate-jump"
+        className="vertical-timeline-element--work  "
         contentStyle={{ background: "#8A53C7", color: "#fff" }}
         contentArrowStyle={{ borderRight: "7px solid  #fff" }}
         date="2023 - 2025 "
@@ -64,7 +64,7 @@ export const TimeLine = () => {
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
-        className="vertical-timeline-element--education animate-duration-[2000] animate-ease-in-out hover:animate-jump "
+        className="vertical-timeline-element--education  "
         contentStyle={{ background: "#8A53C7", color: "#fff" }}
         date="2023 - non défini"
         iconStyle={{ background: "#8A53C7", color: "#fff" }}
