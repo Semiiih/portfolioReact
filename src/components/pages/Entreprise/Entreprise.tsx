@@ -64,7 +64,7 @@ export const Entreprise = () => {
           <Team items={teamData} />
         </div>
       </section>
-      <div className="bg-gradient-to-b from-violet-600 via-violet-400 to-violet-600 p-20 text-center">
+      <div className="bg-gradient-to-b from-violet-600 via-violet-400 to-violet-600 text-center sm:p-20">
         <p className="pb-10 text-start text-[50px] text-white">
           <FancyText
             gradient={{ from: "#FFFF", to: "#8a8a8a", type: "linear" }}
@@ -74,7 +74,7 @@ export const Entreprise = () => {
             L'approche de Snowpact
           </FancyText>
         </p>
-        <div className="flex flex-row justify-center gap-10">
+        <div className="flex flex-col justify-center gap-10 sm:flex-row">
           <CardApproche
             label="Livraison"
             description="Nous testons et validons ensemble pour mettre de nouvelles versions en production de manière continue."

@@ -6,15 +6,15 @@ import FancyText from "@carefully-coded/react-text-gradient";
 
 export const CertificationBlock = () => {
   return (
-    <div className="h-[200PX] w-full flex-row border-4 shadow-2xl shadow-white">
-      <div className=" absolute left-44 h-[200px] w-[200px] pt-10">
+    <div className="ms:mb-0 mb-8 flex h-[full] w-full flex-row justify-center border-4 shadow-2xl shadow-white sm:h-[200px] sm:justify-start">
+      <div className="absolute left-44 hidden h-[200px] w-[200px] pt-10 sm:block">
         <img
           src={click}
           alt="AnssiCertification"
-          className="h-32 w-32 animate-fade-right animate-duration-[1500ms] animate-fill-backwards animate-infinite animate-ease-in-out "
+          className=" h-32 w-32 animate-fade-right animate-duration-[1500ms] animate-fill-backwards animate-infinite animate-ease-in-out "
         />
       </div>
-      <div className="flex h-[200px] w-[200px] flex-row ">
+      <div className="flex w-[200px] flex-col sm:h-[200px] sm:flex-row ">
         <p className="self-center p-4 pl-8 text-center text-[40px] text-white">
           <FancyText
             gradient={{ from: "#e3e3e0", to: "#bfbfbf", type: "linear" }}
