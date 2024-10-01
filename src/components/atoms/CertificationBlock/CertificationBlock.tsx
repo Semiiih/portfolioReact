@@ -1,6 +1,8 @@
 import React from "react";
 import AnssiCertification from "@/assets/AnssiCertification.png";
 import PixCertification from "@/assets/PixLogo.svg.png";
+// import OpenCertification from "@/assets/logoOpenclassrooms.jpeg";
+import OpenCertification from "@/assets/openlogo.webp";
 import click from "@/assets/click.png";
 import FancyText from "@carefully-coded/react-text-gradient";
 
@@ -27,9 +29,14 @@ export const CertificationBlock = () => {
         <img
           src={AnssiCertification}
           alt="AnssiCertification"
-          className="h-full w-full"
+          className="mx-4 h-full w-full"
         />
         <img src={PixCertification} alt="Avatar" className="h-full w-full " />
+        <img
+          src={OpenCertification}
+          alt="Avatar"
+          className="mx-2 h-full w-full"
+        />
       </div>
     </div>
   );

@@ -12,10 +12,17 @@ import FancyText from "@carefully-coded/react-text-gradient";
 import { CertificationBlock } from "@/components/atoms/CertificationBlock/index";
 import AnssiCertification from "@/assets/AnssiCertification.png";
 import PixCertification from "@/assets/PixLogo.svg.png";
+import OpenCertification from "@/assets/logoOpenclassrooms.jpeg";
 import Certifier from "@/assets/Certifier.png";
-import Certifier2 from "@/assets/certifier2.png";
+import Certifier2 from "@/assets/Certifier2.png";
 import AttestationAnssi from "@/assets/attestation-anssi.pdf";
 import AttestationPix from "@/assets/attestation-pix.pdf";
+import AttestationOpen from "@/assets/certificatOpenCLass.pdf";
+import logoNext from "@/assets/next.png";
+import logoJS from "@/assets/js.png";
+import logoTailwind from "@/assets/TailwindCSS.png";
+import logoReact from "@/assets/react.png";
+import logoNpm from "@/assets/npm.png";
 
 export const HomePage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -115,16 +122,45 @@ export const HomePage = () => {
               screenshotUrl={AttestationPix}
             />
             <TiltEffect
-              label="Pix"
-              imageSrc={PixCertification}
+              label="OpenClassroom"
+              imageSrc={OpenCertification}
               competences={[
-                "Informations et données",
-                "Communication et collaboration",
-                "Création de contenu",
-                "Protection et sécurité",
-                "Environnement numérique",
+                "Maîtrise des bases de HTML5",
+                "Mettre en forme les pages web avec CSS3",
+                "Agencer le contenu des pages",
+                "Utilisation des fonctionnalités avancées de HTML et CSS",
               ]}
+              screenshotUrl={AttestationOpen}
             />
+          </div>
+          <div className="justify-center pb-32 pt-40 text-center text-[40px] sm:pt-60">
+            <FancyText
+              gradient={{ from: "#e3e3e0", to: "#bfbfbf", type: "linear" }}
+              animateTo={{ from: "#8a8a8a", to: "#e3e3e0" }}
+              animateDuration={2000}
+            >
+              <p>Mes compétencens</p>
+              <img
+                src={logoNext}
+                alt={`logo`}
+                className="mb-0 h-20 w-20 rounded-xl bg-white"
+              />
+              <img
+                src={logoNext}
+                alt={`logo`}
+                className="mb-0 h-20 w-20 rounded-xl bg-white"
+              />
+              <img
+                src={logoJS}
+                alt={`logo`}
+                className="mb-0 h-20 w-20 rounded-xl bg-white"
+              />
+              <img
+                src={logoTailwind}
+                alt={`logo`}
+                className="mb-0 h-20 w-20 rounded-xl bg-white"
+              />
+            </FancyText>
           </div>
         </section>
       </PublicLayout>

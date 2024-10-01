@@ -9,6 +9,9 @@ import grid1 from "@/assets/grid1.png";
 import grid2 from "@/assets/grid2.png";
 import grid3 from "@/assets/grid3.png";
 import grid4 from "@/assets/grid4.png";
+import textAdventure from "@/assets/textAdventure.jpeg";
+import video from "@/assets/MesMissions.mp4";
+
 import { SwitchButton } from "@/components/atoms/ProjectCard/switchButton";
 
 export const Projets = () => {
@@ -18,40 +21,40 @@ export const Projets = () => {
     {
       logo: logo,
       title: "Signaleo",
-      description: "A brief description of Project One.",
+      description: "Faire une description.",
       link: "https://example.com/project-one",
     },
     {
       logo: logoMSW,
       title: "MySocialWorker",
-      description: "A brief description of Project Two.",
+      description: "Faire une description.",
       link: "https://example.com/project-two",
     },
     {
       logo: logoMRH,
       title: "Mon Resto'Halal",
-      description: "A brief description of Project Three.",
+      description: "Faire une description.",
       link: "https://example.com/project-three",
     },
   ];
 
   const projetsEcole = [
     {
-      logo: logo,
-      title: "Project Ecole 1",
-      description: "A brief description of School Project One.",
+      logo: textAdventure,
+      title: "Text Adventure ",
+      description: "Faire une description.",
       link: "https://example.com/school-project-one",
     },
     {
       logo: logoMSW,
       title: "Project Ecole 2",
-      description: "A brief description of School Project Two.",
+      description: "Faire une description.",
       link: "https://example.com/school-project-two",
     },
     {
       logo: logoMRH,
       title: "Project Ecole 3",
-      description: "A brief description of School Project Three.",
+      description: "Faire une description.",
       link: "https://example.com/school-project-three",
     },
   ];
@@ -68,19 +71,18 @@ export const Projets = () => {
     <PublicLayout>
       <main className="bg-gray-300">
         <div className="mx-auto mb-10 flex w-full max-w-screen-xl flex-row place-content-center rounded-xl border-2 bg-slate-800 p-6">
-          <div className="flex flex-1 flex-col text-center">
+          <div className="flex flex-1 flex-col self-center text-center">
             <p className="mb-6 text-center text-[30px] text-white">
               Les missions que j'ai réalisées :
             </p>
             <p className="mb-6 text-center text-[30px] text-gray-300">
-              Les missions que j'ai réalisées : Les missions que j'ai réalisées
-              Les missions que j'ai réalisées : Les missions que j'ai
-              réaliséesLes missions que j'ai réalisées : Les missions que j'ai
-              réaliséesLes missions que j'ai réalisées : Les missions que j'ai
-              réalisées
+              Au fil de mon parcours, tant à l'école qu'en entreprise, j'ai eu
+              l'opportunité de travailler sur divers projets qui m'ont permis de
+              développer mes compétences et d'appliquer mes connaissances dans
+              des contextes réels.
             </p>
           </div>
-          <div className="mx-auto grid max-w-screen-md flex-1 grid-cols-2 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2">
+          {/* <div className="mx-auto grid max-w-screen-md flex-1 grid-cols-2 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2">
             {logos.map((logo, index) => (
               <div
                 key={index}
@@ -89,6 +91,15 @@ export const Projets = () => {
                 <img src={logo} alt={`Logo ${index + 1}`} className="" />
               </div>
             ))}
+          </div> */}
+          <div className=" flex-1 ">
+            <video
+              src={video}
+              loop
+              autoPlay
+              muted
+              className="h-full max-w-full rounded-full"
+            />
           </div>
         </div>
         <div className="bg mx-auto flex flex-col gap-4 bg-slate-800 p-20 ">
@@ -99,7 +110,7 @@ export const Projets = () => {
               logo={project.logo}
               title={project.title}
               description={project.description}
-              link={project.link}
+              project={project}
             />
           ))}
         </div>

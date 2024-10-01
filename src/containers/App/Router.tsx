@@ -4,6 +4,7 @@ import { Entreprise } from "@/components/pages/Entreprise/Entreprise";
 import { ScrollToTop } from "@/components/hooks/ScrollToTop";
 import { Veille } from "@/components/pages/Veille/Veille";
 import { Projets } from "@/components/pages/Projets/Projets";
+import { ProjectDetail } from "@/components/pages/Projets/ProjectDetail";
 
 export const Router = () => {
   return (
@@ -15,6 +16,7 @@ export const Router = () => {
         <Route path="veille" element={<Veille />} />
         <Route path="projets" element={<Projets />} />
         <Route path="entreprise" element={<Entreprise />} />
+        <Route path="/project-detail" element={<ProjectDetail />} />
       </Routes>
     </ScrollToTop>
   );
