@@ -24,6 +24,7 @@ export const projectsData = [
       { name: "React", logo: logoReact },
       { name: "Npm", logo: logoNpm },
     ],
+    patrimoineInformatique: "Patrimoine informatique",
   },
   {
     type: "entreprise",

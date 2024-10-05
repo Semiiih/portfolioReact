@@ -74,7 +74,7 @@ export const TiltEffect: React.FC<CardApprocheProps> = ({
         <div className="flex  items-center justify-center">
           <div className="relative h-[500px] w-[300px] transform cursor-pointer rounded-2xl bg-gradient-to-b from-gray-700 via-gray-800 to-slate-800 shadow-[0_-5px_25px_rgba(255,255,255,0.5)] transition-transform hover:scale-105">
             <img src={imageSrc} alt={label} className="mt-4  w-full p-6 " />
-            <p className="font-poppins flex-col justify-end px-8 pt-4 text-center text-lg text-slate-300">
+            <p className="flex-col justify-end px-8 pt-4 text-center font-poppins text-lg text-slate-300">
               {description}
             </p>
             <div className="px-8 pt-4 text-slate-300">

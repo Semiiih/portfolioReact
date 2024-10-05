@@ -1,21 +1,36 @@
+import React, { useState } from "react";
 import { Card } from "flowbite-react";
 
 type VeilleCardProps = {
-  renderAs?: React.ElementType;
   href?: string;
   title: string;
   description: string;
   image?: string;
-  children?: React.ReactNode;
+  rating: number;
   className?: string;
+  date: string;
 };
+
 export const VeilleCard = ({
   href,
   image,
   title,
   description,
+  rating,
   className,
+  date,
 }: VeilleCardProps) => {
+  const renderStars = (rating: number) => {
+    return [...Array(5)].map((_, index) => (
+      <span
+        key={index}
+        className={index < rating ? "text-yellow-400" : "text-gray-400"}
+      >
+        ★
+      </span>
+    ));
+  };
+
   return (
     <a
       href={href}
@@ -30,7 +45,14 @@ export const VeilleCard = ({
         <p className="font-normal text-gray-700 dark:text-gray-400">
           {description}
         </p>
+
+        <div className="mt-2 flex justify-center">{renderStars(rating)}</div>
+
+        <p className="mt-2 text-sm text-gray-500">
+          {new Date(date).toLocaleDateString()}
+        </p>
       </Card>
+
       <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 hover:opacity-100">
         <p className="text-lg font-bold text-white">Voir l'article</p>
       </div>

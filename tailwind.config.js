@@ -17,7 +17,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     flowbite.content(),
-    "./src/ToggleSwitch.css", // Add this line
+    "./src/ToggleSwitch.css",
   ],
   theme: {
     extend: {

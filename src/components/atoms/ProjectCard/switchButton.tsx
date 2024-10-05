@@ -10,16 +10,18 @@ export const SwitchButton = ({ onToggle }: any) => {
 
   return (
     <div className="m-10 box-border flex items-center justify-center p-0 text-white">
-      <label className="relative inline-block h-10 w-36">
+      <label className="relative inline-block h-10 w-36 ">
         <input
           type="checkbox"
           checked={checked}
           onChange={handleToggle}
-          className="hidden"
+          className="hidden "
         />
         <span
           className={`absolute inset-0 cursor-pointer rounded-3xl bg-gray-800 transition-colors duration-500 ${
-            checked ? "bg-purple-600" : ""
+            checked
+              ? "bg-gradient-to-t from-violet-700 via-violet-900 to-slate-600"
+              : "bg-gradient-to-t from-slate-600 via-slate-700 to-violet-800"
           }`}
         >
           <span
@@ -30,11 +32,11 @@ export const SwitchButton = ({ onToggle }: any) => {
             {checked ? "Ecole" : "Entreprise"}
           </span>
           <span
-            className={`absolute left-0.5 top-0.5 h-9 w-9 transform rounded-full bg-white transition-transform duration-500 ${
+            className={`absolute left-0.5 top-0.5 h-9 w-9 transform rounded-full bg-gradient-to-t from-white via-slate-300 to-slate-400 transition-transform duration-500   ${
               checked ? "translate-x-28" : ""
             }`}
           >
-            <span className="absolute inset-0 flex items-center justify-center">
+            <span className="absolute inset-0 flex items-center justify-center ">
               <svg
                 className="h-6 w-6 text-gray-800 dark:text-white"
                 aria-hidden="true"

@@ -21,7 +21,7 @@ export const ProjectDetail = () => {
 
   return (
     <PublicLayout>
-      <div className="flex flex-col items-center bg-slate-800 pt-20 text-white">
+      <div className="flex flex-col items-center bg-slate-800 pt-20 text-white ">
         <div className="flex flex-col items-center gap-7 text-center text-[50px]">
           <h1>
             <FancyText
@@ -35,7 +35,7 @@ export const ProjectDetail = () => {
           <img
             src={project.logo}
             alt={project.title}
-            className="w-32 rounded-full"
+            className="w-32 animate-wiggle rounded-full animate-duration-[2000ms] animate-fill-backwards animate-infinite animate-ease-linear"
           />
         </div>
         <p className="pb-20 pt-6">{project.details}</p>
@@ -57,7 +57,7 @@ export const ProjectDetail = () => {
         <div className="flex flex-row gap-20 pt-20 text-center">
           <div className="flex-1text-center">
             <p className="mx-24 mb-4 border-b-2 pb-2 text-[25px]">
-              Propriétaire du projet
+              Duré de la mission
             </p>
             <p>
               <FancyText
@@ -103,22 +103,19 @@ export const ProjectDetail = () => {
               ))}
             </div>
           </div>
-          <div className="flex-1 text-center">
-            <p className="mx-24 mb-4 border-b-2 pb-2 text-[25px]">
-              Duré de la mission
-            </p>
-            <p>
-              <FancyText
-                gradient={{ from: "#FFFF", to: "#8a8a8a", type: "linear" }}
-                animateTo={{ from: "#8a8a8a", to: "#FFFF" }}
-                animateDuration={1000}
-              >
-                {project.details}
-              </FancyText>{" "}
-            </p>
-          </div>
         </div>
         <Ecard />
+        <div className="flex flex-col items-center gap-7 text-center text-[50px]">
+          <h1>
+            <FancyText
+              gradient={{ from: "#FFFF", to: "#808080", type: "linear" }}
+              animateTo={{ from: "#8a8a8a", to: "#FFFF" }}
+              animateDuration={1000}
+            >
+              {project.patrimoineInformatique}
+            </FancyText>
+          </h1>
+        </div>
       </div>
     </PublicLayout>
   );

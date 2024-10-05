@@ -15,7 +15,7 @@ export const CardApproche: React.FC<CardApprocheProps> = ({
     <div className="flex  items-center justify-center">
       <div className="relative h-[500px] w-[300px] transform cursor-pointer rounded-2xl bg-gradient-to-b from-gray-700  via-gray-800 to-slate-800 shadow-lg transition-transform hover:scale-110">
         <img src={imageSrc} alt={label} className="mt-4 h-1/2 w-full p-6 " />
-        <p className="font-poppins flex-col justify-end px-8 pt-4 text-center text-lg text-white">
+        <p className="flex-col justify-end px-8 pt-4 text-center font-poppins text-lg text-white">
           {description}
         </p>
         <span className="absolute -left-2 -top-2 flex h-36 w-36 items-center justify-center overflow-hidden">
