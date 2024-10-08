@@ -1,16 +1,14 @@
-import React from "react";
 import { useLocation } from "react-router-dom";
 import { PublicLayout } from "@/components/templates/PublicLayout";
 import { projectsData } from "@/projects/mrn";
 import FancyText from "@carefully-coded/react-text-gradient";
 import { Ecard } from "@/components/atoms/Ecard/index";
-import video from "@/assets/MesMissions.mp4";
+import { ProjetRole } from "@/components/organisms/ProjetRole/ProjetRole";
 
 export const ProjectDetail = () => {
   const location = useLocation();
   const selectedProjectTitle = location.state?.projectTitle;
 
-  // Trouver le projet correspondant dans les données JSON
   const project = projectsData.find(
     (proj) => proj.title === selectedProjectTitle,
   );
@@ -21,7 +19,7 @@ export const ProjectDetail = () => {
 
   return (
     <PublicLayout>
-      <div className="flex flex-col items-center bg-slate-800 pt-20 text-white ">
+      <div className="flex flex-col items-center overflow-hidden bg-slate-800 pt-20 font-bold text-white">
         <div className="flex flex-col items-center gap-7 text-center text-[50px]">
           <h1>
             <FancyText
@@ -84,7 +82,7 @@ export const ProjectDetail = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-row gap-20 pt-32 text-center">
+        <div className="flex flex-row gap-20 pt-32 text-center ">
           <div className="flex-1 text-center">
             <p className="mx-24 mb-4 border-b-2 pb-2 text-[25px]">
               Technologies
@@ -105,7 +103,7 @@ export const ProjectDetail = () => {
           </div>
         </div>
         <Ecard />
-        <div className="flex flex-col items-center gap-7 text-center text-[50px]">
+        <div className="flex flex-col items-center gap-7 text-center text-[50px] ">
           <h1>
             <FancyText
               gradient={{ from: "#FFFF", to: "#808080", type: "linear" }}
@@ -115,6 +113,9 @@ export const ProjectDetail = () => {
               {project.patrimoineInformatique}
             </FancyText>
           </h1>
+          {project.githubFeatures && (
+            <ProjetRole features={project.githubFeatures} />
+          )}
         </div>
       </div>
     </PublicLayout>

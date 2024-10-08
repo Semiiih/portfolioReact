@@ -11,7 +11,6 @@ import grid3 from "@/assets/grid3.png";
 import grid4 from "@/assets/grid4.png";
 import FancyText from "@carefully-coded/react-text-gradient";
 
-import projets from "@/assets/projets.svg";
 import textAdventure from "@/assets/textAdventure.jpeg";
 import video from "@/assets/programmer2.gif";
 import projectsIllustration1 from "@/assets/projects-illustration1.gif";
