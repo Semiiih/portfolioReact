@@ -23,6 +23,10 @@ import logoJS from "@/assets/js.png";
 import logoTailwind from "@/assets/TailwindCSS.png";
 import logoReact from "@/assets/react.png";
 import logoNpm from "@/assets/npm.png";
+import logoHTML from "@/assets/html.png";
+import logoCSS from "@/assets/css.png";
+import logoYarn from "@/assets/yarn.png";
+import logoStorybook from "@/assets/storybook.png";
 
 export const HomePage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -75,13 +79,16 @@ export const HomePage = () => {
             </FancyText>
           </div>
           <TimeLine />
-          <div className="justify-center pb-32 pt-40 text-center text-[40px] sm:pt-60">
+          <div
+            className="justify-center pb-32 pt-40 text-center text-[40px] sm:pt-60"
+            id="certifications"
+          >
             <FancyText
               gradient={{ from: "#e3e3e0", to: "#bfbfbf", type: "linear" }}
               animateTo={{ from: "#8a8a8a", to: "#e3e3e0" }}
               animateDuration={2000}
             >
-              <p>Mes Certifications</p>
+              <p id="certifications">Mes Certifications</p>
             </FancyText>
             <img
               src={Certifier}
@@ -94,10 +101,7 @@ export const HomePage = () => {
               className="absolute left-0 mx-auto flex  h-32 w-32 sm:left-1 sm:h-80 sm:w-80 "
             />
           </div>
-          <div
-            id="certifications"
-            className="flex flex-col items-center justify-center gap-20 sm:flex-row "
-          >
+          <div className="flex flex-col items-center justify-center gap-20 sm:flex-row ">
             <TiltEffect
               label="Mooc Anssi"
               imageSrc={AnssiCertification}
@@ -133,33 +137,61 @@ export const HomePage = () => {
               screenshotUrl={AttestationOpen}
             />
           </div>
-          <div className="justify-center pb-32 pt-40 text-center text-[40px] sm:pt-60">
+          <div className=" justify-center pb-32 pt-40 text-center text-[40px] sm:pt-60">
             <FancyText
               gradient={{ from: "#e3e3e0", to: "#bfbfbf", type: "linear" }}
               animateTo={{ from: "#8a8a8a", to: "#e3e3e0" }}
               animateDuration={2000}
             >
               <p>Mes compétencens</p>
-              <img
-                src={logoNext}
-                alt={`logo`}
-                className="mb-0 h-20 w-20 rounded-xl bg-white"
-              />
-              <img
-                src={logoNext}
-                alt={`logo`}
-                className="mb-0 h-20 w-20 rounded-xl bg-white"
-              />
-              <img
-                src={logoJS}
-                alt={`logo`}
-                className="mb-0 h-20 w-20 rounded-xl bg-white"
-              />
-              <img
-                src={logoTailwind}
-                alt={`logo`}
-                className="mb-0 h-20 w-20 rounded-xl bg-white"
-              />
+              <div className="flex flex-row gap-10">
+                <img
+                  src={logoNext}
+                  alt={`logo`}
+                  className="mb-0 h-20 w-20 rounded-xl "
+                />
+                <img
+                  src={logoReact}
+                  alt={`logo`}
+                  className="mb-0 h-20 w-20 rounded-xl "
+                />
+                <img
+                  src={logoJS}
+                  alt={`logo`}
+                  className="mb-0 h-20 w-20 rounded-xl"
+                />
+                <img
+                  src={logoTailwind}
+                  alt={`logo`}
+                  className="mb-0 h-20 w-20 rounded-xl "
+                />
+                <img
+                  src={logoNpm}
+                  alt={`logo`}
+                  className="mb-0 h-20 w-20 rounded-xl "
+                />
+
+                <img
+                  src={logoHTML}
+                  alt={`logo`}
+                  className="mb-0 h-20 w-20 rounded-xl "
+                />
+                <img
+                  src={logoCSS}
+                  alt={`logo`}
+                  className="mb-0 h-20 w-20 rounded-xl "
+                />
+                <img
+                  src={logoYarn}
+                  alt={`logo`}
+                  className="mb-0 h-20 w-20 rounded-xl "
+                />
+                <img
+                  src={logoStorybook}
+                  alt={`logo`}
+                  className="mb-0 h-20 w-20 rounded-xl "
+                />
+              </div>
             </FancyText>
           </div>
         </section>

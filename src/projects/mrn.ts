@@ -32,6 +32,58 @@ export const projectsData = [
         description2:
           "Les différentes parties du projets sont splités en plusieurs repo sur Github",
       },
+
+      {
+        name: "Push to deploy.",
+        description1:
+          "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+        icon: projectsIllustration1,
+      },
+      {
+        name: "SSL certificates.",
+        description1:
+          "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+        icon: projectsIllustration1,
+      },
+      {
+        name: "Database backups.",
+        description1:
+          "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+        icon: projectsIllustration1,
+      },
+    ],
+    figmaFeatures: [
+      {
+        title: "Figma",
+        subtitle: "Charte graphique du projet",
+        description2: `Un design sur Figma a été réalisé pour se calquer dessus pour les couleurs, polices, design des composants ect..
+          Il était donc impératif de bien s'appuyer sur les modèles`,
+      },
+      {
+        name: "Push to deploy.",
+        description1:
+          "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+        icon: projectsIllustration1,
+      },
+      {
+        name: "SSL certificates.",
+        description1:
+          "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+        icon: projectsIllustration1,
+      },
+      {
+        name: "Database backups.",
+        description1:
+          "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+        icon: projectsIllustration1,
+      },
+    ],
+    slackFeatures: [
+      {
+        title: "Slack",
+        subtitle: "Communication sur Slack",
+        description2: `On communique sur Slack en cas de besoin et surtout pour suivre l'avancement du projet ainsi que des tâches`,
+      },
       {
         name: "Push to deploy.",
         description1:

@@ -7,8 +7,17 @@ import click from "@/assets/click.png";
 import FancyText from "@carefully-coded/react-text-gradient";
 
 export const CertificationBlock = () => {
+  const scrollToCertifications = () => {
+    const certificationsSection = document.getElementById("certifications");
+    if (certificationsSection) {
+      certificationsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
-    <div className="ms:mb-0 mb-8 flex h-[full] w-full flex-row justify-center border-4 shadow-2xl shadow-white sm:h-[200px] sm:justify-start">
+    <div
+      className="ms:mb-0 mb-8 flex h-[full] w-full flex-row justify-center border-4 shadow-2xl shadow-white sm:h-[200px] sm:justify-start"
+      onClick={scrollToCertifications}
+    >
       <div className="absolute left-44 hidden h-[200px] w-[200px] pt-10 sm:block">
         <img
           src={click}

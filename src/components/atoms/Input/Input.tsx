@@ -24,8 +24,6 @@ export const Input: React.FC<InputProps> = ({
       <div className="relative flex flex-col items-center justify-center">
         <div className="glow absolute h-full max-h-[130px] w-full max-w-[354px] rounded-[12px] opacity-40 blur-[30px]"></div>
         <div className="absolute h-full max-h-[70px] w-full max-w-[314px] rounded-[12px] bg-gradient-to-br from-purple-600 to-pink-500 blur-sm"></div>
-        <div className="absolute h-full max-h-[70px] w-full max-w-[314px] rounded-[12px] bg-black blur-sm"></div>
-        <div className="absolute h-full max-h-[70px] w-full max-w-[314px] rounded-[12px] bg-gray-800"></div>
 
         <div className="relative">
           <input
@@ -35,6 +33,7 @@ export const Input: React.FC<InputProps> = ({
             onChange={onChange}
           />
           <div className="absolute left-[20px] top-[15px]">
+            {/* la loupe  */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

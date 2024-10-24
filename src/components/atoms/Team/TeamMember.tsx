@@ -21,7 +21,7 @@ export const TeamMember = ({
     <div
       className={`border-primary-500/50 shadow-primary-500/50 m-2 grid min-h-[200px] w-32 items-center justify-items-center rounded-xl border bg-white p-3 text-center shadow-[0px_3px_0px_0px]  md:w-40 ${
         stylePerso
-          ? "  animate-jump border-white bg-purple-400 animate-duration-[1500ms] animate-infinite animate-ease-in-out"
+          ? "  animate-jump border-white bg-purple-400 bg-gradient-to-r from-purple-400 via-purple-500 to-violet-600 text-gray-50 animate-duration-[1500ms] animate-infinite animate-ease-in-out "
           : ""
       }`}
     >

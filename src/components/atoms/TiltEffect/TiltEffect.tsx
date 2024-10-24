@@ -20,7 +20,7 @@ interface CardApprocheProps {
   description?: string;
   imageSrc?: string;
   competences?: string[];
-  screenshotUrl?: string; // Add this prop to pass the screenshot URL
+  screenshotUrl?: string;
 }
 
 export const TiltEffect: React.FC<CardApprocheProps> = ({

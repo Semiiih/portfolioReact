@@ -4,6 +4,9 @@ import { projectsData } from "@/projects/mrn";
 import FancyText from "@carefully-coded/react-text-gradient";
 import { Ecard } from "@/components/atoms/Ecard/index";
 import { ProjetRole } from "@/components/organisms/ProjetRole/ProjetRole";
+import signaleoGithub from "@/assets/signaleoGithub.png";
+import signaleoFigma from "@/assets/signaleoFigma.png";
+import signaleoSlack from "@/assets/signaleoSlack.png";
 
 export const ProjectDetail = () => {
   const location = useLocation();
@@ -114,7 +117,25 @@ export const ProjectDetail = () => {
             </FancyText>
           </h1>
           {project.githubFeatures && (
-            <ProjetRole features={project.githubFeatures} />
+            <ProjetRole
+              features={project.githubFeatures}
+              imagePosition="right"
+              image={signaleoGithub}
+            />
+          )}
+          {project.figmaFeatures && (
+            <ProjetRole
+              features={project.figmaFeatures}
+              imagePosition="left"
+              image={signaleoFigma}
+            />
+          )}
+          {project.slackFeatures && (
+            <ProjetRole
+              features={project.slackFeatures}
+              imagePosition="right"
+              image={signaleoSlack}
+            />
           )}
         </div>
       </div>

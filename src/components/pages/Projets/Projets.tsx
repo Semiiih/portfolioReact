@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { PublicLayout } from "@/components/templates/PublicLayout";
 import "@/components/hooks/mainAnim.css";
 import { ProjectCard } from "@/components/atoms/ProjectCard/ProjectCard";
 import logo from "@/assets/logo.png";
 import logoMSW from "@/assets/logoMSW.png";
 import logoMRH from "@/assets/logoMRH.jpg";
+import logoADN from "@/assets/logoADN.webp";
+import logoSnowpact from "@/assets/main-logo.png";
+import logoEvolios from "@/assets/logoEvolios.webp";
 import grid1 from "@/assets/grid1.png";
 import grid2 from "@/assets/grid2.png";
 import grid3 from "@/assets/grid3.png";
@@ -30,14 +33,32 @@ export const Projets = () => {
       link: "https://example.com/project-one",
     },
     {
+      logo: logoSnowpact,
+      title: "Snowpact",
+      description: "Faire une description.",
+      link: "https://example.com/project-three",
+    },
+    {
+      logo: logoMRH,
+      title: "Mon Resto'Halal",
+      description: "Faire une description.",
+      link: "https://example.com/project-three",
+    },
+    {
+      logo: logoADN,
+      title: "ADN",
+      description: "Faire une description.",
+      link: "https://example.com/project-three",
+    },
+    {
       logo: logoMSW,
       title: "MySocialWorker",
       description: "Faire une description.",
       link: "https://example.com/project-two",
     },
     {
-      logo: logoMRH,
-      title: "Mon Resto'Halal",
+      logo: logoEvolios,
+      title: "Evolios",
       description: "Faire une description.",
       link: "https://example.com/project-three",
     },
@@ -167,19 +188,7 @@ export const Projets = () => {
             </div>
           </div>
         </div>
-        {/* <div className="mx-auto mb-10 flex w-full max-w-screen-xl flex-row place-content-center rounded-xl  bg-slate-800 p-6">
-          <div className="flex flex-1 flex-col self-center text-center ">
-            <p className="mb-6 text-center text-[30px] text-white">
-              Les missions que j'ai réalisées :
-            </p>
-            <p className="mb-6 text-center text-[30px] text-gray-300">
-              Au fil de mon parcours, tant à l'école qu'en entreprise, j'ai eu
-              l'opportunité de travailler sur divers projets qui m'ont permis de
-              développer mes compétences et d'appliquer mes connaissances dans
-              des contextes réels.
-            </p>
-          </div>
-        </div> */}
+
         <div className="bg mx-auto flex flex-col gap-4 bg-slate-800 p-20  ">
           <SwitchButton onToggle={handleSwitchChange} />
           {projectsToDisplay.map((project) => (

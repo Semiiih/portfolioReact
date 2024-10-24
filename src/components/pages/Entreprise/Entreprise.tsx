@@ -14,6 +14,8 @@ import { teamData } from "@/components/atoms/Team/temaData";
 import HeaderSnowpact from "@/components/atoms/HeaderSnowpact/HeaderSnowpact";
 import { CardApproche } from "@/components/atoms/CardApproche/CardApproche";
 import FancyText from "@carefully-coded/react-text-gradient";
+import { MesMissions } from "@/components/organisms/MesMissions/MesMissions";
+import StackInformatique from "@/components/organisms/StackInformatique/StackInformatique";
 
 export const Entreprise = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -58,9 +60,16 @@ export const Entreprise = () => {
       </div>
       <section className=" flex justify-center bg-slate-800 pb-20 pt-36">
         <div className="flex w-2/3 flex-col ">
-          <p className="pb-10 text-center text-[35px] text-white">
-            L'équipe Snowpact
+          <p className="pb-10 text-center text-[50px] text-white">
+            <FancyText
+              gradient={{ from: "#FFFF", to: "#8a8a8a", type: "linear" }}
+              animateTo={{ from: "#8a8a8a", to: "#FFFF" }}
+              animateDuration={1000}
+            >
+              L'équipe Snowpact
+            </FancyText>
           </p>
+
           <Team items={teamData} />
         </div>
       </section>
@@ -97,6 +106,10 @@ export const Entreprise = () => {
           />
         </div>
       </div>
+      <section>
+        <MesMissions />
+        <StackInformatique />
+      </section>
     </PublicLayout>
   );
 };
