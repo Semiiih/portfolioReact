@@ -85,7 +85,7 @@ export const Projets = () => {
     },
   ];
 
-  const logos = [grid1, grid2, grid3, grid4]; // Array with logo images
+  const logos = [grid1, grid2, grid3, grid4];
 
   const handleSwitchChange = () => {
     setIsEcole(!isEcole);

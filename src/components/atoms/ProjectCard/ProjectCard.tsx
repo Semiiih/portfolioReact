@@ -12,7 +12,7 @@ export const ProjectCard = ({ logo, title, description, project }: any) => {
   };
 
   return (
-    <div className="flex animate-fade flex-row items-center justify-between rounded-lg border border-white p-4 shadow-lg transition-transform animate-duration-1000 animate-fill-backwards animate-once animate-ease-in hover:scale-105">
+    <div className="flex animate-fade flex-col items-center justify-between rounded-lg border border-white p-4 shadow-lg transition-transform animate-duration-1000 animate-fill-backwards animate-once animate-ease-in hover:scale-105 sm:flex-row">
       <img
         src={logo}
         alt={`${title} logo`}

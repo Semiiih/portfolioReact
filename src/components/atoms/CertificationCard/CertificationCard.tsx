@@ -19,14 +19,16 @@ interface CardApprocheProps {
   label?: string;
   description?: string;
   imageSrc?: string;
+  imageSize?: string;
   competences?: string[];
   screenshotUrl?: string;
 }
 
-export const TiltEffect: React.FC<CardApprocheProps> = ({
+export const CertificationCard: React.FC<CardApprocheProps> = ({
   label = "Premium",
   description = "",
   imageSrc,
+  imageSize = "w-full",
   competences = [],
   screenshotUrl,
 }) => {
@@ -72,8 +74,12 @@ export const TiltEffect: React.FC<CardApprocheProps> = ({
       >
         <div className="pulse absolute -inset-2 rounded-lg bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 opacity-75 blur-xl" />
         <div className="flex  items-center justify-center">
-          <div className="relative h-[500px] w-[300px] transform cursor-pointer rounded-2xl bg-gradient-to-b from-gray-700 via-gray-800 to-slate-800 shadow-[0_-5px_25px_rgba(255,255,255,0.5)] transition-transform hover:scale-105">
-            <img src={imageSrc} alt={label} className="mt-4  w-full p-6 " />
+          <div className="relative  h-[500px] w-[300px] transform cursor-pointer rounded-2xl bg-gradient-to-b from-gray-700 via-gray-800 to-slate-800 shadow-[0_-5px_25px_rgba(255,255,255,0.5)] transition-transform hover:scale-105">
+            <img
+              src={imageSrc}
+              alt={label}
+              className={`mx-auto mt-4 self-center  p-6 ${imageSize}`}
+            />
             <p className="flex-col justify-end px-8 pt-4 text-center font-poppins text-lg text-slate-300">
               {description}
             </p>
