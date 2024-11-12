@@ -21,21 +21,29 @@ import projectsIllustration2 from "@/assets/projects-illustration2.gif";
 import projectsIllustration3 from "@/assets/projects-illustration3.gif";
 
 import { SwitchButton } from "@/components/atoms/ProjectCard/switchButton";
+import { useLocation } from "react-router-dom";
+import { projectsData } from "@/projects/mrn";
 
 export const Projets = () => {
   const [isEcole, setIsEcole] = useState(false);
 
+  const location = useLocation();
+  const selectedProjectTitle = location.state?.projectTitle;
+  const project = projectsData.find(
+    (proj) => proj.title === selectedProjectTitle,
+  );
   const projetsEntreprise = [
     {
       logo: logo,
       title: "Signaleo",
-      description: "Faire une description.",
+      description:
+        "Application pour contribuer au bien être de sa ville en signalant les incidents",
       link: "https://example.com/project-one",
     },
     {
       logo: logoSnowpact,
       title: "Snowpact",
-      description: "Faire une description.",
+      description: "Agence agile du web et du mobile",
       link: "https://example.com/project-three",
     },
     {

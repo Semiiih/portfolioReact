@@ -1,10 +1,10 @@
 import FancyText from "@carefully-coded/react-text-gradient";
 
 const links = [
-  { name: "Open roles", href: "#" },
-  { name: "Internship program", href: "#" },
-  { name: "Our values", href: "#" },
-  { name: "Meet our leadership", href: "#" },
+  { name: "L'équipe Snowpact", href: "#team" },
+  { name: "L'approche de Snowpact", href: "#approach" },
+  { name: "Mes Missions", href: "#missions" },
+  { name: "Stack Informatique", href: "#stack" },
 ];
 const stats = [
   { name: "Nombres de salariés", value: "17" },

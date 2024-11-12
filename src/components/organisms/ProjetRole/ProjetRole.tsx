@@ -87,7 +87,7 @@ export function ProjetRole({
             <img
               alt="Product screenshot"
               src={image}
-              onClick={openModal} // Open modal when image is clicked
+              onClick={openModal}
               width={2432}
               height={1442}
               className="w-[48rem] max-w-none cursor-pointer rounded-xl bg-slate-200 p-10 shadow-xl shadow-violet-400 ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"

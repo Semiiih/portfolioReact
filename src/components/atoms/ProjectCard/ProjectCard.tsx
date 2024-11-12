@@ -1,7 +1,6 @@
 import React from "react";
 import { HoverButton } from "../ButtonHover/ButtonHover";
 import { useNavigate } from "react-router-dom";
-import video from "@/assets/MesMissions.mp4";
 import FancyText from "@carefully-coded/react-text-gradient";
 
 export const ProjectCard = ({ logo, title, description, project }: any) => {
@@ -12,27 +11,29 @@ export const ProjectCard = ({ logo, title, description, project }: any) => {
   };
 
   return (
-    <div className="flex animate-fade flex-col items-center justify-between rounded-lg border border-white p-4 shadow-lg transition-transform animate-duration-1000 animate-fill-backwards animate-once animate-ease-in hover:scale-105 sm:flex-row">
-      <img
-        src={logo}
-        alt={`${title} logo`}
-        className="mb-0 h-20 w-20 rounded-xl bg-white transition-transform hover:scale-110"
-      />
+    <div className="flex animate-fade flex-col items-center justify-between rounded-lg border border-white p-4 shadow-lg transition-transform hover:scale-105 sm:flex-row sm:items-center sm:justify-start sm:space-x-4">
+      <div className="flex items-center space-x-4">
+        <img
+          src={logo}
+          alt={`${title} logo`}
+          className="h-20 w-20 rounded-xl bg-white transition-transform hover:scale-110"
+        />
+        <h3 className="w-80 pl-20 text-xl font-bold text-white">
+          <FancyText
+            gradient={{
+              from: "#e3e3e0",
+              to: "#bfbfbf",
+              type: "linear",
+            }}
+            animateTo={{ from: "#A25CFC", to: "#e3e3e0" }}
+            animateDuration={2000}
+          >
+            {title}
+          </FancyText>
+        </h3>
+      </div>
 
-      <h3 className="mb-2 text-xl font-bold text-white">
-        <FancyText
-          gradient={{
-            from: "#e3e3e0",
-            to: "#bfbfbf",
-            type: "linear",
-          }}
-          animateTo={{ from: "#A25CFC", to: "#e3e3e0" }}
-          animateDuration={2000}
-        >
-          {title}
-        </FancyText>
-      </h3>
-      <p className="mb-4 text-slate-400">
+      <p className="mt-4 flex-1 pl-10 text-center text-slate-400 sm:text-left">
         <FancyText
           gradient={{
             from: "#e3e3e0",
@@ -45,7 +46,8 @@ export const ProjectCard = ({ logo, title, description, project }: any) => {
           {description}
         </FancyText>
       </p>
-      <HoverButton onClick={handleClick} />
+
+      <HoverButton onClick={handleClick} className="flex " />
     </div>
   );
 };

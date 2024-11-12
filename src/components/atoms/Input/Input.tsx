@@ -91,7 +91,7 @@ export const Input: React.FC<InputProps> = ({
           {/* Bloc pour selectionner les étoiles */}
           {showRating && (
             <>
-              <div className="absolute -right-[200px] top-[0px] flex flex-col items-center">
+              <div className="absolute -right-10 -top-[150px] flex flex-col items-center lg:-right-[200px] lg:top-[0px]">
                 <div className="pulse absolute -inset-2 rounded-lg bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 opacity-75 blur-xl" />
 
                 <div className="relative z-10 flex flex-col items-center rounded-lg bg-gray-700 bg-opacity-70 p-4 shadow-lg">
@@ -120,7 +120,7 @@ export const Input: React.FC<InputProps> = ({
                   )}
                 </div>
               </div>
-              <div className="absolute -left-[200px] top-[0px] flex flex-col items-center">
+              <div className="absolute -left-10 -top-[150px] flex flex-col items-center lg:-left-[200px] lg:top-[0px]">
                 <div className="pulse absolute -inset-2 rounded-lg bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 opacity-75 blur-xl" />
 
                 <div className="relative z-10 flex flex-col items-center rounded-lg bg-gray-700 bg-opacity-70 p-4 shadow-lg">

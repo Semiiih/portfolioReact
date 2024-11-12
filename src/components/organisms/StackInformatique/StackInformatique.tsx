@@ -24,18 +24,35 @@ export default function StackInformatique() {
                 src="https://tailwindui.com/plus/img/component-images/bento-02-releases.png"
                 className="h-80 object-cover object-left"
               />
-              <div className="p-10">
-                <h3 className="text-sm/4 font-semibold text-gray-400">
-                  Releases
-                </h3>
-                <p className="mt-2 text-lg/7 font-medium tracking-tight text-white">
-                  Push to deploy
-                </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  gravida justo et nulla efficitur, maximus egestas sem
-                  pellentesque.
-                </p>
+              <div className="flex gap-10 p-10">
+                <span>
+                  <h3 className="mt-2 text-lg/7 font-medium tracking-tight text-white">
+                    Gestionnaire de dependances
+                  </h3>
+
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+                    pnpm, npm, yarn
+                  </p>
+                </span>
+                <span>
+                  <h3 className="mt-2 text-lg/7 font-medium tracking-tight text-white">
+                    Analytics
+                  </h3>
+
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+                    Firebase Matomo Google Analytics <br /> Google Search
+                    Console
+                  </p>
+                </span>
+                <span>
+                  <h3 className="mt-2 text-lg/7 font-medium tracking-tight text-white">
+                    CI/CD
+                  </h3>
+
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+                    Github
+                  </p>
+                </span>
               </div>
             </div>
           </div>
@@ -47,16 +64,15 @@ export default function StackInformatique() {
                 className="h-80 object-cover object-center"
               />
               <div className="p-10">
-                <h3 className="text-sm/4 font-semibold text-gray-400">
-                  Integrations
-                </h3>
-                <p className="mt-2 text-lg/7 font-medium tracking-tight text-white">
-                  Connect your favorite tools
-                </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
-                  Curabitur auctor, ex quis auctor venenatis, eros arcu rhoncus
-                  massa.
-                </p>
+                <span>
+                  <h3 className="mt-2 text-lg/7 font-medium tracking-tight text-white">
+                    Communications avec l'équipe
+                  </h3>
+
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+                    Slack, Gmail, Google Teams
+                  </p>
+                </span>
               </div>
             </div>
           </div>
@@ -68,15 +84,17 @@ export default function StackInformatique() {
                 className="h-80 object-cover object-center"
               />
               <div className="p-10">
-                <h3 className="text-sm/4 font-semibold text-gray-400">
-                  Security
+                <h3 className="mt-2 text-lg/7 font-medium tracking-tight text-white">
+                  Frameworks
                 </h3>
-                <p className="mt-2 text-lg/7 font-medium tracking-tight text-white">
-                  Advanced access control
-                </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
-                  Vestibulum ante ipsum primis in faucibus orci luctus et
-                  ultrices posuere cubilia.
+                  Next js, Node js, React, React Native, Express, Gatsby, Honojs
+                </p>
+                <h3 className="mt-2 text-lg/7 font-medium tracking-tight text-white">
+                  Langages
+                </h3>
+                <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+                  Typescript, Javascript, SQL, HTML, CSS
                 </p>
               </div>
             </div>
@@ -88,18 +106,35 @@ export default function StackInformatique() {
                 src="https://tailwindui.com/plus/img/component-images/bento-02-performance.png"
                 className="h-80 object-cover object-left"
               />
-              <div className="p-10">
-                <h3 className="text-sm/4 font-semibold text-gray-400">
-                  Performance
-                </h3>
-                <p className="mt-2 text-lg/7 font-medium tracking-tight text-white">
-                  Lightning-fast builds
-                </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
-                  Sed congue eros non finibus molestie. Vestibulum euismod augue
-                  vel commodo vulputate. Maecenas at augue sed elit dictum
-                  vulputate.
-                </p>
+              <div className="flex flex-row gap-10 p-10">
+                <span>
+                  <h3 className="mt-2 text-lg/7 font-medium tracking-tight text-white">
+                    Base de donnée
+                  </h3>
+
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+                    PostgreSQL, Mysql
+                  </p>
+                </span>
+                <span>
+                  <h3 className="mt-2 text-lg/7 font-medium tracking-tight text-white">
+                    Infrastructure
+                  </h3>
+
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+                    Docker, Google Cloud, OVH
+                  </p>
+                </span>
+                <span>
+                  <h3 className="mt-2 text-lg/7 font-medium tracking-tight text-white">
+                    Outil de développeur
+                  </h3>
+
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
+                    Docker, Mailhog, Make, Storybook, Firebase, PhpMyAdmin,
+                    Mocky Vitejs, PosgreAdmin, Adminer
+                  </p>
+                </span>
               </div>
             </div>
           </div>

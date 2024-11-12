@@ -18,8 +18,9 @@ export const TimeLine = () => {
         <h3 className="vertical-timeline-element-title ">Général Option NSI</h3>
         <h4 className="vertical-timeline-element-subtitle">Avignon</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
+          NSI, comprendre les bases de la programmation, pour élaborer des
+          logiciels par exemple, des sites internet, des applications pour
+          smartphones, etc.
         </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
@@ -32,8 +33,9 @@ export const TimeLine = () => {
         <h3 className="vertical-timeline-element-title">STI2D Option SIN</h3>
         <h4 className="vertical-timeline-element-subtitle">Avignon</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
+          SIN, aborde la façon dont le traitement numérique de l'information
+          permet le pilotage des produits et l'optimisation de leurs usages et
+          de leurs performances environnementales.
         </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
@@ -43,9 +45,14 @@ export const TimeLine = () => {
         iconStyle={{ background: "rgb(135, 135, 135)", color: "#fff" }}
         icon={<ImAccessibility />}
       >
-        <h3 className="vertical-timeline-element-title">Stage chez </h3>
+        <h3 className="vertical-timeline-element-title">
+          Stage chez Point services mobiles{" "}
+        </h3>
         <h4 className="vertical-timeline-element-subtitle">Avignon</h4>
-        <p>reperateur d'appareil éléctronique</p>
+        <p>
+          Chaîne nationale spécialisée dans la réparation de smartphones et
+          tablettes
+        </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work  "
@@ -58,8 +65,9 @@ export const TimeLine = () => {
         <h3 className="vertical-timeline-element-title">Esiee-IT</h3>
         <h4 className="vertical-timeline-element-subtitle">Pontoise</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
+          BTS SIO SLAM, préparation à la mise en place de solutions
+          informatiques au sein des entreprises, en vue de gérer efficacement un
+          parc informatique complet.
         </p>
       </VerticalTimelineElement>
 
@@ -74,10 +82,7 @@ export const TimeLine = () => {
           alternance chez Snowpact
         </h3>
         <h4 className="vertical-timeline-element-subtitle">Osny</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
-        </p>
+        <p>Agence de développement d'application web et mobile</p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}

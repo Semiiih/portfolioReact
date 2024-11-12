@@ -1,10 +1,10 @@
 import { CertificationCard } from "@/components/atoms/CertificationCard/CertificationCard";
 import AnssiCertification from "@/assets/AnssiCertification.png";
 import PixCertification from "@/assets/PixLogo.svg.png";
-import OpenCertification from "@/assets/logoOpenclassrooms.jpeg";
+import OpenCertification from "@/assets/openlogo.webp";
 import AttestationAnssi from "@/assets/attestation-anssi.pdf";
 import AttestationPix from "@/assets/attestation-pix.pdf";
-import AttestationOpen from "@/assets/certificatOpenCLass.pdf";
+import AttestationOpen from "@/assets/certificatOpen.png";
 import logoUdemy from "@/assets/udemyLogo.png";
 import certificationUdemySQL from "@/assets/certificationUdemySQL.jpg";
 

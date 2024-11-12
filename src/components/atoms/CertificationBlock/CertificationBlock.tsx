@@ -2,6 +2,7 @@ import React from "react";
 import AnssiCertification from "@/assets/AnssiCertification.png";
 import PixCertification from "@/assets/PixLogo.svg.png";
 import OpenCertification from "@/assets/openlogo.webp";
+import udemyLogo from "@/assets/udemyLogo.png";
 import click from "@/assets/click.png";
 import FancyText from "@carefully-coded/react-text-gradient";
 
@@ -14,7 +15,7 @@ export const CertificationBlock = () => {
   };
   return (
     <div
-      className="ms:mb-0 mb-8 flex h-[full] w-full flex-row justify-center border-4 shadow-2xl shadow-white sm:h-[200px] sm:justify-start"
+      className="ms:mb-0 mb-8 flex h-[full] w-full flex-row justify-center border-4 shadow-2xl shadow-white sm:h-[200px]"
       onClick={scrollToCertifications}
     >
       <div className="absolute left-44 hidden h-[200px] w-[200px] pt-10 sm:block">
@@ -24,8 +25,8 @@ export const CertificationBlock = () => {
           className=" h-32 w-32 animate-fade-right animate-duration-[1500ms] animate-fill-backwards animate-infinite animate-ease-in-out "
         />
       </div>
-      <div className="flex w-[200px] flex-col sm:h-[200px] sm:flex-row ">
-        <p className="self-center p-4 pl-8 text-center text-[40px] text-white">
+      <div className="flex w-[200px] flex-col justify-center sm:h-[200px] sm:flex-row">
+        {/* <p className="self-center p-4 pl-8 text-center text-[40px] text-white">
           <FancyText
             gradient={{ from: "#e3e3e0", to: "#bfbfbf", type: "linear" }}
             animateTo={{ from: "#8a8a8a", to: "#e3e3e0" }}
@@ -33,7 +34,7 @@ export const CertificationBlock = () => {
           >
             Certifications
           </FancyText>
-        </p>
+        </p> */}
         <img
           src={AnssiCertification}
           alt="AnssiCertification"
@@ -45,6 +46,7 @@ export const CertificationBlock = () => {
           alt="Avatar"
           className="mx-2 h-full w-full"
         />
+        <img src={udemyLogo} alt="Avatar" className="mx-2 h-full w-full p-5" />
       </div>
     </div>
   );

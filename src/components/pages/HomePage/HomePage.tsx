@@ -102,6 +102,25 @@ export const HomePage = () => {
               <CompetenceBlock />
             </FancyText>
           </div>
+          <div className="justify-center pb-32 pt-40 text-center text-[40px] sm:pt-60">
+            <FancyText
+              gradient={{ from: "#e3e3e0", to: "#bfbfbf", type: "linear" }}
+              animateTo={{ from: "#8a8a8a", to: "#e3e3e0" }}
+              animateDuration={2000}
+            >
+              <p>Mon entreprise</p>
+              <CompetenceBlock />
+            </FancyText>
+          </div>
+          <div className="justify-center pb-32 pt-40 text-center text-[40px] sm:pt-60">
+            <FancyText
+              gradient={{ from: "#e3e3e0", to: "#bfbfbf", type: "linear" }}
+              animateTo={{ from: "#8a8a8a", to: "#e3e3e0" }}
+              animateDuration={2000}
+            >
+              <p>Mes projets</p>
+            </FancyText>
+          </div>
         </section>
       </PublicLayout>
     </>

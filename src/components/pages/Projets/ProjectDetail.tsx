@@ -4,9 +4,6 @@ import { projectsData } from "@/projects/mrn";
 import FancyText from "@carefully-coded/react-text-gradient";
 import { Ecard } from "@/components/atoms/Ecard/index";
 import { ProjetRole } from "@/components/organisms/ProjetRole/ProjetRole";
-import signaleoGithub from "@/assets/signaleoGithub.png";
-import signaleoFigma from "@/assets/signaleoFigma.png";
-import signaleoSlack from "@/assets/signaleoSlack.png";
 
 export const ProjectDetail = () => {
   const location = useLocation();
@@ -39,7 +36,11 @@ export const ProjectDetail = () => {
             className="w-32 animate-wiggle rounded-full animate-duration-[2000ms] animate-fill-backwards animate-infinite animate-ease-linear"
           />
         </div>
-        <p className="pb-20 pt-6">{project.details}</p>
+        <p className="pb-20 pt-6">
+          {typeof project.details === "string"
+            ? project.details
+            : project.description}
+        </p>
         {/* <a href={project.link} target="_blank" rel="noopener noreferrer">
           Visit Project
         </a> */}
@@ -51,7 +52,9 @@ export const ProjectDetail = () => {
               animateTo={{ from: "#8a8a8a", to: "#FFFF" }}
               animateDuration={1000}
             >
-              {project.details}
+              {typeof project.details === "string"
+                ? project.details
+                : project.details[0]?.description}
             </FancyText>
           </p>
         </div>
@@ -66,7 +69,9 @@ export const ProjectDetail = () => {
                 animateTo={{ from: "#8a8a8a", to: "#FFFF" }}
                 animateDuration={1000}
               >
-                {project.details}
+                {typeof project.details === "string"
+                  ? project.details
+                  : project.details[0]?.duree}
               </FancyText>{" "}
             </p>
           </div>
@@ -80,7 +85,9 @@ export const ProjectDetail = () => {
                 animateTo={{ from: "#8a8a8a", to: "#FFFF" }}
                 animateDuration={1000}
               >
-                {project.details}
+                {typeof project.details === "string"
+                  ? project.details
+                  : project.details[0]?.public}
               </FancyText>{" "}
             </p>
           </div>
@@ -120,21 +127,21 @@ export const ProjectDetail = () => {
             <ProjetRole
               features={project.githubFeatures}
               imagePosition="right"
-              image={signaleoGithub}
+              image={project.imageGithub}
             />
           )}
           {project.figmaFeatures && (
             <ProjetRole
               features={project.figmaFeatures}
               imagePosition="left"
-              image={signaleoFigma}
+              image={project.imageFigma}
             />
           )}
           {project.slackFeatures && (
             <ProjetRole
               features={project.slackFeatures}
               imagePosition="right"
-              image={signaleoSlack}
+              image={project.imageSlack}
             />
           )}
         </div>
