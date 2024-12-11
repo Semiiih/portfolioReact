@@ -37,5 +37,5 @@
 }
 
 .animated-bg {
-  animation: moveBackground 15s ease-in-out infinite; /* Réglez la durée et le type d'animation selon vos préférences */
+  animation: moveBackground 15s ease-in-out infinite;
 }

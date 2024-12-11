@@ -3,6 +3,7 @@ import "@/components/hooks/mainAnim.css";
 import { useEffect, useState } from "react";
 import avataaars2 from "@/assets/avataaars2.png";
 import avataaarsWinkT from "@/assets/avataaarsWinkT.png";
+import avatarLego from "@/assets/avatarLego.png";
 
 import homeBg from "@/assets/home-bg.jpg";
 import FancyText from "@carefully-coded/react-text-gradient";
@@ -15,6 +16,7 @@ import { Cards } from "@/components/atoms/Card/Card";
 import { TimeLine } from "@/components/atoms/TimeLine/TimeLine";
 import { BlockProjectCard } from "@/components/organisms/BlockProjectCard";
 import { CompetenceBlock } from "@/components/atoms/CompetenceBlock/CompetenceBlock";
+import { Apropos } from "@/components/atoms/Apropos/Apropos";
 
 export const HomePage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -45,6 +47,7 @@ export const HomePage = () => {
               <div className="hidden sm:block">
                 <img
                   src={images[currentImageIndex].toString()}
+                  // src={avatarLego}
                   alt="Avatar"
                   className="h-full w-full animate-shake animate-duration-[1500ms] animate-ease-in-out"
                 />
@@ -102,16 +105,16 @@ export const HomePage = () => {
               <CompetenceBlock />
             </FancyText>
           </div>
-          <div className="justify-center pb-32 pt-40 text-center text-[40px] sm:pt-60">
+          {/* <div className="justify-center pb-32 pt-40 text-center text-[40px] sm:pt-60">
             <FancyText
               gradient={{ from: "#e3e3e0", to: "#bfbfbf", type: "linear" }}
               animateTo={{ from: "#8a8a8a", to: "#e3e3e0" }}
               animateDuration={2000}
             >
               <p>Mon entreprise</p>
-              <CompetenceBlock />
             </FancyText>
-          </div>
+          </div> */}
+          <Apropos />
           <div className="justify-center pb-32 pt-40 text-center text-[40px] sm:pt-60">
             <FancyText
               gradient={{ from: "#e3e3e0", to: "#bfbfbf", type: "linear" }}

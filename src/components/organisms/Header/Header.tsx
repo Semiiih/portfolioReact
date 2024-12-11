@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import avataaars3 from "@/assets/avataaars3.png";
 import avataaars from "@/assets/avataaars.png";
+import avatarLego3 from "@/assets/avatarLego3.png";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,7 +48,7 @@ export const Header = () => {
         href="https://flowbite-react.com"
         className="h-21 animate-duration-[1500ms] animate-ease-in-out hover:animate-rotate-x"
       >
-        <img src={avataaars3} className=" mr-3 h-6 sm:h-9" alt="avatar" />
+        <img src={avatarLego3} className=" mr-3 h-6 sm:h-9" alt="avatar" />
         <span className="self-center whitespace-nowrap text-xl font-semibold text-white">
           Portfolio
         </span>

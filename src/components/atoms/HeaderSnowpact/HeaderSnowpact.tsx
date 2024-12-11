@@ -9,7 +9,7 @@ const links = [
 const stats = [
   { name: "Nombres de salariés", value: "17" },
   { name: "Types de clients ", value: "B&B, B&C" },
-  { name: "Paid time off", value: "Unlimited" },
+  { name: "a completrr", value: "a completer" },
   {
     name: "Expertise technologique",
     value: "Next, React JS, Tailwinds, Typescript",

@@ -4,6 +4,7 @@ import { projectsData } from "@/projects/mrn";
 import FancyText from "@carefully-coded/react-text-gradient";
 import { Ecard } from "@/components/atoms/Ecard/index";
 import { ProjetRole } from "@/components/organisms/ProjetRole/ProjetRole";
+import { HeroScroll } from "@/components/atoms/HeroScroll/HeroScroll";
 
 export const ProjectDetail = () => {
   const location = useLocation();
@@ -145,6 +146,7 @@ export const ProjectDetail = () => {
             />
           )}
         </div>
+        <HeroScroll />
       </div>
     </PublicLayout>
   );
