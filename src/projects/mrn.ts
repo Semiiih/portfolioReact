@@ -2,6 +2,12 @@ import logo from "@/assets/logo.png";
 import logoSnowpact from "@/assets/main-logo.png";
 import logoMSW from "@/assets/logoMSW.png";
 import logoMRH from "@/assets/logoMRH.jpg";
+import logoADN from "@/assets/logoADN.webp";
+import adnRepo from "@/assets/adnRepo.png";
+import adnCron from "@/assets/adnCron.png";
+import adnLinear from "@/assets/adnLinear.png";
+import LinearSignaleo from "@/assets/LinearSignaleo.png";
+import adnSlack from "@/assets/adnSlack.png";
 import logoNext from "@/assets/next.png";
 import logoJS from "@/assets/js.png";
 import logoTailwind from "@/assets/TailwindCSS.png";
@@ -22,6 +28,11 @@ const images = {
   snowpactSlack,
   signaleoFigma,
   signaleoSlack,
+  adnRepo,
+  adnSlack,
+  LinearSignaleo,
+  adnLinear,
+  adnCron,
 };
 
 export const projectsData = [
@@ -101,6 +112,7 @@ export const projectsData = [
     imageGithub: images.signaleoGithub,
     imageFigma: images.signaleoFigma,
     imageSlack: images.signaleoSlack,
+    imageLinear: images.LinearSignaleo,
   },
   {
     title: "Snowpact",
@@ -179,6 +191,81 @@ export const projectsData = [
     imageGithub: images.snowpactGithub,
     imageFigma: images.signaleoFigma,
     imageSlack: images.snowpactSlack,
+  },
+  {
+    title: "ADN",
+    type: "entreprise",
+    logo: logoADN,
+    description: "Animation Digital Network",
+    link: "https://signaleo.co/",
+    details: [
+      {
+        description: `Site français au service du stream d'animation et anime en vostfr et vf`,
+        public: `Citoyens`,
+        duree: `10 Sept 2024 - 10 Oct 2024`,
+      },
+    ],
+    technologies: [
+      { name: "Next.js", logo: logoNext },
+      { name: "JavaScript", logo: logoJS },
+      { name: "Tailwind CSS", logo: logoTailwind },
+      { name: "React", logo: logoReact },
+      { name: "Npm", logo: logoNpm },
+      { name: "Yarn", logo: logoYarn },
+      { name: "Storybook", logo: logoStorybook },
+    ],
+    patrimoineInformatique: "Patrimoine informatique",
+    githubFeatures: [
+      {
+        title: "GitLab",
+        subtitle: "Codes sur GitLab pour la sauvegarde des données",
+        description2:
+          "Les différentes parties du projets sont splités en plusieurs repo sur Github",
+      },
+      {
+        description1: `Chaque membre de l'équipe travaille sur des branches spécifiques pour assurer des tests sans perturbation du code principal. Les revues de code et les fusions sont effectuées régulièrement.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Les versions majeures du projet sont étiquetées pour assurer un historique clair et permettre des retours en arrière si nécessaire.`,
+        icon: projectsIllustration1,
+      },
+    ],
+
+    slackFeatures: [
+      {
+        title: "Slack",
+        subtitle: "Communication sur Slack",
+        description2: `On communique sur Slack en cas de besoin et surtout pour suivre l'avancement du projet ainsi que des tâches`,
+      },
+      {
+        description1: `Chaque aspect du projet dispose de son propre canal, permettant une organisation structurée et la séparation des discussions importantes.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Des notifications régulières nous informent des mises à jour et rappels de réunions, assurant une synchronisation de l'équipe.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    mesMissions: [
+      {
+        title: "CRON",
+        subtitle: "Command Run On Time",
+        description2: `Un cron en informatique est un outil utilisé pour automatiser l'exécution de tâches répétitives à des intervalles de temps définis`,
+      },
+      {
+        description1: `j'ai eu l'opportunité de travailler sur quelques features`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `En integrant des test unitaires et des test d'intégration qui sont des pratiques essentielles en développement logiciel pour garantir la fiabilité et la qualité du code`,
+        icon: projectsIllustration1,
+      },
+    ],
+    imageGithub: images.adnRepo,
+    imageSlack: images.adnSlack,
+    imageLinear: images.adnLinear,
+    imageAdnCron: images.adnCron,
   },
   {
     title: "MySocialWorker",

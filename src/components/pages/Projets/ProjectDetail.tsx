@@ -89,7 +89,7 @@ export const ProjectDetail = () => {
                 {typeof project.details === "string"
                   ? project.details
                   : project.details[0]?.public}
-              </FancyText>{" "}
+              </FancyText>
             </p>
           </div>
         </div>
@@ -146,7 +146,31 @@ export const ProjectDetail = () => {
             />
           )}
         </div>
-        <HeroScroll />
+        {project.imageLinear && <HeroScroll image={project.imageLinear} />}
+        <div className="flex flex-row gap-20 pt-32 text-center ">
+          <div className="flex-1 text-center">
+            <p className="mx-24 mb-4 pb-2 text-[50px]">
+              <FancyText
+                gradient={{ from: "#FFFF", to: "#808080", type: "linear" }}
+                animateTo={{ from: "#8a8a8a", to: "#FFFF" }}
+                animateDuration={1000}
+              >
+                Mes missions
+              </FancyText>
+            </p>
+            {project.mesMissions && (
+              <div className="flex justify-center gap-8">
+                {project.imageAdnCron && (
+                  <ProjetRole
+                    features={project.mesMissions}
+                    imagePosition="left"
+                    image={project.imageAdnCron}
+                  />
+                )}
+              </div>
+            )}
+          </div>
+        </div>
       </div>
     </PublicLayout>
   );

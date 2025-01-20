@@ -31,6 +31,7 @@ export const Apropos = () => {
                 />
                 <use x={86} href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" />
               </svg>
+
               <div className="text-xl/8 font-semibold text-white sm:text-2xl/9">
                 <div className="absolute -top-14 text-[40px] text-gray-400 selection:mt-1">
                   <FancyText
@@ -62,7 +63,12 @@ export const Apropos = () => {
                 </p>
               </div>
               <div className="mt-8 text-base ">
-                <Button className="bg-slate-700 px-10">En savoir plus</Button>
+                <a
+                  href="/entreprise"
+                  className="rounded-md bg-white px-10 py-2.5 text-sm font-semibold text-gray-900 shadow-sm  hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  En savoir plus <span aria-hidden="true">→</span>
+                </a>
               </div>
             </div>
           </div>

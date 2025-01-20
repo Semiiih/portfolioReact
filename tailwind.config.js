@@ -29,9 +29,16 @@ export default {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" },
         },
+        infiniteSlider: {
+          "0%": { transform: "translateX(0)" },
+          "100%": {
+            transform: "translateX(calc(-250px * 5))",
+          },
+        },
       },
       animation: {
         rotBGimg: "rotBGimg 3s linear infinite",
+        ["infinite-slider"]: "infiniteSlider 20s linear infinite",
       },
     },
   },

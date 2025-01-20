@@ -5,6 +5,7 @@ import { ScrollToTop } from "@/components/hooks/ScrollToTop";
 import { Veille } from "@/components/pages/Veille/Veille";
 import { Projets } from "@/components/pages/Projets/Projets";
 import { ProjectDetail } from "@/components/pages/Projets/ProjectDetail";
+import { MentionsLegales } from "@/components/pages/MentionsLegales/MentionsLegales";
 
 export const Router = () => {
   return (
@@ -17,6 +18,7 @@ export const Router = () => {
         <Route path="projets" element={<Projets />} />
         <Route path="entreprise" element={<Entreprise />} />
         <Route path="/project-detail" element={<ProjectDetail />} />
+        <Route path="mentions-legales" element={<MentionsLegales />} />
       </Routes>
     </ScrollToTop>
   );

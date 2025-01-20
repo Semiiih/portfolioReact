@@ -1,4 +1,3 @@
-import React from "react";
 import { HoverButton } from "../ButtonHover/ButtonHover";
 import { useNavigate } from "react-router-dom";
 import FancyText from "@carefully-coded/react-text-gradient";
@@ -18,7 +17,7 @@ export const ProjectCard = ({ logo, title, description, project }: any) => {
           alt={`${title} logo`}
           className="h-20 w-20 rounded-xl bg-white transition-transform hover:scale-110"
         />
-        <h3 className="w-80 pl-20 text-xl font-bold text-white">
+        <h3 className="w-80 text-xl font-bold text-white lg:pl-20">
           <FancyText
             gradient={{
               from: "#e3e3e0",
@@ -33,7 +32,7 @@ export const ProjectCard = ({ logo, title, description, project }: any) => {
         </h3>
       </div>
 
-      <p className="mt-4 flex-1 pl-10 text-center text-slate-400 sm:text-left">
+      <p className="mt-4 flex-1 text-center text-slate-400 sm:text-left lg:pl-10">
         <FancyText
           gradient={{
             from: "#e3e3e0",

@@ -3,7 +3,11 @@ import { ContainerScroll } from "./container-scroll-animation";
 import LinearSignaleo from "@/assets/LinearSignaleo.png";
 import FancyText from "@carefully-coded/react-text-gradient";
 
-export function HeroScroll() {
+interface HeroScrollProps {
+  image?: any;
+}
+
+export function HeroScroll({ image }: HeroScrollProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
@@ -30,7 +34,7 @@ export function HeroScroll() {
         }
       >
         <img
-          src={LinearSignaleo}
+          src={image}
           alt="hero"
           height="720"
           width="1400"
@@ -50,7 +54,7 @@ export function HeroScroll() {
               ✕
             </button>
             <img
-              src={LinearSignaleo}
+              src={image}
               alt="hero enlarged"
               className="rounded-lg object-cover"
               style={{ maxHeight: "80vh", maxWidth: "80vw" }}

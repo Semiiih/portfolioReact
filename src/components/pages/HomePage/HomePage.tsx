@@ -15,8 +15,9 @@ import Certifier2 from "@/assets/Certifier2.png";
 import { Cards } from "@/components/atoms/Card/Card";
 import { TimeLine } from "@/components/atoms/TimeLine/TimeLine";
 import { BlockProjectCard } from "@/components/organisms/BlockProjectCard";
-import { CompetenceBlock } from "@/components/atoms/CompetenceBlock/CompetenceBlock";
 import { Apropos } from "@/components/atoms/Apropos/Apropos";
+import MesProjets from "@/components/atoms/MesProjets/MesProjets";
+import { CompetenceSlideBlock } from "@/components/atoms/CompetenceSlideBlock/CompetenceSlideBlock";
 
 export const HomePage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -58,6 +59,23 @@ export const HomePage = () => {
             </div>
             <CertificationBlock />
           </main>
+          {/* <main className="mx-auto max-w-screen-xl">
+            <div className="grid justify-items-center  pt-10 sm:grid-cols-2">
+              <div className="hidden self-end sm:flex">
+                <img
+                  src={avatarLego}
+                  alt="Avatar"
+                  className="h-[600px] w-full animate-shake animate-duration-[1500ms] animate-ease-in-out"
+                />
+              </div>
+              <div className="animate-fade-down self-end pb-10 text-right animate-duration-[1500ms] animate-ease-in-out sm:pb-0">
+                <Cards />
+              </div>
+            </div>
+            <div className="w-[1200px]">
+              <CertificationBlock />
+            </div>
+          </main> */}
         </div>
         <section className="bg-slate-800">
           <div className="ms:mx-80 mb-32 flex justify-center border-b-2 pb-6 pt-56 text-[20px] text-white  sm:text-[40px] ">
@@ -101,28 +119,13 @@ export const HomePage = () => {
               animateTo={{ from: "#8a8a8a", to: "#e3e3e0" }}
               animateDuration={2000}
             >
-              <p>Mes compétences</p>
-              <CompetenceBlock />
+              <p>Mes compétences en langagues</p>
             </FancyText>
+            <CompetenceSlideBlock />
           </div>
-          {/* <div className="justify-center pb-32 pt-40 text-center text-[40px] sm:pt-60">
-            <FancyText
-              gradient={{ from: "#e3e3e0", to: "#bfbfbf", type: "linear" }}
-              animateTo={{ from: "#8a8a8a", to: "#e3e3e0" }}
-              animateDuration={2000}
-            >
-              <p>Mon entreprise</p>
-            </FancyText>
-          </div> */}
           <Apropos />
           <div className="justify-center pb-32 pt-40 text-center text-[40px] sm:pt-60">
-            <FancyText
-              gradient={{ from: "#e3e3e0", to: "#bfbfbf", type: "linear" }}
-              animateTo={{ from: "#8a8a8a", to: "#e3e3e0" }}
-              animateDuration={2000}
-            >
-              <p>Mes projets</p>
-            </FancyText>
+            <MesProjets />
           </div>
         </section>
       </PublicLayout>

@@ -50,6 +50,20 @@ const navigation = {
         </svg>
       ),
     },
+    {
+      name: "GitLab",
+      href: "https://gitlab.com/Semih55",
+      icon: (props: any) => (
+        <svg
+          {...props}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path d="M23.77 9.5a.9.9 0 00-.06-.48L21.02 2.4c-.12-.32-.4-.54-.74-.56a.86.86 0 00-.81.55l-2.15 6.6H7.49L5.34 2.4a.87.87 0 00-.81-.56.86.86 0 00-.74.56L.29 9.02a.9.9 0 00-.06.48c.03.16.1.3.2.42l11.19 11.32a.86.86 0 001.22 0L23.57 9.92a.86.86 0 00.2-.42zm-11.8 11L1.97 9.6l2.27-6.96 2.17 6.68c.07.23.27.39.5.39h10.18c.23 0 .44-.16.5-.39l2.17-6.68 2.27 6.96-10.8 10.9z" />
+        </svg>
+      ),
+    },
   ],
 };
 
@@ -95,7 +109,7 @@ export const Footer = () => {
 
         <div className="mt-8 lg:mt-0 lg:flex lg:flex-col lg:items-end ">
           <a
-            href="#"
+            href="/mentions-legales"
             className="mt-4 flex justify-center text-sm text-gray-400 hover:text-white lg:mt-0"
           >
             Mentions légales
