@@ -1,18 +1,31 @@
 import React from "react";
+import FancyText from "@carefully-coded/react-text-gradient";
 
-export const Ecard = () => {
+interface EcardProps {
+  title?: string;
+  subTitle?: string;
+}
+
+export const Ecard = ({ title, subTitle }: EcardProps) => {
   return (
-    <div className="relative mx-auto mt-24 h-80 w-60 overflow-hidden rounded-lg bg-transparent shadow-lg">
-      <div className="animate-rotBGimg absolute left-0 top-0 -ml-[50%] -mt-[70%] h-[700px] w-[540px] rounded-[40%] bg-gradient-to-r from-purple-500 via-blue-600 to-violet-800 opacity-60"></div>
-      <div className="animate-rotBGimg absolute left-0 top-[210px] -ml-[50%] -mt-[70%] h-[700px] w-[540px] rounded-[40%] bg-gradient-to-r from-purple-500 via-blue-600 to-violet-800 opacity-60"></div>
-      <div className="animate-rotBGimg absolute left-0 top-[420px] -ml-[50%] -mt-[70%] h-[700px] w-[540px] rounded-[40%] bg-gradient-to-r from-purple-500 via-blue-600 to-violet-800 opacity-60"></div>
+    <div className="w-100 relative mx-auto mt-24 h-44 overflow-hidden rounded-e-3xl bg-transparent shadow-lg">
+      <div className="absolute left-0 top-0 -ml-[50%] -mt-[70%] h-[700px] w-[540px] animate-rotBGimg rounded-[40%] bg-gradient-to-r from-purple-500 via-blue-600 to-violet-800 opacity-60"></div>
+      <div className="absolute left-0 top-[210px] -ml-[50%] -mt-[70%] h-[700px] w-[540px] animate-rotBGimg rounded-[40%] bg-gradient-to-r from-purple-500 via-blue-600 to-violet-800 opacity-60"></div>
+      <div className="absolute left-0 top-[420px] -ml-[50%] -mt-[70%] h-[700px] w-[540px] animate-rotBGimg rounded-[40%] bg-gradient-to-r from-purple-500 via-blue-600 to-violet-800 opacity-60"></div>
 
-      <div className="absolute inset-x-0 top-24 text-center text-lg font-semibold text-white">
+      <div className=" absolute inset-x-0 top-3 text-center text-xl font-semibold text-white">
+        <FancyText
+          gradient={{ from: "#FFFF", to: "#8a8a8a", type: "linear" }}
+          animateTo={{ from: "#8a8a8a", to: "#FFFF" }}
+          animateDuration={1000}
+        >
+          {title}
+        </FancyText>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          className="mx-auto -mt-4 w-12 pb-4"
+          className="mx-auto mt-4 w-12 pb-0"
         >
           <path
             stroke-linecap="round"
@@ -21,9 +34,8 @@ export const Ecard = () => {
           />
         </svg>
         <br />
-        <p>aaaaaaaaa</p>
-        <div className="mt-2 text-sm font-light lowercase text-white">
-          <p>bbbbb</p>
+        <div className="mt-0 text-lg font-light lowercase text-white">
+          <p>{subTitle}</p>
         </div>
       </div>
     </div>

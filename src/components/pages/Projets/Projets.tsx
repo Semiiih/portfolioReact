@@ -41,6 +41,13 @@ export const Projets = () => {
       link: "https://example.com/project-one",
     },
     {
+      logo: logoADN,
+      title: "ADN",
+      description:
+        "Site français au service du stream d'animation et anime en vostfr et vf",
+      link: "https://example.com/project-three",
+    },
+    {
       logo: logoSnowpact,
       title: "Snowpact",
       description: "Agence agile du web et du mobile",
@@ -51,13 +58,6 @@ export const Projets = () => {
       title: "HelioFitness",
       description: "Centre de santé par le sport & l'alimentation",
       link: "https://example.com/project-two",
-    },
-    {
-      logo: logoADN,
-      title: "ADN",
-      description:
-        "Site français au service du stream d'animation et anime en vostfr et vf",
-      link: "https://example.com/project-three",
     },
     {
       logo: logoMRH,

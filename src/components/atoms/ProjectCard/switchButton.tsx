@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export const SwitchButton = ({ onToggle }: any) => {
   const [checked, setChecked] = useState(false);
 
   const handleToggle = () => {
     setChecked(!checked);
-    onToggle(); // Appel de la fonction onToggle passée en prop
+    onToggle();
   };
 
   return (

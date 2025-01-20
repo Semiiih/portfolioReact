@@ -5,6 +5,7 @@ import FancyText from "@carefully-coded/react-text-gradient";
 import { Ecard } from "@/components/atoms/Ecard/index";
 import { ProjetRole } from "@/components/organisms/ProjetRole/ProjetRole";
 import { HeroScroll } from "@/components/atoms/HeroScroll/HeroScroll";
+import { ProjetRoleCenter } from "@/components/organisms/ProjetRoleCenter/ProjetRoleCenter";
 
 export const ProjectDetail = () => {
   const location = useLocation();
@@ -113,7 +114,7 @@ export const ProjectDetail = () => {
             </div>
           </div>
         </div>
-        <Ecard />
+        {/* <Ecard /> */}
         <div className="flex flex-col items-center gap-7 text-center text-[50px] ">
           <h1>
             <FancyText
@@ -161,9 +162,8 @@ export const ProjectDetail = () => {
             {project.mesMissions && (
               <div className="flex justify-center gap-8">
                 {project.imageAdnCron && (
-                  <ProjetRole
+                  <ProjetRoleCenter
                     features={project.mesMissions}
-                    imagePosition="left"
                     image={project.imageAdnCron}
                   />
                 )}

@@ -254,12 +254,78 @@ export const projectsData = [
         description2: `Un cron en informatique est un outil utilisé pour automatiser l'exécution de tâches répétitives à des intervalles de temps définis`,
       },
       {
-        description1: `j'ai eu l'opportunité de travailler sur quelques features`,
+        description1: `Ma mission était de :<br /><br />
+        - Automatisation efficace de la mise à jour des données (comme mise à jour des abonnés, des épisodes).<br />
+        - Code plus clair, modulaire et évolutif grâce à la migration du PHP vers du Typescript .<br />
+        - Meilleure fiabilité grâce à l'ajout de tests garantissant le bon fonctionnement du CRON.`,
         icon: projectsIllustration1,
-      },
-      {
-        description1: `En integrant des test unitaires et des test d'intégration qui sont des pratiques essentielles en développement logiciel pour garantir la fiabilité et la qualité du code`,
-        icon: projectsIllustration1,
+        codeSnippet: `// Test: Suppression des abonnés existants et insertion des nouveaux
+        it('should delete all previous subscribers and insert new active subscriptions', async () => {
+          // Définition des dates de début et de fin de l'abonnement
+          const startDate = dayjs().subtract(1, 'month').toDate();
+          const endDate = dayjs().add(1, 'month').toDate();
+
+          // Création et insertion d'un abonné existant
+          const existingSubscriber = subscribersFactory();
+          await testDbManager.persistSubscribers(existingSubscriber);
+
+          // Définition des abonnements actifs
+          const activeSubscriptions: Order[] = [
+            {
+              userId: 123,
+              subscriptionId: 2,
+              startDate: startDate,
+              endDate: endDate,
+              price: 10,
+              method: 'credit_card',
+              paymentDate: new Date(),
+              validated: true,
+              ip: '127.0.0.1',
+              stripeInvoiceId: 'invoice_123',
+            },
+            {
+              userId: 124,
+              subscriptionId: 3,
+              startDate: startDate,
+              endDate: endDate,
+              price: 10,
+              method: 'credit_card',
+              paymentDate: new Date(),
+              validated: true,
+              ip: '127.0.0.1',
+              stripeInvoiceId: 'invoice_124',
+            },
+          ];
+
+          // Persistance des nouveaux abonnements
+          for (const sub of activeSubscriptions) {
+            await testDbManager.persistOrder(sub);
+          }
+
+          // Mise à jour des abonnés
+          await subscriberRepository.updateSubscribers();
+
+          // Vérification de l'insertion des nouveaux abonnements
+          const subscribers = await testDbManager
+            .getConnectionManager()
+            .query('SELECT * FROM adn_subscribers');
+
+          expect(subscribers).toHaveLength(2);
+          expect(subscribers).toEqual(
+            expect.arrayContaining([
+              expect.objectContaining({ user_id: 123, subscription_id: 2, end: expect.any(Date) }),
+              expect.objectContaining({ user_id: 124, subscription_id: 3, end: expect.any(Date) }),
+            ]),
+          );
+        });`,
+        codeSnippet2: `
+        "event_rule": {
+          "schedule": "cron(0 3 * * *)",
+          "retry": 3
+        },
+        
+        // 0 3 * * *   -->   à 03h00  tout les jours 
+        `,
       },
     ],
     imageGithub: images.adnRepo,
