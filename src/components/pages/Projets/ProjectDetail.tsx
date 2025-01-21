@@ -115,7 +115,7 @@ export const ProjectDetail = () => {
           </div>
         </div>
         {/* <Ecard /> */}
-        <div className="flex flex-col items-center gap-7 text-center text-[50px] ">
+        <div className="flex flex-col items-center gap-7 pt-32 text-center text-[50px] ">
           <h1>
             <FancyText
               gradient={{ from: "#FFFF", to: "#808080", type: "linear" }}

@@ -13,7 +13,10 @@ import logoJS from "@/assets/js.png";
 import logoTailwind from "@/assets/TailwindCSS.png";
 import logoReact from "@/assets/react.png";
 import logoNpm from "@/assets/npm.png";
+import php from "@/assets/PHP.svg";
+import typeScript from "@/assets/typeScript.svg";
 import logoYarn from "@/assets/yarn.png";
+import logoSql from "@/assets/logoSql.svg";
 import logoStorybook from "@/assets/storybook.png";
 import projectsIllustration1 from "@/assets/projects-illustration1.gif";
 import signaleoGithub from "@/assets/signaleoGithub.png";
@@ -207,12 +210,12 @@ export const projectsData = [
     ],
     technologies: [
       { name: "Next.js", logo: logoNext },
-      { name: "JavaScript", logo: logoJS },
-      { name: "Tailwind CSS", logo: logoTailwind },
+      { name: "php", logo: php },
+      { name: "SQL", logo: logoSql },
       { name: "React", logo: logoReact },
+      { name: "TypeScript", logo: typeScript },
       { name: "Npm", logo: logoNpm },
       { name: "Yarn", logo: logoYarn },
-      { name: "Storybook", logo: logoStorybook },
     ],
     patrimoineInformatique: "Patrimoine informatique",
     githubFeatures: [

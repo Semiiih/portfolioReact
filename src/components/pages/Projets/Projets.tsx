@@ -6,6 +6,12 @@ import logo from "@/assets/logo.png";
 import logoMSW from "@/assets/logoMSW.png";
 import logoMRH from "@/assets/logoMRH.jpg";
 import logoADN from "@/assets/logoADN.webp";
+import joTickets from "@/assets/joTickets.webp";
+import les4Fantastiques from "@/assets/Les4Fantastiques.png";
+import billetterie from "@/assets/billetterie.png";
+import mercedess_concess from "@/assets/mercedess_concess.png";
+import gestEPI from "@/assets/gestEPi.webp";
+import gestionEntretiens from "@/assets/gestionEntretiens.webp";
 import logoSnowpact from "@/assets/main-logo.png";
 import logoHelioFitness from "@/assets/logoHelioFitness.png";
 import grid1 from "@/assets/grid1.png";
@@ -84,19 +90,47 @@ export const Projets = () => {
     {
       logo: textAdventure,
       title: "Text Adventure ",
-      description: "Faire une description.",
+      description: "un jeu d'aventure, résolvez des énigmes captivantes ",
       link: "https://example.com/school-project-one",
     },
     {
-      logo: logoMSW,
-      title: "Project Ecole 2",
-      description: "Faire une description.",
+      logo: gestionEntretiens,
+      title: "Gestion Entretiens",
+      description:
+        "Développement d'une API pour la gestion des avions et des techniciens de la base aérienne d’Istres",
       link: "https://example.com/school-project-two",
     },
     {
-      logo: logoMRH,
-      title: "Project Ecole 3",
-      description: "Faire une description.",
+      logo: gestEPI,
+      title: "GestEPI",
+      description:
+        "Une gestion efficace des EPI pour garantir la sécurité de vos cordistes",
+      link: "https://example.com/school-project-three",
+    },
+    {
+      logo: joTickets,
+      title: "JO Tickets",
+      description:
+        "Plateforme de billetterie pour les Jeux Olympiques, achat et de gestion des billets pour assister aux événements.",
+      link: "https://example.com/school-project-three",
+    },
+    {
+      logo: billetterie,
+      title: "Billetterie",
+      description: "Achat de billet pour se balader dans la ville de Fukuoka",
+      link: "https://example.com/school-project-three",
+    },
+    {
+      logo: mercedess_concess,
+      title: "Mercedess_concess",
+      description: "site vitrine pour vendre des mercedess",
+      link: "https://example.com/school-project-three",
+    },
+    {
+      logo: les4Fantastiques,
+      title: "Les4Fantastiques",
+      description:
+        "site qui reference les personnages et les séries de l'univers de Marvel",
       link: "https://example.com/school-project-three",
     },
   ];

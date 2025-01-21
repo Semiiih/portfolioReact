@@ -72,12 +72,12 @@ export function MesMissions() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="mt-2 text-lg/7 font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Sécurité Informatique
+                  Tests unitaires et d'intégration
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  J'intègre des mesures de sécurité dans les applications,
-                  telles que l'authentification sécurisée, le chiffrement des
-                  données
+                  J'implémente des tests unitaires et d'intégration afin
+                  d'assurer la fiabilité et la robustesse des applications
+                  développées.
                 </p>
               </div>
               <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">

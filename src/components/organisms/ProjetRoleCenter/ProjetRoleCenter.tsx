@@ -38,6 +38,16 @@ export function ProjetRoleCenter({ features, image }: ProjetRoleProps) {
     <div className="bg-slate-800 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl rounded-xl bg-white p-20 px-6 shadow-2xl shadow-violet-500 lg:px-8">
         <div className="mx-auto max-w-2xl text-center lg:max-w-none">
+          {image && (
+            <img
+              alt="Product screenshot"
+              src={image}
+              onClick={openModal}
+              width={2432}
+              height={1442}
+              className="mx-auto mb-20 w-full max-w-4xl cursor-pointer rounded-xl bg-slate-200 p-10 shadow-xl shadow-violet-400 ring-1 ring-gray-400/10"
+            />
+          )}
           {features.map((feature) => (
             <div className="mb-12" key={feature.name}>
               <h2 className="text-xl font-semibold leading-7 text-indigo-600">
@@ -49,16 +59,6 @@ export function ProjetRoleCenter({ features, image }: ProjetRoleProps) {
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 {feature.description2}
               </p>
-              {image && (
-                <img
-                  alt="Product screenshot"
-                  src={image}
-                  onClick={openModal}
-                  width={2432}
-                  height={1442}
-                  className="mx-auto w-full max-w-4xl cursor-pointer rounded-xl bg-slate-200 p-10 shadow-xl shadow-violet-400 ring-1 ring-gray-400/10"
-                />
-              )}
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 <div className="relative pl-9">
                   <dt className="inline font-semibold text-gray-900">
