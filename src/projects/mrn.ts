@@ -24,6 +24,23 @@ import snowpactGithub from "@/assets/snowpactGithub.png";
 import snowpactSlack from "@/assets/snowpactSlack.png";
 import signaleoFigma from "@/assets/signaleoFigma.png";
 import signaleoSlack from "@/assets/signaleoSlack.png";
+import textAdventure from "@/assets/textAdventure.jpeg";
+import logoPython from "@/assets/logoPython.webp";
+import logoCss from "@/assets/css.png";
+import logoHtml from "@/assets/html.png";
+import logoJavaScript from "@/assets/JavaScript.webp";
+import logoSQLite from "@/assets/SQLite.webp";
+import logoDjangoNoir from "@/assets/DjangoNoir.webp";
+import textAdventureRepo from "@/assets/textAdventureRepo.webp";
+import textAdventureReadMe from "@/assets/textAdventureReadME.webp";
+import textAdventurePlan from "@/assets/textAdventurePlan.webp";
+import textAdventureExemple from "@/assets/textAdventureExemple.webp";
+import les4Fantastiques from "@/assets/Les4Fantastiques.png";
+import Les4FantastiquesRepo from "@/assets/Les4FantastiquesRepo.webp";
+import Les4FantastiquesDiagramme from "@/assets/Les4FantastiquesDiagramme.webp";
+import Les4FantastiquesLinear from "@/assets/Les4FantastiquesLinear.webp";
+import Les4FantastiquescharteGraphique from "@/assets/Les4FantastiquescharteGraphique.webp";
+import Les4fantastiquesRole from "@/assets/Les4fantastiquesRole.webp";
 
 const images = {
   signaleoGithub,
@@ -36,6 +53,16 @@ const images = {
   LinearSignaleo,
   adnLinear,
   adnCron,
+  textAdventure,
+  textAdventureRepo,
+  textAdventureReadMe,
+  textAdventurePlan,
+  textAdventureExemple,
+  Les4FantastiquesRepo,
+  Les4FantastiquesDiagramme,
+  Les4FantastiquesLinear,
+  Les4FantastiquescharteGraphique,
+  Les4fantastiquesRole,
 };
 
 export const projectsData = [
@@ -369,16 +396,219 @@ export const projectsData = [
     ],
     image: images.snowpactSlack,
   },
+  //////////////////////////// ECOLE //////////////////////
   {
     type: "ecole",
-    logo: logoMRH,
-    title: "Project Ecole 1",
-    description: "faire une description.",
+    logo: textAdventure,
+    title: "Text Adventure",
+    description: "Un jeu d'aventure, résolvez des énigmes captivantes.",
     link: "https://example.com/school-project-one",
-    details: "Detailed description of .",
-    technologies: [
-      { name: "Next.js", logo: logoNext },
-      { name: "JavaScript", logo: logoJS },
+    details: [
+      {
+        description: `Jeu d'aventure textuel en Python où le joueur explore un lycée, interagit avec l’environnement et combat dans un système dynamique.`,
+        public: `Utilisateur en local`,
+        duree: `14 Mars 2024 - 04 Avril 2024`,
+      },
     ],
+    technologies: [{ name: "Python", logo: logoPython }],
+    patrimoineInformatique: "Structure et Développement du Projet",
+    githubFeatures: [
+      {
+        title: "GitLab",
+        subtitle: "Gestion du Code Source",
+        description2:
+          "Le code est hébergé sur GitLab pour assurer la sauvegarde des données.",
+      },
+      {
+        description1: `Je développe directement sur la branche principale tout en effectuant des tests pour garantir la stabilité du projet.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Les versions majeures du projet sont étiquetées pour assurer un historique clair et permettre des retours en arrière si nécessaire.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    figmaFeatures: [
+      {
+        title: "ReadMe",
+        subtitle: "Mise en situation",
+        description2: `Le projet a été initialement structuré autour d’un fichier README détaillant les étapes à suivre. Celui-ci définissait le contexte du jeu, inspiré d’un manga, et les mécaniques de base à implémenter.`,
+      },
+      {
+        description1: `J’ai suivi ces étapes méthodiquement pour développer les fonctionnalités et assurer la progression du projet. Le gameplay repose sur un jeu textuel où le joueur peut se déplacer dans un lycée fictif et interagir avec son environnement.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Le jeu intègre un système de gestion d’objets, incluant un smartphone comme objet clé et un inventaire permettant de stocker divers éléments collectés au fil du jeu.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Les actions possibles sont limitées à la saisie d’un lieu ou d’une action par l’utilisateur. Cependant, il est possible d'ajouter des interactions supplémentaires pour enrichir l’expérience.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    slackFeatures: [
+      {
+        title: "Plan du Projet",
+        subtitle: "Représentation visuelle",
+        description2: `Pour structurer le développement du jeu, j’ai élaboré un plan visuel détaillé à l'aide de schémas. Ces représentations graphiques m'ont permis d'organiser les différentes interactions possibles ainsi que les connexions entre les lieux et les actions du joueur.`,
+      },
+      {
+        description1: `Les images ont servi de guide pour la conception du système de navigation et d'interaction dans le jeu. Elles illustrent les transitions entre les différentes zones du lycée et les actions disponibles à chaque étape.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Grâce à ces schémas, j’ai pu mieux comprendre la logique du gameplay et m’assurer que chaque élément du jeu soit bien intégré et cohérent.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    mesMissions: [
+      {
+        title: "Mon rôle dans le projet",
+        description2: `Dans ce projet, j'avais plusieurs objectifs à atteindre pour structurer et développer un jeu textuel interactif. J'ai travaillé seul sur la conception, le développement et l'intégration des différentes mécaniques du jeu.`,
+      },
+      {
+        description1: `
+        - Mise en place d'un système de navigation permettant au joueur de se déplacer entre plusieurs lieux du lycée A.U.<br/>
+        - Intégration d'un inventaire pour stocker des objets clés et des consommables.<br/>
+        - Développement d'un système de combat où le joueur peut affronter des mannequins et obtenir des récompenses.
+        `,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `
+        - Gestion des actions du joueur via des choix interactifs en terminal.<br/>
+        - Utilisation de Colorama pour améliorer l'affichage avec des couleurs dynamiques.<br/>
+        - Optimisation du code pour une meilleure organisation et évolutivité.
+        `,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `
+        - Ajout d'un système d'objets récupérables et interactifs (ex : obtenir une arme, récupérer un badge, etc.).<br/>
+        - Possibilité d'étendre facilement le jeu avec de nouveaux lieux et actions.<br/>
+        - Respect des consignes du README initial en y ajoutant une touche personnelle.
+        `,
+        icon: projectsIllustration1,
+      },
+    ],
+    imageGithub: images.textAdventureRepo,
+    imageFigma: images.textAdventureReadMe,
+    imageSlack: images.textAdventurePlan,
+    imageAdnCron: images.textAdventureExemple,
+  },
+  {
+    type: "ecole",
+    logo: les4Fantastiques,
+    title: "Les4Fantastiques",
+    description:
+      "Exploration de l’univers Marvel : personnages, séries et mini-jeu interactif",
+    link: "https://example.com/school-project-two",
+    details: [
+      {
+        description: `Projet réalisé en équipe de 3-4 personnes, visant à développer une application complète intégrant une API externe et une base de données pour stocker des informations utilisateur.`,
+        public: `Utilisateur en local`,
+        duree: `02 Octobre 2024 - 18 Décembre 2024`,
+      },
+    ],
+    technologies: [
+      { name: "Python", logo: logoPython },
+      { name: "Django", logo: logoDjangoNoir },
+      { name: "HTML", logo: logoHtml },
+      { name: "CSS", logo: logoCss },
+      { name: "JavaScript", logo: logoJavaScript },
+      { name: "SQLite", logo: logoSQLite },
+    ],
+
+    patrimoineInformatique: "Structure et Développement du Projet",
+    githubFeatures: [
+      {
+        title: "GitLab",
+        subtitle: "Gestion du Code Source",
+        description2:
+          "Le projet est hébergé sur GitLab pour assurer la sauvegarde des données et faciliter la collaboration entre les membres de l’équipe.",
+      },
+      {
+        description1: `Le développement s’est fait sur différentes branches, permettant à chaque membre de l’équipe de travailler sur des fonctionnalités spécifiques sans perturber le code principal.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Des commits réguliers ont été effectués pour suivre l’évolution du projet et assurer un historique de développement clair et structuré.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Des revues de code et des fusions de branches ont été effectuées régulièrement afin d'assurer la stabilité et la qualité du projet.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    figmaFeatures: [
+      {
+        title: "Conception de la Base de Données",
+        subtitle: "Suivi méthodologique et structuration",
+        description2: `Nous avons suivi les étapes de conception afin de structurer correctement notre base de données. Cette approche nous a permis d'organiser les relations entre les différentes entités et d'assurer la cohérence des données.`,
+      },
+      {
+        description1: `Un diagramme de la base de données a été réalisé afin de visualiser les entités principales : Utilisateur, Série, Personnages, Question et Favoris.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Ce modèle relationnel permet de gérer efficacement les interactions entre les utilisateurs et les éléments de l’univers Marvel, garantissant une structuration optimale pour notre application.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    slackFeatures: [
+      {
+        title: "Charte Graphique",
+        subtitle: "Cohérence visuelle et identité du projet",
+        description2: `Une charte graphique a été établie afin de garantir une identité visuelle cohérente et immersive, en accord avec l’univers Marvel et les 4 Fantastiques.`,
+      },
+      {
+        description1: `Nous avons défini une typographie spécifique pour notre projet : "Avengeance-Heroic-Avenger" pour les titres, inspirée de l’univers Marvel, et "Poppins" pour le contenu, garantissant une lisibilité optimale.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Le style des boutons a été conçu pour être intuitif et dynamique, avec des couleurs contrastées et des effets de survol permettant d’améliorer l’expérience utilisateur.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `La mise en page a été pensée pour offrir une navigation fluide, avec un header distinctif en fond bleu, mettant en avant le logo et assurant une hiérarchie visuelle claire.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    mesMissions: [
+      {
+        title: "Notre Rôle dans le Projet",
+        subtitle: "Missions et Contributions",
+        description2: `Tout au long du projet, nous avons collaboré pour structurer, concevoir et développer une application web immersive sur l’univers Marvel. Notre travail s'est articulé autour de plusieurs axes essentiels.`,
+      },
+      {
+        description1: `
+        - Élaboration d'un cahier des charges détaillé définissant les objectifs et fonctionnalités de l'application.</br>
+        - Conception et modélisation de la base de données pour structurer les interactions entre utilisateurs, séries et personnages.</br>
+        - Développement du backend avec Django, incluant l’intégration d’une API externe pour récupérer des données Marvel.
+        `,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `
+        - Mise en place d'une charte graphique cohérente inspirée de l’univers Marvel, incluant typographie, palette de couleurs et design des boutons.</br>
+        - Développement du frontend en respectant l’identité visuelle définie, assurant une navigation fluide et une bonne ergonomie.</br>
+        - Gestion du code source sur GitLab avec un workflow collaboratif, incluant les branches et les revues de code.
+        `,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `
+        - Tests et ajustements pour garantir la stabilité et l’expérience utilisateur optimale.</br>
+        - Documentation complète du projet, avec un README détaillé et un guide d’installation pour faciliter la prise en main.
+        `,
+        icon: projectsIllustration1,
+      },
+    ],
+    imageGithub: images.Les4FantastiquesRepo,
+    imageFigma: images.Les4FantastiquesDiagramme,
+    imageSlack: images.Les4FantastiquescharteGraphique,
+    imageLinear: images.Les4FantastiquesLinear,
+    imageAdnCron: images.Les4fantastiquesRole,
   },
 ];

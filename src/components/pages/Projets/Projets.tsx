@@ -89,16 +89,23 @@ export const Projets = () => {
   const projetsEcole = [
     {
       logo: textAdventure,
-      title: "Text Adventure ",
-      description: "un jeu d'aventure, résolvez des énigmes captivantes ",
+      title: "Text Adventure",
+      description: "Un jeu d'aventure, résolvez des énigmes captivantes ",
       link: "https://example.com/school-project-one",
+    },
+    {
+      logo: les4Fantastiques,
+      title: "Les4Fantastiques",
+      description:
+        "site qui reference les personnages et les séries de l'univers de Marvel",
+      link: "https://example.com/school-project-two",
     },
     {
       logo: gestionEntretiens,
       title: "Gestion Entretiens",
       description:
         "Développement d'une API pour la gestion des avions et des techniciens de la base aérienne d’Istres",
-      link: "https://example.com/school-project-two",
+      link: "https://example.com/school-project-three",
     },
     {
       logo: gestEPI,
@@ -124,13 +131,6 @@ export const Projets = () => {
       logo: mercedess_concess,
       title: "Mercedess_concess",
       description: "site vitrine pour vendre des mercedess",
-      link: "https://example.com/school-project-three",
-    },
-    {
-      logo: les4Fantastiques,
-      title: "Les4Fantastiques",
-      description:
-        "site qui reference les personnages et les séries de l'univers de Marvel",
       link: "https://example.com/school-project-three",
     },
   ];
@@ -160,7 +160,7 @@ export const Projets = () => {
                     animateTo={{ from: "#A25CFC", to: "#e3e3e0" }}
                     animateDuration={2000}
                   >
-                    <p>Les missions que j'ai réalisées :</p>
+                    <p>Les projets que j'ai réalisées :</p>
                   </FancyText>
                 </h1>
                 <p className="relative mt-6 text-lg leading-8 text-white sm:max-w-md lg:max-w-none">

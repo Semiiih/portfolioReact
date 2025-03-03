@@ -21,7 +21,7 @@ export default function StackInformatique() {
             <div className="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]">
               <img
                 alt=""
-                src="https://tailwindui.com/plus/img/component-images/bento-02-releases.png"
+                src="https://tailwindui.com/plus-assets/img/component-images/bento-02-releases.png"
                 className="h-80 object-cover object-left"
               />
               <div className="flex gap-10 p-10">
@@ -60,7 +60,7 @@ export default function StackInformatique() {
             <div className="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 lg:rounded-tr-[2rem]">
               <img
                 alt=""
-                src="https://tailwindui.com/plus/img/component-images/bento-02-integrations.png"
+                src="https://tailwindui.com/plus-assets/img/component-images/bento-02-integrations.png"
                 className="h-80 object-cover object-center"
               />
               <div className="p-10">
@@ -80,7 +80,7 @@ export default function StackInformatique() {
             <div className="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 lg:rounded-bl-[2rem]">
               <img
                 alt=""
-                src="https://tailwindui.com/plus/img/component-images/bento-01-integrations.png"
+                src="https://tailwindui.com/plus-assets/img/component-images/bento-01-integrations.png"
                 className="h-80 object-cover object-center"
               />
               <div className="p-10">
@@ -103,7 +103,7 @@ export default function StackInformatique() {
             <div className="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]">
               <img
                 alt=""
-                src="https://tailwindui.com/plus/img/component-images/bento-02-performance.png"
+                src="https://tailwindui.com/plus-assets/img/component-images/bento-02-performance.png"
                 className="h-80 object-cover object-left"
               />
               <div className="flex flex-row gap-10 p-10">
