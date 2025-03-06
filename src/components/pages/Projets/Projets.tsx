@@ -101,6 +101,13 @@ export const Projets = () => {
       link: "https://example.com/school-project-two",
     },
     {
+      logo: joTickets,
+      title: "JO Tickets",
+      description:
+        "Plateforme de billetterie pour les Jeux Olympiques, achat et de gestion des billets pour assister aux événements.",
+      link: "https://example.com/school-project-three",
+    },
+    {
       logo: gestionEntretiens,
       title: "Gestion Entretiens",
       description:
@@ -114,13 +121,7 @@ export const Projets = () => {
         "Une gestion efficace des EPI pour garantir la sécurité de vos cordistes",
       link: "https://example.com/school-project-three",
     },
-    {
-      logo: joTickets,
-      title: "JO Tickets",
-      description:
-        "Plateforme de billetterie pour les Jeux Olympiques, achat et de gestion des billets pour assister aux événements.",
-      link: "https://example.com/school-project-three",
-    },
+
     {
       logo: billetterie,
       title: "Billetterie",

@@ -41,6 +41,11 @@ import Les4FantastiquesDiagramme from "@/assets/Les4FantastiquesDiagramme.webp";
 import Les4FantastiquesLinear from "@/assets/Les4FantastiquesLinear.webp";
 import Les4FantastiquescharteGraphique from "@/assets/Les4FantastiquescharteGraphique.webp";
 import Les4fantastiquesRole from "@/assets/Les4fantastiquesRole.webp";
+import joTickets from "@/assets/joTickets.webp";
+import JoRepo from "@/assets/JoRepo.webp";
+import SchemaJo from "@/assets/SchemaJo.webp";
+import ReadMeJo from "@/assets/ReadMeJo.webp";
+import JoRole from "@/assets/JoRole.webp";
 
 const images = {
   signaleoGithub,
@@ -63,6 +68,10 @@ const images = {
   Les4FantastiquesLinear,
   Les4FantastiquescharteGraphique,
   Les4fantastiquesRole,
+  JoRepo,
+  SchemaJo,
+  ReadMeJo,
+  JoRole,
 };
 
 export const projectsData = [
@@ -610,5 +619,119 @@ export const projectsData = [
     imageSlack: images.Les4FantastiquescharteGraphique,
     imageLinear: images.Les4FantastiquesLinear,
     imageAdnCron: images.Les4fantastiquesRole,
+  },
+  {
+    type: "ecole",
+    logo: joTickets,
+    title: "JO Tickets",
+    description:
+      "Plateforme de billetterie pour les Jeux Olympiques, achat et de gestion des billets pour assister aux événements.",
+    link: "https://example.com/school-project-three",
+    details: [
+      {
+        description: `Développement d'une application web en Django avec une API REST permettant la gestion des matchs de football des JO, l'achat de billets et le contrôle d'accès via QR Code.`,
+        public: `Utilisateur en local`,
+        duree: `05 Janvier 2025 - 17 mars 2025`,
+      },
+    ],
+    technologies: [
+      { name: "Python", logo: logoPython },
+      { name: "Django", logo: logoDjangoNoir },
+      { name: "HTML", logo: logoHtml },
+      { name: "CSS", logo: logoCss },
+      { name: "JavaScript", logo: logoJavaScript },
+      { name: "SQLite", logo: logoSQLite },
+    ],
+
+    patrimoineInformatique: "Structure et Développement du Projet",
+    githubFeatures: [
+      {
+        title: "GitLab",
+        subtitle: "Gestion du Code Source",
+        description2:
+          "Le projet est hébergé sur GitLab pour assurer la sauvegarde des données et faciliter un développement structuré.",
+      },
+      {
+        description1: `Le développement a été réalisé en autonomie, en adoptant un workflow organisé avec des commits réguliers pour assurer un suivi clair des évolutions.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Une gestion rigoureuse des versions a été mise en place, avec des sauvegardes fréquentes afin d’éviter toute perte de données et faciliter les retours en arrière si nécessaire.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `L'utilisation d'un dépôt centralisé a permis d'assurer une organisation optimale du code et une meilleure traçabilité des modifications.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    figmaFeatures: [
+      {
+        title: "Planification et Conception",
+        subtitle: "Un diagramme pour structurer le projet",
+      },
+      {
+        description1: `Le diagramme a permis d'identifier les trois principales composantes du projet : l'application mobile pour les supporters, l'API Django pour la gestion des données et l'application de scan des billets.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Grâce à cette représentation visuelle, j'ai pu structurer la mise en place des endpoints API, définir les fonctionnalités à développer en priorité et organiser les flux de données entre les différentes applications.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Cela m'a permis d'avoir une vision globale du projet dès le départ, de m'assurer que chaque module fonctionne de manière cohérente et d'anticiper les défis techniques liés à l'intégration des différentes fonctionnalités.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    slackFeatures: [
+      {
+        title: "Documentation et Organisation",
+        subtitle: "Un README pour structurer le projet",
+        description2: `Dès le début du projet, un fichier README a été rédigé afin de définir les objectifs, les étapes de développement et les fonctionnalités principales à implémenter.`,
+      },
+      {
+        description1: `Le README contenait des informations détaillées sur l'installation du projet, la configuration de la base de données et le déploiement de l’API pour assurer un bon démarrage.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Ce document a également servi de guide technique, expliquant comment interagir avec l’API Django, quelles routes étaient disponibles et comment les applications mobiles devaient s’y connecter.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Grâce à cette documentation, il a été plus facile de suivre une méthodologie claire et de garantir une bonne structuration du code et des fonctionnalités.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    mesMissions: [
+      {
+        title: "Mon Rôle dans le Projet",
+        subtitle: "Missions et Contributions",
+        description2: `Dans ce projet, j’ai travaillé en autonomie sur l’ensemble des aspects techniques, de la conception à la mise en place de l’application. Mon travail s'est articulé autour de plusieurs axes essentiels.`,
+      },
+      {
+        description1: `
+        - Conception et structuration de la base de données, en ajoutant notamment le modèle de gestion des tickets.</br>
+        - Développement du backend en Django, avec mise en place des endpoints API permettant la gestion des matchs, des billets et de l'authentification utilisateur.</br>
+        - Implémentation d’un système sécurisé pour l’achat de billets et la génération de QR Codes uniques.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `
+        - Développement de l’interface d’administration Django pour permettre aux super utilisateurs de gérer les événements et les scores des matchs.</br>
+        - Mise en place de la gestion des sessions et de l'authentification via API pour permettre la connexion des utilisateurs sur l’application mobile.</br>
+        - Création d’un scanner de billets fonctionnel capable de lire un QR Code et de vérifier la validité du ticket via l’API.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `
+        - Gestion du code source sur GitLab avec un suivi rigoureux des versions grâce à des commits réguliers.</br>
+        - Tests et corrections des fonctionnalités API et intégration des différentes parties du projet pour assurer une communication fluide entre les applications.</br>
+        - Rédaction d’un README détaillé pour documenter l’installation, le fonctionnement de l’API et les appels nécessaires pour l’interaction avec l’application mobile.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    imageGithub: images.JoRepo,
+    imageFigma: images.SchemaJo,
+    imageSlack: images.ReadMeJo,
+    imageAdnCron: images.JoRole,
   },
 ];
