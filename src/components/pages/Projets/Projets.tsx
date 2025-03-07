@@ -14,10 +14,6 @@ import gestEPI from "@/assets/gestEPi.webp";
 import gestionEntretiens from "@/assets/gestionEntretiens.webp";
 import logoSnowpact from "@/assets/main-logo.png";
 import logoHelioFitness from "@/assets/logoHelioFitness.png";
-import grid1 from "@/assets/grid1.png";
-import grid2 from "@/assets/grid2.png";
-import grid3 from "@/assets/grid3.png";
-import grid4 from "@/assets/grid4.png";
 import FancyText from "@carefully-coded/react-text-gradient";
 
 import textAdventure from "@/assets/textAdventure.jpeg";
