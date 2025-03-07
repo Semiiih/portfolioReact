@@ -10,7 +10,7 @@ import joTickets from "@/assets/joTickets.webp";
 import les4Fantastiques from "@/assets/Les4Fantastiques.png";
 import billetterie from "@/assets/billetterie.png";
 import mercedess_concess from "@/assets/mercedess_concess.png";
-import gestEPI from "@/assets/gestEPi.webp";
+import gestEPI from "@/assets/gestEPI.webp";
 import gestionEntretiens from "@/assets/gestionEntretiens.webp";
 import logoSnowpact from "@/assets/main-logo.png";
 import logoHelioFitness from "@/assets/logoHelioFitness.png";
