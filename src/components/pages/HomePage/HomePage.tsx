@@ -3,7 +3,6 @@ import "@/components/hooks/mainAnim.css";
 import { useEffect, useState } from "react";
 import avataaars2 from "@/assets/avataaars2.png";
 import avataaarsWinkT from "@/assets/avataaarsWinkT.png";
-import avatarLego from "@/assets/avatarLego.png";
 
 import homeBg from "@/assets/home-bg.jpg";
 import FancyText from "@carefully-coded/react-text-gradient";

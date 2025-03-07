@@ -1,7 +1,6 @@
 import logo from "@/assets/logo.png";
 import logoSnowpact from "@/assets/main-logo.png";
 import logoMSW from "@/assets/logoMSW.png";
-import logoMRH from "@/assets/logoMRH.jpg";
 import logoADN from "@/assets/logoADN.webp";
 import adnRepo from "@/assets/adnRepo.png";
 import adnCron from "@/assets/adnCron.png";

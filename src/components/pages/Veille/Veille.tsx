@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { PublicLayout } from "@/components/templates/PublicLayout";
 import { VeilleCard } from "@/components/atoms/VeilleCard/VeilleCard";
 import { Input } from "@/components/atoms/Input/Input";
@@ -10,7 +10,6 @@ import veille5 from "@/assets/veille5.jpeg";
 import veille6 from "@/assets/veille6.jpeg";
 import { LampContainer } from "@/components/atoms/Lamp/Lamp";
 import { motion } from "framer-motion";
-import VeilleHeader from "@/components/organisms/VeilleHeader/VeilleHeader";
 import FancyText from "@carefully-coded/react-text-gradient";
 
 import video from "@/assets/programmer2.gif";

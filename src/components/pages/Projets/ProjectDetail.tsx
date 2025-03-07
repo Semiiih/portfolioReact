@@ -2,7 +2,6 @@ import { useLocation } from "react-router-dom";
 import { PublicLayout } from "@/components/templates/PublicLayout";
 import { projectsData } from "@/projects/mrn";
 import FancyText from "@carefully-coded/react-text-gradient";
-import { Ecard } from "@/components/atoms/Ecard/index";
 import { ProjetRole } from "@/components/organisms/ProjetRole/ProjetRole";
 import { HeroScroll } from "@/components/atoms/HeroScroll/HeroScroll";
 import { ProjetRoleCenter } from "@/components/organisms/ProjetRoleCenter/ProjetRoleCenter";

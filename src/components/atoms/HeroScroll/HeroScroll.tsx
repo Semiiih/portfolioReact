@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { ContainerScroll } from "./container-scroll-animation";
-import LinearSignaleo from "@/assets/LinearSignaleo.png";
 import FancyText from "@carefully-coded/react-text-gradient";
 
 interface HeroScrollProps {

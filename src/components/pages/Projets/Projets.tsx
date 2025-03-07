@@ -27,18 +27,16 @@ import projectsIllustration2 from "@/assets/projects-illustration2.gif";
 import projectsIllustration3 from "@/assets/projects-illustration3.gif";
 
 import { SwitchButton } from "@/components/atoms/ProjectCard/switchButton";
-import { useLocation } from "react-router-dom";
-import { projectsData } from "@/projects/mrn";
 /////conclusion: ce que j ai appris durant le projet
 /////cahier dss charges 4 fantasitque
 export const Projets = () => {
   const [isEcole, setIsEcole] = useState(false);
 
-  const location = useLocation();
-  const selectedProjectTitle = location.state?.projectTitle;
-  const project = projectsData.find(
-    (proj) => proj.title === selectedProjectTitle,
-  );
+  // const location = useLocation();
+  // const selectedProjectTitle = location.state?.projectTitle;
+  // const project = projectsData.find(
+  //   (proj) => proj.title === selectedProjectTitle,
+  // );
   const projetsEntreprise = [
     {
       logo: logo,
@@ -136,8 +134,6 @@ export const Projets = () => {
       link: "https://example.com/school-project-three",
     },
   ];
-
-  const logos = [grid1, grid2, grid3, grid4];
 
   const handleSwitchChange = () => {
     setIsEcole(!isEcole);
