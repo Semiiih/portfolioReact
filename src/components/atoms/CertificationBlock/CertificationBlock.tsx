@@ -1,10 +1,8 @@
-import React from "react";
 import AnssiCertification from "@/assets/AnssiCertification.png";
 import PixCertification from "@/assets/PixLogo.svg.png";
 import OpenCertification from "@/assets/openlogo.webp";
 import udemyLogo from "@/assets/udemyLogo.png";
 import click from "@/assets/click.png";
-import FancyText from "@carefully-coded/react-text-gradient";
 
 export const CertificationBlock = () => {
   const scrollToCertifications = () => {

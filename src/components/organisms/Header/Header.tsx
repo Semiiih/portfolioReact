@@ -1,8 +1,6 @@
-import { Avatar, Dropdown, Navbar } from "flowbite-react";
+import { Navbar } from "flowbite-react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import avataaars3 from "@/assets/avataaars3.png";
-import avataaars from "@/assets/avataaars.png";
 import avatarLego3 from "@/assets/avatarLego3.png";
 
 export const Header = () => {

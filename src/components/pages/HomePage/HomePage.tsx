@@ -84,7 +84,7 @@ export const HomePage = () => {
               animateTo={{ from: "#8a8a8a", to: "#bfbfbf" }}
               animateDuration={2000}
             >
-              <p>MON PARCOURS TECHNOLOGIQUES</p>
+              <p>MON PARCOURS TECHNOLOGIQUE</p>
             </FancyText>
           </div>
           <TimeLine />
@@ -119,7 +119,7 @@ export const HomePage = () => {
               animateTo={{ from: "#8a8a8a", to: "#e3e3e0" }}
               animateDuration={2000}
             >
-              <p>Mes compétences en langagues</p>
+              <p>Mes compétences techniques</p>
             </FancyText>
             <CompetenceSlideBlock />
           </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import FancyText from "@carefully-coded/react-text-gradient";
 
 interface EcardProps {

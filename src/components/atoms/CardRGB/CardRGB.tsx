@@ -1,4 +1,3 @@
-import React from "react";
 import logoMRH from "@/assets/logoMRH.jpg";
 
 export const CardRGB = () => {
@@ -11,7 +10,7 @@ export const CardRGB = () => {
         alt={`${logoMRH} logo`}
         className="z-50 mb-0 h-[100px] w-[100px] rounded-xl bg-white"
       />
-      <div className="animate-rotBGimg absolute h-[130%] w-[100px] bg-gradient-to-b from-[#00b7ff] to-[#ff30ff] transition-all duration-200 ease-linear"></div>
+      <div className="absolute h-[130%] w-[100px] animate-rotBGimg bg-gradient-to-b from-[#00b7ff] to-[#ff30ff] transition-all duration-200 ease-linear"></div>
       <div className="absolute inset-[5px] rounded-[15px] bg-[#07182E]"></div>
     </div>
   );

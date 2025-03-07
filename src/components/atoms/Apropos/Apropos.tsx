@@ -1,7 +1,5 @@
-import avataaars from "@/assets/VeilleHero2.jpeg";
 import snow from "@/assets/snowpactHeader.jpeg";
 import FancyText from "@carefully-coded/react-text-gradient";
-import { Button } from "flowbite-react";
 
 export const Apropos = () => {
   return (

@@ -109,7 +109,7 @@ export default function StackInformatique() {
               <div className="flex flex-row gap-10 p-10">
                 <span>
                   <h3 className="mt-2 text-lg/7 font-medium tracking-tight text-white">
-                    Base de donnée
+                    Base de données
                   </h3>
 
                   <p className="mt-2 max-w-lg text-sm/6 text-gray-400">

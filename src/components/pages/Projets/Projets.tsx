@@ -29,7 +29,8 @@ import projectsIllustration3 from "@/assets/projects-illustration3.gif";
 import { SwitchButton } from "@/components/atoms/ProjectCard/switchButton";
 import { useLocation } from "react-router-dom";
 import { projectsData } from "@/projects/mrn";
-
+/////conclusion: ce que j ai appris durant le projet
+/////cahier dss charges 4 fantasitque
 export const Projets = () => {
   const [isEcole, setIsEcole] = useState(false);
 
@@ -161,7 +162,7 @@ export const Projets = () => {
                     animateTo={{ from: "#A25CFC", to: "#e3e3e0" }}
                     animateDuration={2000}
                   >
-                    <p>Les projets que j'ai réalisées :</p>
+                    <p>Les projets que j'ai réalisés :</p>
                   </FancyText>
                 </h1>
                 <p className="relative mt-6 text-lg leading-8 text-white sm:max-w-md lg:max-w-none">

@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface TeamMemberProps {
   image: string;
   alt: string;

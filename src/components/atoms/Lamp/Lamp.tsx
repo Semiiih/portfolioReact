@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { Cards } from "../Card/Card";
-import { CertificationBlock } from "../CertificationBlock";
 import avataaars2 from "@/assets/avataaars2.png";
 import avataaarsWinkT from "@/assets/avataaarsWinkT.png";
 

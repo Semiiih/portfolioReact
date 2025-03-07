@@ -1,18 +1,6 @@
 "use client";
 
-import { useState } from "react";
-
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
-  { name: "Log in", href: "#" },
-];
-
 export default function VeilleHeader() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <div className="bg-slate-900">
       <div className="relative">

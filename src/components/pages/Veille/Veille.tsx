@@ -31,20 +31,23 @@ export const Veille = () => {
   const articles = [
     {
       image: veille1,
-      title: "Article 1",
-      description: "Quel langages de programmation choisir en 2024 ?",
-      href: "https://www.grandeecolenumerique.fr/actualites/quel-langage-de-programmation-choisir",
+      title: "Le Framework Electrobun ",
+      description:
+        "Electrobun est disponible pour créer des applications de bureau multiplateformes écrites en TypeScript, Electrobun vise à être un framework inclus dans les piles pour la construction, le test et la mise à jour.",
+      href: "https://typescript.developpez.com/actu/365027/Le-Framework-Electrobun-creer-des-applications-de-bureau-multiplateformes-ecrites-en-TypeScript/",
       rating: 5,
-      date: "2024-01-15",
+      date: "22 novembre 2024",
+      source: "Jade Emy",
     },
     {
       image: veille2,
-      title: "Article 2",
+      title: "Les nouveautés de NextJS 15",
       description:
-        "Les avantages d’utiliser des frameworks en développement web",
-      href: "https://koul.io/blog/4-avantages-d-utiliser-des-frameworks-en-developpement-web",
+        "NextJS 15 a été présenté aux yeux du monde le 24 octobre 2024 à San Francisco, voici tout ce que l'on sait des puissantes nouveautés de NextJS 15 !",
+      href: "https://believemy.com/r/les-nouveautes-de-nextjs-15",
       rating: 4,
-      date: "2024-01-20",
+      date: "12/05/2024",
+      source: "Louis-Nicolas Leuillet",
     },
     {
       image: veille3b,
@@ -53,23 +56,26 @@ export const Veille = () => {
       href: "https://cyberinstitut.fr/framework-definition-role-developpement-logiciel/",
       rating: 3,
       date: "2024-01-25",
+      source: "fffff",
     },
     {
       image: veille4,
       title: "Article 4",
       description: "Les langages de programmation (et leur utilité)",
-      href: "https://blog.hubspot.fr/website/langage-de-programmation",
+      href: "https://typescript.developpez.com/actu/368264/A-partir-de-la-version-23-6-0-Node-js-prend-en-charge-TypeScript-par-defaut-en-raison-de-sa-popularite-croissante-TypeScript-etant-la-fonctionnalite-la-plus-demandee-sur-Node-js/",
       rating: 4,
       date: "2024-01-30",
+      source: "fffff",
     },
     {
       image: veille5,
-      title: "Article 5",
+      title: "Node.js prend en charge TypeScript par défaut",
       description:
-        "Quels sont les meilleurs langages de programmation à apprendre en 2024",
+        "À partir de la version 23.6.0, Node.js prend en charge TypeScript par défaut, en raison de sa popularité croissante",
       href: "https://www.hays.fr/conseils-carriere/article/les-meilleurs-langages-de-programmation-%C3%80-apprendre-en-2024",
       rating: 5,
-      date: "2024-02-05",
+      date: "21 janvier 2025",
+      source: "Jade Emy",
     },
     {
       image: veille6,
@@ -78,6 +84,7 @@ export const Veille = () => {
       href: "https://www.geeketteandgreluche.fr/decouvrez-les-langages-de-programmation-et-frameworks-les-plus-tendance-du-moment/",
       rating: 2,
       date: "2024-02-10",
+      source: "fffff",
     },
   ];
 
@@ -166,7 +173,7 @@ export const Veille = () => {
             </div>
 
             <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-              <h1 className="relative mt-0 text-center text-[25px] leading-8 text-white sm:max-w-md lg:mt-44 lg:max-w-none lg:pl-20 lg:text-[30px]">
+              <h1 className="relative mt-0 text-center text-[25px] leading-10 text-white sm:max-w-md lg:mt-44 lg:max-w-none lg:pl-20 lg:text-[42px]">
                 <FancyText
                   gradient={{
                     from: "#e3e3e0",
@@ -177,9 +184,11 @@ export const Veille = () => {
                   animateDuration={2000}
                 >
                   <p>
-                    Quels sont les langages de programmation et frameworks les
+                    {/* Quels sont les langages de programmation et frameworks les
                     plus appropriés pour répondre efficacement aux besoins
-                    spécifiques d'un projet ?
+                    spécifiques d'un projet ? */}
+                    Les nouveautés sur les langages de programmation et
+                    frameworks
                   </p>
                 </FancyText>
               </h1>
@@ -239,6 +248,7 @@ export const Veille = () => {
               href={article.href}
               rating={article.rating}
               date={article.date}
+              source={article.source}
             />
           ))}
           {filteredArticles.length === 0 && (

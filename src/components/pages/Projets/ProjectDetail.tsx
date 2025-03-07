@@ -63,7 +63,7 @@ export const ProjectDetail = () => {
         <div className="flex flex-row gap-20 pt-20 text-center">
           <div className="flex-1text-center">
             <p className="mx-24 mb-4 border-b-2 pb-2 text-[25px]">
-              Duré de la mission
+              Durée de la mission
             </p>
             <p>
               <FancyText
