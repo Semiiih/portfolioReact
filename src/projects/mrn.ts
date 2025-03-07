@@ -42,7 +42,7 @@ import Les4FantastiquescharteGraphique from "@/assets/Les4FantastiquescharteGrap
 import Les4fantastiquesRole from "@/assets/Les4fantastiquesRole.webp";
 import joTickets from "@/assets/joTickets.webp";
 import JoRepo from "@/assets/JoRepo.webp";
-import SchemaJo from "@/assets/SchemaJo.webp";
+import SchemaJo from "@/assets/SchemaJO.webp";
 import ReadMeJo from "@/assets/ReadMeJo.webp";
 import JoRole from "@/assets/JoRole.webp";
 
