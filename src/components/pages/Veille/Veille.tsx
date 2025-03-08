@@ -182,7 +182,7 @@ export const Veille = () => {
                   animateTo={{ from: "#13DDF0", to: "#e3e3e0" }}
                   animateDuration={2000}
                 >
-                  <p>
+                  <p className="pb-10">
                     {/* Quels sont les langages de programmation et frameworks les
                     plus appropriés pour répondre efficacement aux besoins
                     spécifiques d'un projet ? */}
@@ -250,6 +250,7 @@ export const Veille = () => {
               source={article.source}
             />
           ))}
+
           {filteredArticles.length === 0 && (
             <p className="text-white">Aucun article trouvé</p>
           )}

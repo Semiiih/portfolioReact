@@ -63,7 +63,7 @@ export const Entreprise = () => {
         <main className="flex flex-col items-center justify-center gap-10 self-center ">
           <div className="flex w-full justify-center py-20">
             <div
-              className="mx-20 rounded-xl"
+              className=" rounded-xl lg:mx-20"
               style={{
                 // height: 500,
                 background: "transparent",
@@ -80,7 +80,7 @@ export const Entreprise = () => {
         id="team"
         className=" flex justify-center bg-slate-800 pb-20 pt-36"
       >
-        <div className="flex w-2/3 flex-col ">
+        <div className="flex flex-col lg:w-2/3 ">
           <p className="pb-10 text-center text-[50px] text-white">
             <FancyText
               gradient={{ from: "#FFFF", to: "#8a8a8a", type: "linear" }}
@@ -101,12 +101,13 @@ export const Entreprise = () => {
               gradient={{ from: "#FFFF", to: "#8a8a8a", type: "linear" }}
               animateTo={{ from: "#8a8a8a", to: "#FFFF" }}
               animateDuration={1000}
+              className="pt-10 text-center lg:pt-0"
             >
               L'approche de Snowpact
             </FancyText>
           </p>
 
-          <div className="flex flex-col justify-center gap-10 sm:flex-row">
+          <div className="flex flex-col justify-center gap-10 pb-10 sm:flex-row lg:pb-0">
             <CardApproche
               label="Livraison"
               description="Nous testons et validons ensemble pour mettre de nouvelles versions en production de manière continue."

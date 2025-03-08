@@ -114,7 +114,7 @@ export const VeilleCard = ({
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex transform items-center rounded-full bg-blue-600 px-4 py-2 font-bold text-white shadow-lg transition-transform hover:scale-105 hover:bg-blue-700"
+            className="inline-flex transform items-center rounded-full bg-violet-500 px-4 py-2 font-bold text-white shadow-lg transition-transform hover:scale-105 hover:bg-blue-700"
             onClick={handleLinkClick}
           >
             Voir l'article complet

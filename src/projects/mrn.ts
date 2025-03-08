@@ -45,6 +45,16 @@ import JoRepo from "@/assets/JoRepo.webp";
 import SchemaJo from "@/assets/SchemaJO.webp";
 import ReadMeJo from "@/assets/ReadMeJo.webp";
 import JoRole from "@/assets/JoRole.webp";
+import murat from "@/assets/team/murat.png";
+import stephane from "@/assets/team/stephane.png";
+import anthony from "@/assets/team/anthony.png";
+import alexandre from "@/assets/team/alexandre.png";
+import fahmi from "@/assets/team/fahmi.png";
+import semih from "@/assets/team/semih.png";
+import farid from "@/assets/team/farid.png";
+import emir from "@/assets/team/emir.png";
+import yasin from "@/assets/team/yasin.png";
+import mohamed from "@/assets/team/mohammed.png";
 
 const images = {
   signaleoGithub,
@@ -94,6 +104,68 @@ export const projectsData = [
       { name: "Tailwind CSS", logo: logoTailwind },
       { name: "React", logo: logoReact },
       { name: "Npm", logo: logoNpm },
+    ],
+    teamMembers: [
+      {
+        id: 1,
+        name: "Murat",
+        designation: "Développeur Front / Mobile / Back",
+        image: murat,
+      },
+      {
+        id: 2,
+        name: "Stephane",
+        designation: "Développeur Back / DevOps",
+        image: stephane,
+      },
+      {
+        id: 3,
+        name: "Mohamed",
+        designation: "Business Analyst",
+        image: mohamed,
+      },
+      {
+        id: 4,
+        name: "Yasin",
+        designation: "Développeur Front",
+        image: yasin,
+      },
+      {
+        id: 5,
+        name: "Emir",
+        designation: "Apprenti développeur",
+        image: emir,
+      },
+      {
+        id: 6,
+        name: "Farid",
+        designation: "Développeur Front / Mobile / Back",
+        image: farid,
+      },
+      {
+        id: 7,
+        name: "Semih",
+        designation: "Apprenti développeur",
+        image: semih,
+      },
+      {
+        id: 8,
+        name: "Fahmi",
+        designation: "Développeur Front / Mobile / Back",
+        image: fahmi,
+      },
+      {
+        id: 9,
+        name: "Alexandre",
+        designation: "Développeur Back",
+        image: alexandre,
+      },
+      {
+        id: 10,
+        name: "Anthony",
+        designation: "Developpeur Junior ",
+        image: anthony,
+      },
     ],
     patrimoineInformatique: "Patrimoine informatique",
     githubFeatures: [

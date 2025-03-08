@@ -9,9 +9,9 @@ export type TeamProps = {
 export const Team = ({ items, vertical }: TeamProps) => {
   return (
     <div
-      className={clsx("flex md:p-2", {
+      className={clsx("flex gap-4 md:p-2 lg:gap-0", {
         "flex-row flex-wrap justify-center": !vertical,
-        "flex-col text-center": vertical,
+        "flex-col gap-10 text-center": vertical,
       })}
     >
       {items &&

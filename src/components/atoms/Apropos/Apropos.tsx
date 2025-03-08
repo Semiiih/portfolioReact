@@ -31,7 +31,7 @@ export const Apropos = () => {
               </svg>
 
               <div className="text-xl/8 font-semibold text-white sm:text-2xl/9">
-                <div className="absolute -top-14 text-[40px] text-gray-400 selection:mt-1">
+                <div className="absolute -top-10 text-[40px] text-gray-400 selection:mt-1 lg:-top-14">
                   <FancyText
                     gradient={{
                       from: "#e3e3e0",

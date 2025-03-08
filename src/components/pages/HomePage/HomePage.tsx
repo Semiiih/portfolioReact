@@ -42,7 +42,7 @@ export const HomePage = () => {
             backgroundSize: "",
           }}
         >
-          <main className="mx-auto max-w-screen-xl">
+          <main className="mx-auto max-w-screen-xl ">
             <div className="grid justify-items-center gap-4 pt-10 sm:grid-cols-2">
               <div className="hidden sm:block">
                 <img
@@ -56,8 +56,8 @@ export const HomePage = () => {
                 <Cards />
               </div>
             </div>
-            <CertificationBlock />
           </main>
+          <CertificationBlock />
           {/* <main className="mx-auto max-w-screen-xl">
             <div className="grid justify-items-center  pt-10 sm:grid-cols-2">
               <div className="hidden self-end sm:flex">

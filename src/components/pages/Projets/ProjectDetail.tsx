@@ -5,6 +5,7 @@ import FancyText from "@carefully-coded/react-text-gradient";
 import { ProjetRole } from "@/components/organisms/ProjetRole/ProjetRole";
 import { HeroScroll } from "@/components/atoms/HeroScroll/HeroScroll";
 import { ProjetRoleCenter } from "@/components/organisms/ProjetRoleCenter/ProjetRoleCenter";
+import { Colaboration } from "@/components/atoms/Colaboration";
 
 export const ProjectDetail = () => {
   const location = useLocation();
@@ -113,6 +114,14 @@ export const ProjectDetail = () => {
             </div>
           </div>
         </div>
+        {project.teamMembers && project.teamMembers.length > 0 && (
+          <div>
+            <p className="mx-24 mb-4 border-b-2 pb-2 pt-20 text-center text-[25px]">
+              Les membres du projet
+            </p>
+            <Colaboration people={project.teamMembers} />
+          </div>
+        )}
         {/* <Ecard /> */}
         <div className="flex flex-col items-center gap-7 pt-32 text-center text-[50px] ">
           <h1>

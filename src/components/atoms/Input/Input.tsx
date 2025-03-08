@@ -15,7 +15,7 @@ export const Input: React.FC<InputProps> = ({
   onRatingChange,
   onSortByDate,
 }) => {
-  const [showRating, setShowRating] = useState(false);
+  const [showRating, setShowRating] = useState(true);
 
   return (
     <div className="relative flex items-center justify-center">

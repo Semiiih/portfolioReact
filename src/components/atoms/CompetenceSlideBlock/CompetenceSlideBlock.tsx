@@ -23,8 +23,8 @@ const competences = [
 
 export const CompetenceSlideBlock = () => {
   return (
-    <div className="relative m-auto w-2/3 overflow-hidden bg-transparent py-20 before:absolute before:left-0 before:top-0 before:z-[2] before:h-full before:w-[100px] after:content-['']">
-      <div className="animate-infinite-slider flex w-[calc(250px*10)]">
+    <div className="relative m-auto w-full overflow-hidden  bg-transparent py-20 before:absolute before:left-0 before:top-0 before:z-[2] before:h-full before:w-[100px] after:content-[''] lg:w-2/3">
+      <div className="flex w-[calc(250px*10)] animate-infinite-slider">
         {competences.map((logo, index) => (
           <div
             className="slide group relative flex w-[125px] flex-col items-center justify-center"
