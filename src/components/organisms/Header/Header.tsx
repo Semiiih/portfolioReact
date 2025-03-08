@@ -35,7 +35,7 @@ export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const [activeLink, setActiveLink] = useState("");
+  const [, setActiveLink] = useState("");
 
   // États et refs pour la SlidingTabBar - Corriger les types
   const tabsRef = useRef<(HTMLAnchorElement | null)[]>([]);
