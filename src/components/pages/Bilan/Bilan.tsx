@@ -17,7 +17,7 @@ import {
   FaNetworkWired,
   FaProjectDiagram,
 } from "react-icons/fa";
-import { MacbookScroll } from "@/components/atoms/MacBookHeroScroll /HeroScroll";
+import { MacbookScroll } from "@/components/atoms/MacBookHeroScroll/HeroScroll";
 
 export const Bilan = () => {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -156,11 +156,6 @@ export const Bilan = () => {
             className="mt-16 flow-root sm:mt-24"
           >
             <div className="relative rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-              {/* <img
-                src={bilanHero}
-                alt="Bilan BTS"
-                className="rounded-md shadow-2xl ring-1 ring-gray-900/10"
-              /> */}
               <MacbookScroll />
             </div>
           </motion.div>
@@ -209,7 +204,7 @@ export const Bilan = () => {
                 (category, idx) => (
                   <Tab
                     key={idx}
-                    className={({ selected }) =>
+                    className={({ selected }: { selected: boolean }) =>
                       `w-full rounded-lg py-2.5 text-sm font-medium leading-5 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2 ${
                         selected
                           ? "bg-violet-600 text-white shadow"
