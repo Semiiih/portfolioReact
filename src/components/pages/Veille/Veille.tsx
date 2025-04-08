@@ -51,11 +51,11 @@ export const Veille = () => {
     {
       image: veille3b,
       title: "Article 3",
-      description: "Définition et Rôle dans le Développement Logiciel",
-      href: "https://cyberinstitut.fr/framework-definition-role-developpement-logiciel/",
+      description: "Node.js prend en charge TypeScript par défaut",
+      href: "https://typescript.developpez.com/actu/368264/A-partir-de-la-version-23-6-0-Node-js-prend-en-charge-TypeScript-par-defaut-en-raison-de-sa-popularite-croissante-TypeScript-etant-la-fonctionnalite-la-plus-demandee-sur-Node-js/",
       rating: 3,
-      date: "2024-01-25",
-      source: "fffff",
+      date: "21 janvier 2025",
+      source: "Jade Emy",
     },
     {
       image: veille4,
