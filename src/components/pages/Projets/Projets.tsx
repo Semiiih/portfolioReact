@@ -73,12 +73,6 @@ export const Projets = () => {
         "Plateforme de mise en relation entre particuliers et professionnels facilitant la délégation des démarches administratives",
       link: "https://example.com/project-two",
     },
-    // {
-    //   logo: logoEvolios,
-    //   title: "Evolios",
-    //   description: "Faire une description.",
-    //   link: "https://example.com/project-three",
-    // },
   ];
 
   const projetsEcole = [

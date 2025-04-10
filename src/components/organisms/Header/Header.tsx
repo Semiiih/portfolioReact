@@ -1,7 +1,7 @@
 import { Navbar } from "flowbite-react";
 import { useEffect, useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import avatarLego3 from "@/assets/avatarLego3.png";
+import avatarLego3 from "@/assets/avataaars3.png";
 
 const allTabs = [
   {

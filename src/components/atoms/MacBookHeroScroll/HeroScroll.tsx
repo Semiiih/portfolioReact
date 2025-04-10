@@ -84,7 +84,7 @@ export const MacbookScroll = ({
             <h1 className="mx-auto max-w-2xl text-center text-4xl font-bold tracking-tight text-white sm:text-6xl">
               <FancyText
                 gradient={{ from: "#e3e3e0", to: "#bfbfbf", type: "linear" }}
-                animateTo={{ from: "#13DDF0", to: "#e3e3e0" }}
+                animateTo={{ from: "#6B2CD3", to: "#e3e3e0" }}
                 animateDuration={2000}
               >
                 Bilan de mon BTS

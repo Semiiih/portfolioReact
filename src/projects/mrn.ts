@@ -16,7 +16,6 @@ import php from "@/assets/PHP.svg";
 import typeScript from "@/assets/typeScript.svg";
 import logoYarn from "@/assets/yarn.png";
 import logoSql from "@/assets/logoSql.svg";
-import logoStorybook from "@/assets/storybook.png";
 import projectsIllustration1 from "@/assets/projects-illustration1.gif";
 import signaleoGithub from "@/assets/signaleoGithub.png";
 import snowpactGithub from "@/assets/snowpactGithub.png";
@@ -24,6 +23,7 @@ import snowpactSlack from "@/assets/snowpactSlack.png";
 import signaleoFigma from "@/assets/signaleoFigma.png";
 import signaleoSlack from "@/assets/signaleoSlack.png";
 import textAdventure from "@/assets/textAdventure.jpeg";
+import helioFitnessLogo from "@/assets/logoHelioFitness.png";
 import logoPython from "@/assets/logoPython.webp";
 import logoCss from "@/assets/css.png";
 import logoHtml from "@/assets/html.png";
@@ -40,6 +40,8 @@ import Les4FantastiquesDiagramme from "@/assets/Les4FantastiquesDiagramme.webp";
 import Les4FantastiquesLinear from "@/assets/Les4FantastiquesLinear.webp";
 import Les4FantastiquescharteGraphique from "@/assets/Les4FantastiquescharteGraphique.webp";
 import Les4fantastiquesRole from "@/assets/Les4fantastiquesRole.webp";
+import logoWordPress from "@/assets/wordpress.png";
+import logoO2Switch from "@/assets/o2switch.svg";
 import joTickets from "@/assets/joTickets.webp";
 import JoRepo from "@/assets/JoRepo.webp";
 import SchemaJo from "@/assets/SchemaJO.webp";
@@ -55,6 +57,14 @@ import farid from "@/assets/team/farid.png";
 import emir from "@/assets/team/emir.png";
 import yasin from "@/assets/team/yasin.png";
 import mohamed from "@/assets/team/mohammed.png";
+import helioFitnessGitHub from "@/assets/helioFitnessGitHub.webp";
+import helioFitnessFigma from "@/assets/helioFitnessFigma.webp";
+import helioFitnessSlack from "@/assets/SlackHelioFitness.webp";
+import HelioFitness_avant_audit from "@/assets/HelioFitness_avant_audit.webp";
+import HelioFitness_apres_audit from "@/assets/HelioFitness_apres_audit.webp";
+import snowpactFigma from "@/assets/snowpactFigma.webp";
+import SnowpactAvant from "@/assets/Snowpact_avant.webp";
+import SnowpactApres from "@/assets/Snowpact_apres.webp";
 
 const images = {
   signaleoGithub,
@@ -81,6 +91,14 @@ const images = {
   SchemaJo,
   ReadMeJo,
   JoRole,
+  helioFitnessGitHub,
+  helioFitnessFigma,
+  helioFitnessSlack,
+  HelioFitness_avant_audit,
+  HelioFitness_apres_audit,
+  snowpactFigma,
+  SnowpactAvant,
+  SnowpactApres,
 };
 
 export const projectsData = [
@@ -232,19 +250,14 @@ export const projectsData = [
     link: "https://signaleo.co/",
     details: [
       {
-        description: `Application mobile pour faciliter la gestion des incidents dans les villes pour les citoyens et pour les mairies`,
+        description: `Accompagne dans la conception, le développement et le déploiement de vos applications web et mobile.`,
         public: `Citoyens`,
-        duree: `06 Fév 2022 - 2024`,
+        duree: `13 Fév 2025 - 10 mars 2025`,
       },
     ],
     technologies: [
-      { name: "Next.js", logo: logoNext },
-      { name: "JavaScript", logo: logoJS },
-      { name: "Tailwind CSS", logo: logoTailwind },
-      { name: "React", logo: logoReact },
-      { name: "Npm", logo: logoNpm },
-      { name: "Yarn", logo: logoYarn },
-      { name: "Storybook", logo: logoStorybook },
+      { name: "WordPress", logo: logoWordPress },
+      { name: "o2switch", logo: logoO2Switch },
     ],
     patrimoineInformatique: "Patrimoine informatique",
     githubFeatures: [
@@ -266,12 +279,11 @@ export const projectsData = [
     figmaFeatures: [
       {
         title: "Figma",
-        subtitle: "Charte graphique du projet",
-        description2: `Un design sur Figma a été réalisé pour se calquer dessus pour les couleurs, polices, design des composants ect..
-          Il était donc impératif de bien s'appuyer sur les modèles`,
+        subtitle: "Charte graphique Snowpact",
+        description2: `Une conception soignée a été réalisée sur Figma pour définir l'identité visuelle complète du site Snowpact, servant de référence pour tout le développement.`,
       },
       {
-        description1: `Une palette de couleurs soigneusement sélectionnée pour refléter l'identité de la marque. Chaque teinte a été choisie pour maintenir une cohérence visuelle et faciliter la reconnaissance par les utilisateurs.`,
+        description1: `La palette de couleurs utilise principalement des tons bleu, créant une ambiance tech moderne et professionnelle.`,
         icon: projectsIllustration1,
       },
       {
@@ -279,7 +291,7 @@ export const projectsData = [
         icon: projectsIllustration1,
       },
       {
-        description1: `Des composants interactifs et des icônes ont été créés pour assurer une utilisation intuitive et une esthétique moderne. `,
+        description1: `Des composants interactifs et des icônes ont été créés pour assurer une utilisation intuitive et une esthétique moderne.`,
         icon: projectsIllustration1,
       },
     ],
@@ -298,8 +310,17 @@ export const projectsData = [
         icon: projectsIllustration1,
       },
     ],
+    mesMissions2images: `En partant de la conception visuelle initiale,<br /><br />
+    - J'ai développé et implémenté le design en respectant l'identité de la marque tout en optimisant l'expérience utilisateur. <br />
+    - J'ai amélioré les performances SEO du site en optimisant la structure du code, les métadonnées et les temps de chargement. <br />
+    - J'ai également porté une attention particulière à l'accessibilité, pour garantir une navigation fluide pour tous les utilisateurs.<br />
+    - Enfin, j'ai appliqué les bonnes pratiques de développement web (responsive design, optimisation des images, code propre et maintenable) pour assurer la pérennité et l'évolutivité du projet.`,
+
+    imageAvant: images.SnowpactAvant,
+    imageApres: images.SnowpactApres,
+
     imageGithub: images.snowpactGithub,
-    imageFigma: images.signaleoFigma,
+    imageFigma: images.snowpactFigma,
     imageSlack: images.snowpactSlack,
   },
   {
@@ -475,6 +496,85 @@ export const projectsData = [
       },
     ],
     image: images.snowpactSlack,
+  },
+  {
+    type: "entreprise",
+    logo: helioFitnessLogo,
+    title: "HelioFitness",
+    description: "Helio Fitness est un centre de santé",
+    link: "https://example.com/school-project-one",
+    details: [
+      {
+        description: `Le site présente une interface élégante et intuitive, conçue pour mettre en valeur les différents services et programmes personnalisés offerts par le centre de santé`,
+        public: `Citoyens`,
+        duree: `13 Janvier 2025 - 12 Février 2025`,
+      },
+    ],
+    technologies: [
+      { name: "Next.js", logo: logoNext },
+      { name: "JavaScript", logo: logoJS },
+      { name: "TypeScript", logo: typeScript },
+      { name: "Npm", logo: logoNpm },
+      { name: "Yarn", logo: logoYarn },
+    ],
+    patrimoineInformatique: "Structure et Développement du Projet",
+    githubFeatures: [
+      {
+        title: "GitLab",
+        subtitle: "Gestion du Code Source",
+        description2:
+          "Le code est hébergé sur GitLab pour assurer la sauvegarde des données.",
+      },
+      {
+        description1: `Nous créons des branches spécifiques pour chaque changement ou fonctionnalité, ce qui permet de travailler sans affecter le code principal et facilite les revues de code avant intégration.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Les versions majeures du projet sont étiquetées pour assurer un historique clair et permettre des retours en arrière si nécessaire.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    figmaFeatures: [
+      {
+        title: "Representation visuelle des pages",
+        subtitle: "Conception visuelle du site",
+        description2: `Les maquettes du site Helio Fitness ont été présentées sous forme d'images imprimées illustrant clairement l'apparence attendue du site final, servant de référence visuelle tout au long du développement.`,
+      },
+      {
+        description1: `Ces captures d'écran prévisionnelles montrent la structure envisagée pour le site, avec une palette de couleurs dominée par le violet et le blanc`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Chaque page imprimée représente une section distincte du site, comme "Le Studio" et "Le Crossfit".`,
+        icon: projectsIllustration1,
+      },
+    ],
+    slackFeatures: [
+      {
+        title: "Slack",
+        subtitle: "Communication sur Slack",
+        description2: `On communique sur Slack en cas de besoin et surtout pour suivre l'avancement du projet ainsi que des tâches`,
+      },
+      {
+        description1: `Chaque aspect du projet dispose de son propre canal, permettant une organisation structurée et la séparation des discussions importantes.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Des notifications régulières nous informent des mises à jour et rappels de réunions, assurant une synchronisation de l'équipe.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    mesMissions2images: `En partant de la conception visuelle initiale,<br /><br />
+       - J'ai développé et implémenté le design en respectant l'identité de la marque tout en optimisant l'expérience utilisateur. <br />
+       - J'ai amélioré les performances SEO du site en optimisant la structure du code, les métadonnées et les temps de chargement. <br />
+       - J'ai également porté une attention particulière à l'accessibilité, pour garantir une navigation fluide pour tous les utilisateurs.<br />
+       - Enfin, j'ai appliqué les bonnes pratiques de développement web (responsive design, optimisation des images, code propre et maintenable) pour assurer la pérennité et l'évolutivité du projet.`,
+
+    imageGithub: images.helioFitnessGitHub,
+    imageFigma: images.helioFitnessFigma,
+    imageSlack: images.helioFitnessSlack,
+    imageAvant: images.HelioFitness_avant_audit,
+    imageApres: images.HelioFitness_apres_audit,
   },
   //////////////////////////// ECOLE //////////////////////
   {
