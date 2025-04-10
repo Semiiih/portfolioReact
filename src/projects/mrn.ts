@@ -65,6 +65,12 @@ import HelioFitness_apres_audit from "@/assets/HelioFitness_apres_audit.webp";
 import snowpactFigma from "@/assets/snowpactFigma.webp";
 import SnowpactAvant from "@/assets/Snowpact_avant.webp";
 import SnowpactApres from "@/assets/Snowpact_apres.webp";
+import signaleo1 from "@/assets/signaleo1.webp";
+import signaleo2 from "@/assets/signaleo2.webp";
+import gestEPI from "@/assets/gestEPI.webp";
+import RepoGestiEPI from "@/assets/RepoGestiEPI.webp";
+import diagrammeGestEPI from "@/assets/diagrammeGestEPI.webp";
+import figmaGestEPI from "@/assets/figmaGestEPI.webp";
 
 const images = {
   signaleoGithub,
@@ -99,6 +105,11 @@ const images = {
   snowpactFigma,
   SnowpactAvant,
   SnowpactApres,
+  signaleo1,
+  signaleo2,
+  RepoGestiEPI,
+  diagrammeGestEPI,
+  figmaGestEPI,
 };
 
 export const projectsData = [
@@ -237,6 +248,17 @@ export const projectsData = [
         icon: projectsIllustration1,
       },
     ],
+    mesMissions2images: `En partant de la conception visuelle établie dans Figma, j'ai contribué activement au développement de Signaleo :
+<ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+  <li style="margin-top: 10px;">J'ai développé des interfaces en respectant les maquettes Figma tout en optimisant leur implémentation technique pour garantir fluidité et réactivité.</li>
+  <li style="margin-top: 10px;">J'ai mis en place une SEO complète, optimisant les balises méta, la structure du code et les temps de chargement</li>
+  <li style="margin-top: 10px;">J'ai intégré et configuré des API externes pour récupérer automatiquement les informations des mairies</li>
+  <li style="margin-top: 10px;">J'ai collaboré avec l'équipe pour créer une expérience de signalement fluide et intuitive, permettant aux citoyens de contribuer facilement à l'amélioration de leur cadre de vie.</li>
+</ul>`,
+    showLabels: false,
+    imageAvant: images.signaleo1,
+    imageApres: images.signaleo2,
+
     imageGithub: images.signaleoGithub,
     imageFigma: images.signaleoFigma,
     imageSlack: images.signaleoSlack,
@@ -904,5 +926,129 @@ export const projectsData = [
     imageFigma: images.SchemaJo,
     imageSlack: images.ReadMeJo,
     imageAdnCron: images.JoRole,
+  },
+  {
+    type: "ecole",
+    logo: gestEPI,
+    title: "GestEPI",
+    description:
+      "Une gestion efficace des EPI pour garantir la sécurité de vos cordistes",
+    link: "https://example.com/school-project-three",
+    details: [
+      {
+        description: `Développement d'une application fullstack en React pour la gestion des EPI, backend avec API intégrant un système d'alertes automatiques pour les vérifications à programmer.`,
+        public: `Utilisateur en local`,
+        duree: `20 Janvier 2025 - 17 mars 2025 `,
+      },
+    ],
+    technologies: [
+      { name: "React", logo: logoReact },
+      { name: "phpMyAdmin", logo: logoSql },
+      { name: "Tailwind", logo: logoTailwind },
+    ],
+
+    patrimoineInformatique: "Structure et Développement du Projet",
+    githubFeatures: [
+      {
+        title: "GitHub",
+        subtitle: "Gestion du Code Source",
+        description2:
+          "Le projet est organisé en deux modules distincts dans un dépôt GitHub : GestEPIFront pour l'interface utilisateur et GestEPIBack pour la logique métier et l'API.",
+      },
+      {
+        description1: `La structure du projet est clairement divisée avec TypeScript offrant une base solide et maintenable. Les commits réguliers et la documentation permettent de suivre l'évolution du développement.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Le développement a suivi une approche méthodique avec des branches dédiées et des mises à jour régulières du README pour faciliter la prise en main du projet par d'autres développeurs.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `L'utilisation d'un dépôt centralisé a permis d'assurer une organisation optimale du code et une meilleure traçabilité des modifications, facilitant la collaboration et les revues de code.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    figmaFeatures: [
+      {
+        title: "Interface Utilisateur",
+        subtitle: "Maquettes et Design System",
+        description2: `Les maquettes ont été soigneusement conçues pour offrir une expérience intuitive aux gestionnaires d'EPI, avec une organisation claire des informations et des actions possibles.`,
+      },
+      {
+        description1: `L'interface principale présente un tableau de bord complet des EPI avec des colonnes bien structurées permettant de visualiser rapidement les informations essentielles : identifiant, marque, modèle, dates importantes et fréquence de contrôle.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Un système de couleurs intuitif est utilisé pour distinguer les différents statuts des équipements et des contrôles, facilitant la prise de décision pour les gestionnaires et cordistes.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Des formulaires de saisie épurés et fonctionnels ont été conçus pour l'ajout et la modification des EPI ainsi que pour l'enregistrement des contrôles, assurant une expérience utilisateur optimale.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    slackFeatures: [
+      {
+        title: "Analyse Fonctionnelle",
+        subtitle: "Diagramme des cas d'utilisation",
+        description2: `L'analyse des besoins a été formalisée par un diagramme UML des cas d'utilisation, mettant en évidence les fonctionnalités essentielles du système et les interactions avec les différents acteurs.`,
+      },
+      {
+        description1: `Le diagramme distingue clairement les deux types d'utilisateurs (gestionnaire d'EPI et cordiste) et leurs permissions respectives, structurant ainsi le développement des fonctionnalités et de la gestion des droits.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Les cas d'utilisation principaux sont organisés autour des fonctionnalités d'enregistrement et de consultation des EPI et de leurs contrôles, avec une attention particulière au système d'alertes pour les vérifications à venir.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Cette modélisation a servi de référence tout au long du développement, assurant que toutes les fonctionnalités requises soient correctement implémentées selon les besoins des utilisateurs finaux.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    mesMissions: [
+      {
+        title: "Mes missions principales",
+        subtitle: "Contribution au projet GestEPI",
+        description2: `Dans le cadre de ce projet, j'ai pris en charge plusieurs aspects clés du développement, allant de la conception à l'implémentation finale.`,
+      },
+      {
+        description1: `
+        - J'ai conçu et développé l'interface utilisateur en React et Tailwind CSS, en veillant à l'ergonomie et à la facilité d'utilisation pour les gestionnaires d'EPI et les cordistes.<br/>
+        - J'ai implémenté un système d'alertes automatiques pour notifier les contrôles à venir, crucial pour garantir la conformité et la sécurité des équipements.<br/>
+        - J'ai développé une API RESTful robuste permettant la gestion complète des données relatives aux EPI et à leurs contrôles.
+        `,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `
+        - J'ai conçu et mis en place la base de données en suivant les bonnes pratiques de modélisation, avec une attention particulière à l'intégrité des données.<br/>
+        - J'ai créé un système de filtrage et de recherche avancé pour faciliter la localisation rapide des équipements et l'accès à leurs historiques de contrôle.<br/>
+        - J'ai intégré un système d'authentification sécurisé différenciant les rôles des utilisateurs et leurs niveaux d'accès aux fonctionnalités.
+        `,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `
+        - J'ai assuré la documentation complète du code et du projet pour faciliter sa maintenance et son évolution future.<br/>
+        - J'ai mis en place des tests pour garantir la fiabilité et la robustesse de l'application, particulièrement critiques dans un contexte où la sécurité des utilisateurs finaux est en jeu.<br/>
+        - J'ai travaillé sur l'optimisation des performances pour assurer une expérience utilisateur fluide même avec un grand nombre d'équipements à gérer.
+        `,
+        icon: projectsIllustration1,
+      },
+    ],
+
+    //     mesMissions2images: `<p>Cette application a nécessité une attention particulière aux besoins des utilisateurs et aux exigences réglementaires:</p>
+    // <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+    //   <li>J'ai développé l'interface utilisateur en suivant fidèlement les maquettes tout en optimisant l'UX pour les gestionnaires d'EPI qui manipulent fréquemment l'application.</li>
+    //   <li>J'ai implémenté une logique métier robuste permettant le suivi précis des dates de contrôle et la gestion des statuts des équipements conformément aux normes de sécurité.</li>
+    //   <li>J'ai créé un système d'alerte visuel et par notification pour signaler les équipements nécessitant une vérification, priorisant ainsi la sécurité des cordistes.</li>
+    //   <li>J'ai optimisé la base de données pour garantir des performances optimales même avec un volume important d'équipements et d'historiques de contrôle.</li>
+    //   <li>J'ai veillé à rendre l'application responsive pour permettre son utilisation sur le terrain via des appareils mobiles par les gestionnaires et cordistes.</li>
+    //   <li>J'ai intégré des fonctionnalités d'export de données pour faciliter la génération de rapports et la conformité aux exigences d'audit.</li>
+    // </ul>`,
+    imageGithub: images.RepoGestiEPI,
+    imageFigma: images.figmaGestEPI,
+    imageSlack: images.diagrammeGestEPI,
   },
 ];

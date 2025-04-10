@@ -77,38 +77,32 @@ export const Bilan = () => {
       title: "Les bases du développement",
       description:
         "Apprentissage des fondamentaux du développement web, algorithmique, programmation orientée objet et bases de données.",
-      skills: ["HTML/CSS", "JavaScript", "SQL", "Algorithmique", "POO"],
-      projects: ["Site web statique", "Application console"],
+      skills: ["HTML/CSS", "JavaScript", "Git", "Algorithmique"],
+      projects: [" "],
     },
     {
       period: "Deuxième semestre",
       title: "Approfondissement technique",
       description:
         "Consolidation des connaissances et introduction aux frameworks modernes et à la gestion de projets.",
-      skills: ["React", "Node.js", "Express", "MongoDB", "Git"],
-      projects: ["Application CRUD", "Portfolio personnel"],
+      skills: ["React", "Node.js", "Next.js", "TypeScript"],
+      projects: ["site vitrine", "Portfolio personnel"],
     },
     {
       period: "Troisième semestre",
       title: "Spécialisation et projets professionnels",
       description:
         "Stage en entreprise et développement de compétences avancées en développement web et mobile.",
-      skills: ["Next.js", "TypeScript", "API REST", "Redux", "Tests unitaires"],
-      projects: ["Application métier", "Projet de stage"],
+      skills: ["Tests unitaires", "Méthodes agiles"],
+      projects: [""],
     },
     {
       period: "Quatrième semestre",
       title: "Projet final et préparation professionnelle",
       description:
         "Réalisation du projet final de BTS et préparation à l'insertion professionnelle.",
-      skills: [
-        "Gestion de projet",
-        "DevOps",
-        "CI/CD",
-        "Méthodes agiles",
-        "Veille technologique",
-      ],
-      projects: ["Projet final BTS", "Application full-stack"],
+      skills: ["CRUD"],
+      projects: [""],
     },
   ];
 
@@ -163,9 +157,9 @@ export const Bilan = () => {
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
               Durant ces deux années intensives, j'ai développé des compétences
-              techniques et personnelles qui m'ont permis d'acquérir une solide
-              formation en développement d'applications. Ce bilan présente mon
-              évolution, mes acquis et mes projets marquants.
+              techniques et personnelles qui m'ont permis d'acquérir de me
+              former en développement. Ce bilan présente mon évolution, mes
+              acquis et mes projets marquants.
             </p>
 
             <div className="mt-10 flex justify-center gap-6">
@@ -285,10 +279,9 @@ export const Bilan = () => {
                         Objectifs professionnels
                       </h4>
                       <p className="text-gray-300">
-                        Approfondir mes connaissances dans le développement web
-                        full-stack et m'orienter vers des projets innovants en
-                        mettant à profit l'ensemble des compétences acquises
-                        durant ma formation.
+                        Approfondir mes connaissances en développement web
+                        full-stack et poursuivre mes études en intégrant un
+                        Master.
                       </p>
                     </div>
                   </div>
@@ -417,22 +410,16 @@ export const Bilan = () => {
               Vers l'avenir
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Ces deux années de BTS m'ont permis de construire une base solide
-              de connaissances et de compétences. Je me sens désormais prêt à
-              relever de nouveaux défis, que ce soit en poursuivant mes études
-              ou en intégrant le monde professionnel.
+              Ces deux années de BTS m'ont permis d acquérir des connaissances
+              et de compétences. Je me sens désormais prêt à relever de nouveaux
+              défis, que ce soit en poursuivant mes études ou en intégrant le
+              monde professionnel.
             </p>
 
             <div className="mt-10 flex flex-col items-center space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0">
               <a
-                href="#contact"
-                className="rounded-md bg-violet-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-violet-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600"
-              >
-                Me contacter
-              </a>
-              <a
                 href="/projets"
-                className="rounded-md bg-gray-800 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800"
+                className="rounded-md bg-violet-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800"
               >
                 Voir mes projets
               </a>

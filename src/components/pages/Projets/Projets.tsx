@@ -9,7 +9,6 @@ import logoADN from "@/assets/logoADN.webp";
 import joTickets from "@/assets/joTickets.webp";
 import les4Fantastiques from "@/assets/Les4Fantastiques.png";
 import billetterie from "@/assets/billetterie.png";
-import mercedess_concess from "@/assets/mercedess_concess.png";
 import gestEPI from "@/assets/gestEPI.webp";
 import gestionEntretiens from "@/assets/gestionEntretiens.webp";
 import logoSnowpact from "@/assets/main-logo.png";
@@ -97,6 +96,13 @@ export const Projets = () => {
       link: "https://example.com/school-project-three",
     },
     {
+      logo: gestEPI,
+      title: "GestEPI",
+      description:
+        "Une gestion efficace des EPI pour garantir la sécurité de vos cordistes",
+      link: "https://example.com/school-project-three",
+    },
+    {
       logo: gestionEntretiens,
       title: "Gestion Entretiens",
       description:
@@ -104,23 +110,9 @@ export const Projets = () => {
       link: "https://example.com/school-project-three",
     },
     {
-      logo: gestEPI,
-      title: "GestEPI",
-      description:
-        "Une gestion efficace des EPI pour garantir la sécurité de vos cordistes",
-      link: "https://example.com/school-project-three",
-    },
-
-    {
       logo: billetterie,
       title: "Billetterie",
       description: "Achat de billet pour se balader dans la ville de Fukuoka",
-      link: "https://example.com/school-project-three",
-    },
-    {
-      logo: mercedess_concess,
-      title: "Mercedess_concess",
-      description: "site vitrine pour vendre des mercedess",
       link: "https://example.com/school-project-three",
     },
   ];

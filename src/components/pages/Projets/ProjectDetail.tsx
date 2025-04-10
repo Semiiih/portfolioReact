@@ -12,6 +12,7 @@ export const ProjectDetail = () => {
   const location = useLocation();
   const selectedProjectTitle = location.state?.projectTitle;
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [showLabels, setShowLabels] = useState(true);
 
   const project = projectsData.find(
     (proj) => proj.title === selectedProjectTitle,
@@ -204,9 +205,11 @@ export const ProjectDetail = () => {
                         className="h-auto max-w-full cursor-pointer rounded-lg shadow-lg transition-transform hover:scale-105"
                         onClick={() => setSelectedImage(project.imageAvant)}
                       />
-                      <span className="mt-10 rounded-md bg-violet-500 px-4 py-1 text-white">
-                        Avant
-                      </span>
+                      {project.showLabels !== false && (
+                        <span className="mt-10 rounded-md bg-violet-500 px-4 py-1 text-white">
+                          Avant
+                        </span>
+                      )}
                     </div>
                   )}
                   {project.imageApres && (
@@ -217,9 +220,11 @@ export const ProjectDetail = () => {
                         className="h-auto max-w-full cursor-pointer rounded-lg shadow-lg transition-transform hover:scale-105"
                         onClick={() => setSelectedImage(project.imageApres)}
                       />
-                      <span className="mt-10 rounded-md bg-violet-700 px-4 py-1 text-white">
-                        Après
-                      </span>
+                      {project.showLabels !== false && (
+                        <span className="mt-10 rounded-md bg-violet-700 px-4 py-1 text-white">
+                          Après
+                        </span>
+                      )}
                     </div>
                   )}
                 </div>
