@@ -1006,49 +1006,22 @@ export const projectsData = [
         icon: projectsIllustration1,
       },
     ],
-    mesMissions: [
-      {
-        title: "Mes missions principales",
-        subtitle: "Contribution au projet GestEPI",
-        description2: `Dans le cadre de ce projet, j'ai pris en charge plusieurs aspects clés du développement, allant de la conception à l'implémentation finale.`,
-      },
-      {
-        description1: `
-        - J'ai conçu et développé l'interface utilisateur en React et Tailwind CSS, en veillant à l'ergonomie et à la facilité d'utilisation pour les gestionnaires d'EPI et les cordistes.<br/>
-        - J'ai implémenté un système d'alertes automatiques pour notifier les contrôles à venir, crucial pour garantir la conformité et la sécurité des équipements.<br/>
-        - J'ai développé une API RESTful robuste permettant la gestion complète des données relatives aux EPI et à leurs contrôles.
-        `,
-        icon: projectsIllustration1,
-      },
-      {
-        description1: `
-        - J'ai conçu et mis en place la base de données en suivant les bonnes pratiques de modélisation, avec une attention particulière à l'intégrité des données.<br/>
-        - J'ai créé un système de filtrage et de recherche avancé pour faciliter la localisation rapide des équipements et l'accès à leurs historiques de contrôle.<br/>
-        - J'ai intégré un système d'authentification sécurisé différenciant les rôles des utilisateurs et leurs niveaux d'accès aux fonctionnalités.
-        `,
-        icon: projectsIllustration1,
-      },
-      {
-        description1: `
-        - J'ai assuré la documentation complète du code et du projet pour faciliter sa maintenance et son évolution future.<br/>
-        - J'ai mis en place des tests pour garantir la fiabilité et la robustesse de l'application, particulièrement critiques dans un contexte où la sécurité des utilisateurs finaux est en jeu.<br/>
-        - J'ai travaillé sur l'optimisation des performances pour assurer une expérience utilisateur fluide même avec un grand nombre d'équipements à gérer.
-        `,
-        icon: projectsIllustration1,
-      },
-    ],
 
-    //     mesMissions2images: `<p>Cette application a nécessité une attention particulière aux besoins des utilisateurs et aux exigences réglementaires:</p>
-    // <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
-    //   <li>J'ai développé l'interface utilisateur en suivant fidèlement les maquettes tout en optimisant l'UX pour les gestionnaires d'EPI qui manipulent fréquemment l'application.</li>
-    //   <li>J'ai implémenté une logique métier robuste permettant le suivi précis des dates de contrôle et la gestion des statuts des équipements conformément aux normes de sécurité.</li>
-    //   <li>J'ai créé un système d'alerte visuel et par notification pour signaler les équipements nécessitant une vérification, priorisant ainsi la sécurité des cordistes.</li>
-    //   <li>J'ai optimisé la base de données pour garantir des performances optimales même avec un volume important d'équipements et d'historiques de contrôle.</li>
-    //   <li>J'ai veillé à rendre l'application responsive pour permettre son utilisation sur le terrain via des appareils mobiles par les gestionnaires et cordistes.</li>
-    //   <li>J'ai intégré des fonctionnalités d'export de données pour faciliter la génération de rapports et la conformité aux exigences d'audit.</li>
-    // </ul>`,
+    mesMissions2images: `<p>Cette application a nécessité une attention particulière aux besoins des utilisateurs et aux exigences réglementaires:</p>
+<ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+  <li>J'ai développé l'interface utilisateur en suivant les maquettes pour les gestionnaires d'EPI qui manipulent fréquemment l'application.</li>
+  <li>J'ai implémenté une logique métier permettant le suivi précis des dates de contrôle et la gestion des statuts des équipements conformément aux normes de sécurité.</li>
+  <li>J'ai créé un système d'alerte visuel et par notification pour signaler les équipements nécessitant une vérification, priorisant ainsi la sécurité des cordistes.</li>
+  <li>J'ai veillé à rendre l'application responsive pour permettre son utilisation sur le terrain via des appareils mobiles par les gestionnaires et cordistes.</li>
+</ul>`,
+
+    showLabels: false,
+    imageAvant: images.signaleo1,
+    imageApres: images.signaleo2,
+
     imageGithub: images.RepoGestiEPI,
     imageFigma: images.figmaGestEPI,
     imageSlack: images.diagrammeGestEPI,
+    imageAdnCron: images.JoRole,
   },
 ];

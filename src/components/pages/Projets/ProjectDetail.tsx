@@ -12,7 +12,6 @@ export const ProjectDetail = () => {
   const location = useLocation();
   const selectedProjectTitle = location.state?.projectTitle;
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [showLabels, setShowLabels] = useState(true);
 
   const project = projectsData.find(
     (proj) => proj.title === selectedProjectTitle,
