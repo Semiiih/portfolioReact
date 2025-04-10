@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Interdire l'accès aux fichiers confidentiels
+Disallow: /admin/
+Disallow: /private/
+
+# Indiquer l'emplacement de votre sitemap
+Sitemap: https://www.semih-ck.com/sitemap.xml

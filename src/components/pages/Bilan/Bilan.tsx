@@ -11,13 +11,16 @@ import {
   FaReact,
   FaNodeJs,
   FaDatabase,
-  FaServer,
   FaCode,
   FaLaptopCode,
-  FaNetworkWired,
   FaProjectDiagram,
+  FaPython,
+  FaJava,
 } from "react-icons/fa";
 import { MacbookScroll } from "@/components/atoms/MacBookHeroScroll/HeroScroll";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiExpress } from "react-icons/si";
+import { BiLogoJavascript } from "react-icons/bi";
 
 export const Bilan = () => {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -28,24 +31,25 @@ export const Bilan = () => {
       category: "Développement Front-end",
       skills: [
         { name: "HTML/CSS", icon: <FaCode size={24} /> },
-        { name: "JavaScript", icon: <FaCode size={24} /> },
+        { name: "JavaScript", icon: <BiLogoJavascript size={24} /> },
         { name: "React", icon: <FaReact size={24} /> },
-        { name: "Next.js", icon: <FaReact size={24} /> },
+        { name: "Next.js", icon: <RiNextjsFill size={24} /> },
+        { name: "Java", icon: <FaJava size={24} /> },
+        { name: "Python", icon: <FaPython size={24} /> },
       ],
     },
     {
       category: "Développement Back-end",
       skills: [
         { name: "Node.js", icon: <FaNodeJs size={24} /> },
-        { name: "Express", icon: <FaNodeJs size={24} /> },
-        { name: "API REST", icon: <FaServer size={24} /> },
+        { name: "Express", icon: <SiExpress size={24} /> },
       ],
     },
     {
       category: "Base de données",
       skills: [
-        { name: "SQL", icon: <FaDatabase size={24} /> },
-        { name: "MongoDB", icon: <FaDatabase size={24} /> },
+        { name: "phpMyAdmin", icon: <FaDatabase size={24} /> },
+        { name: "PostgreSQL", icon: <FaDatabase size={24} /> },
       ],
     },
     {
@@ -54,13 +58,6 @@ export const Bilan = () => {
         { name: "Git/GitHub", icon: <FaCode size={24} /> },
         { name: "Méthodes agiles", icon: <FaProjectDiagram size={24} /> },
         { name: "Tests unitaires", icon: <FaLaptopCode size={24} /> },
-      ],
-    },
-    {
-      category: "Infrastructures",
-      skills: [
-        { name: "Réseaux", icon: <FaNetworkWired size={24} /> },
-        { name: "Sécurité", icon: <FaNetworkWired size={24} /> },
       ],
     },
   ];
@@ -117,31 +114,27 @@ export const Bilan = () => {
 
   const keyProjects = [
     {
-      title: "Application de gestion",
+      title: "Signaleo",
       description:
         "Développement d'une application de gestion pour une entreprise locale pendant mon stage de première année.",
-      tech: ["React", "Node.js", "Express", "MongoDB"],
-      role: "Développeur full-stack",
-      impact:
-        "L'application a permis d'optimiser la gestion des stocks et des commandes, réduisant considérablement le temps de traitement.",
+      tech: ["Next.JS", "Node.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
+      role: "Développement back-end front-end",
+      impact: "finirrrr",
     },
     {
-      title: "Plateforme e-learning",
+      title: "GestEPI",
       description:
         "Création d'une plateforme e-learning pour un établissement scolaire dans le cadre d'un projet de groupe.",
-      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
-      role: "Lead développeur front-end",
-      impact:
-        "La plateforme a été adoptée par de nombreux étudiants et a significativement amélioré l'expérience d'apprentissage à distance.",
+      tech: ["React", "TypeScript", "Node.js", "Tailwind CSS", "phpMyAdmin"],
+      role: "Développement back-end front-end",
+      impact: "finirrrr ",
     },
     {
-      title: "API de gestion de données",
-      description:
-        "Conception et développement d'une API RESTful pour la gestion de données métier.",
+      title: "",
+      description: "",
       tech: ["Node.js", "Express", "PostgreSQL", "Docker"],
-      role: "Développeur back-end",
-      impact:
-        "L'API a servi de fondation pour plusieurs applications internes, facilitant l'intégration et la maintenance.",
+      role: "",
+      impact: "finirrrr",
     },
   ];
 

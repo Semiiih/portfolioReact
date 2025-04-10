@@ -83,7 +83,7 @@ export const HomePage = () => {
               animateTo={{ from: "#8a8a8a", to: "#bfbfbf" }}
               animateDuration={2000}
             >
-              <p>MON PARCOURS TECHNOLOGIQUE</p>
+              <h1>MON PARCOURS TECHNOLOGIQUE</h1>
             </FancyText>
           </div>
           <TimeLine />
