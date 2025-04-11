@@ -6,6 +6,7 @@ import logo from "@/assets/logo.png";
 import logoMSW from "@/assets/logoMSW.png";
 import logoMRH from "@/assets/logoMRH.jpg";
 import logoADN from "@/assets/logoADN.webp";
+import logoComindLab from "@/assets/logoComindLab.avif";
 import joTickets from "@/assets/joTickets.webp";
 import les4Fantastiques from "@/assets/Les4Fantastiques.png";
 import billetterie from "@/assets/billetterie.png";
@@ -64,6 +65,13 @@ export const Projets = () => {
       title: "Mon Resto'Halal",
       description: "Application qui référence les restaurant halal en France",
       link: "https://example.com/project-three",
+    },
+    {
+      logo: logoComindLab,
+      title: "Comind LAB",
+      description:
+        "Plateforme de mise en relation entre particuliers et professionnels facilitant la délégation des démarches administratives",
+      link: "https://example.com/project-two",
     },
     {
       logo: logoMSW,

@@ -48,7 +48,7 @@ export const Bilan = () => {
     {
       category: "Base de données",
       skills: [
-        { name: "phpMyAdmin", icon: <FaDatabase size={24} /> },
+        { name: "MySQL", icon: <FaDatabase size={24} /> },
         { name: "PostgreSQL", icon: <FaDatabase size={24} /> },
       ],
     },
@@ -119,7 +119,7 @@ export const Bilan = () => {
       title: "GestEPI",
       description:
         "Création d'une plateforme e-learning pour un établissement scolaire dans le cadre d'un projet de groupe.",
-      tech: ["React", "TypeScript", "Node.js", "Tailwind CSS", "phpMyAdmin"],
+      tech: ["React", "TypeScript", "Node.js", "Tailwind CSS", "MySQL"],
       role: "Développement back-end front-end",
       impact: "finirrrr ",
     },
@@ -134,15 +134,15 @@ export const Bilan = () => {
 
   return (
     <PublicLayout>
-      <div className="relative overflow-hidden bg-gradient-to-b from-violet-900 to-slate-900 pt-16">
+      <div className="relative overflow-hidden bg-gradient-to-b from-violet-900 to-slate-900 md:pt-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 1 }}
-            className="mt-16 flow-root sm:mt-24"
+            className=" flow-root sm:mt-24"
           >
-            <div className="relative rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+            <div>
               <MacbookScroll />
             </div>
           </motion.div>

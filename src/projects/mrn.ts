@@ -53,6 +53,7 @@ import anthony from "@/assets/team/anthony.png";
 import alexandre from "@/assets/team/alexandre.png";
 import fahmi from "@/assets/team/fahmi.png";
 import semih from "@/assets/team/semih.png";
+import kabir from "@/assets/team/kabir.png";
 import farid from "@/assets/team/farid.png";
 import emir from "@/assets/team/emir.png";
 import yasin from "@/assets/team/yasin.png";
@@ -71,6 +72,27 @@ import gestEPI from "@/assets/gestEPI.webp";
 import RepoGestiEPI from "@/assets/RepoGestiEPI.webp";
 import diagrammeGestEPI from "@/assets/diagrammeGestEPI.webp";
 import figmaGestEPI from "@/assets/figmaGestEPI.webp";
+import logoMRH from "@/assets/logoMRH.jpg";
+import mrhRepo from "@/assets/mrhRepo.webp";
+import mrhSlack from "@/assets/mrhSlack.webp";
+import testUnitaireMrh from "@/assets/testUnitaireMrh.webp";
+import renduMrh from "@/assets/renduMrh.webp";
+import imageFrontGestEPI from "@/assets/imageFrontGestEPI.webp";
+import image2FrontGestEPI from "@/assets/image2FrontGestEPI.webp";
+import GestionEntretiensDiagrammeConceptuel from "@/assets/GestionEntretiensDiagrammeConceptuel.webp";
+import GestionEntretienslisteEndpoint from "@/assets/GestionEntretienslisteEndpoint.webp";
+import gestionEntretiens from "@/assets/gestionEntretiens.webp";
+import nodeJs from "@/assets/nodeJs.svg";
+import GestionsEntretiensRepo from "@/assets/GestionsEntretiensrepo.webp";
+import enonce from "@/assets/GestionsEntretiensPostman.webp";
+import postman from "@/assets/GestionsEntretiensEnnonce.webp";
+import mysql from "@/assets/mysql.webp";
+import postmanLogo from "@/assets/postman.svg";
+import billetterie from "@/assets/billetterie.png";
+import billeterieRepo from "@/assets/billeterieRepo.webp";
+import CarteFukuoka from "@/assets/CarteFukuoka.webp";
+import BilleterieTarif from "@/assets/BilleterieTarif.webp";
+import BilletterieRendu from "@/assets/BilletterieRendu.webp";
 
 const images = {
   signaleoGithub,
@@ -110,6 +132,22 @@ const images = {
   RepoGestiEPI,
   diagrammeGestEPI,
   figmaGestEPI,
+  logoMRH,
+  mrhRepo,
+  mrhSlack,
+  testUnitaireMrh,
+  renduMrh,
+  imageFrontGestEPI,
+  image2FrontGestEPI,
+  GestionEntretiensDiagrammeConceptuel,
+  GestionEntretienslisteEndpoint,
+  GestionsEntretiensRepo,
+  enonce,
+  postman,
+  billeterieRepo,
+  CarteFukuoka,
+  BilleterieTarif,
+  BilletterieRendu,
 };
 
 export const projectsData = [
@@ -384,7 +422,6 @@ export const projectsData = [
         icon: projectsIllustration1,
       },
     ],
-
     slackFeatures: [
       {
         title: "Slack",
@@ -486,6 +523,7 @@ export const projectsData = [
     imageLinear: images.adnLinear,
     imageAdnCron: images.adnCron,
   },
+
   {
     title: "MySocialWorker",
     type: "entreprise",
@@ -519,6 +557,7 @@ export const projectsData = [
     ],
     image: images.snowpactSlack,
   },
+
   {
     type: "entreprise",
     logo: helioFitnessLogo,
@@ -597,6 +636,103 @@ export const projectsData = [
     imageSlack: images.helioFitnessSlack,
     imageAvant: images.HelioFitness_avant_audit,
     imageApres: images.HelioFitness_apres_audit,
+  },
+  {
+    type: "entreprise",
+    logo: logoMRH,
+    title: "Mon Resto'Halal",
+    description: "Application qui référence les restaurant halal en France",
+    link: "https://example.com/school-project-one",
+    details: [
+      {
+        description: `Développement d'une plateforme de référencement de restaurants halal à travers la France, offrant aux utilisateurs un moyen simple de découvrir des établissements certifiés et aux restaurateurs.`,
+        public: `Les restaurateurs / Les consommateurs`,
+        duree: `3 Décembre 2024 - 3 Janvier 2025`,
+      },
+    ],
+    technologies: [
+      { name: "Next.js", logo: logoNext },
+      { name: "JavaScript", logo: logoJS },
+      { name: "TypeScript", logo: typeScript },
+      { name: "Npm", logo: logoNpm },
+      { name: "Yarn", logo: logoYarn },
+    ],
+    teamMembers: [
+      {
+        id: 1,
+        name: "Murat",
+        designation: "Développeur Front / Mobile / Back",
+        image: murat,
+      },
+      {
+        id: 2,
+        name: "Stephane",
+        designation: "Développeur Back / DevOps",
+        image: stephane,
+      },
+      {
+        id: 5,
+        name: "Emir",
+        designation: "Apprenti développeur",
+        image: emir,
+      },
+      {
+        id: 7,
+        name: "Semih",
+        designation: "Apprenti développeur",
+        image: semih,
+      },
+      {
+        id: 3,
+        name: "Kabir",
+        designation: "Développeur Back",
+        image: kabir,
+      },
+    ],
+    patrimoineInformatique: "Structure et Développement du Projet",
+    githubFeatures: [
+      {
+        title: "GitLab",
+        subtitle: "Gestion du Code Source",
+        description2:
+          "Le code est hébergé sur GitLab pour assurer la sauvegarde des données.",
+      },
+      {
+        description1: `Nous créons des branches spécifiques pour chaque changement ou fonctionnalité, ce qui permet de travailler sans affecter le code principal et facilite les revues de code avant intégration.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Les versions majeures du projet sont étiquetées pour assurer un historique clair et permettre des retours en arrière si nécessaire.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    figmaFeatures: [
+      {
+        title: "Slack",
+        subtitle: "Communication sur Slack",
+        description2: `On communique sur Slack en cas de besoin et surtout pour suivre l'avancement du projet ainsi que des tâches`,
+      },
+      {
+        description1: `Chaque aspect du projet dispose de son propre canal, permettant une organisation structurée et la séparation des discussions importantes.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Des notifications régulières nous informent des mises à jour et rappels de réunions, assurant une synchronisation de l'équipe.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    mesMissions2images: `<p>Mon rôle dans ce projet s'est principalement concentré sur l'amélioration du SEO et l'expérience utilisateur multilingue :</p>
+<ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+  <li style="margin-bottom: 10px;">J'ai développé un système de FAQ dynamique intelligent qui affiche automatiquement les meilleurs restaurants par catégorie (italien, japonais, etc.) dans chaque ville</li>
+  <li style="margin-bottom: 10px;">J'ai implémenté un support multilingue complet (français, anglais, turc, italien ,allemand) pour les FAQ et les descriptions de restaurants, élargissant ainsi la portée de la plateforme.</li>
+  <li style="margin-bottom: 10px;">J'ai mis en place une logique avancée de filtrage et de comparaison pour identifier les tags de restaurants les plus pertinents pour chaque ville, optimisant ainsi la pertinence des questions affichées.</li>
+  <li style="margin-bottom: 10px;">J'ai fais de tests unitaires pour garantir le bon fonctionnement des api</li>
+</ul>`,
+    showLabels: false,
+    imageGithub: images.mrhRepo,
+    imageFigma: images.mrhSlack,
+    imageAvant: images.testUnitaireMrh,
+    imageApres: images.renduMrh,
   },
   //////////////////////////// ECOLE //////////////////////
   {
@@ -927,6 +1063,7 @@ export const projectsData = [
     imageSlack: images.ReadMeJo,
     imageAdnCron: images.JoRole,
   },
+
   {
     type: "ecole",
     logo: gestEPI,
@@ -943,7 +1080,7 @@ export const projectsData = [
     ],
     technologies: [
       { name: "React", logo: logoReact },
-      { name: "phpMyAdmin", logo: logoSql },
+      { name: "MySQL", logo: logoSql },
       { name: "Tailwind", logo: logoTailwind },
     ],
 
@@ -1016,12 +1153,205 @@ export const projectsData = [
 </ul>`,
 
     showLabels: false,
-    imageAvant: images.signaleo1,
-    imageApres: images.signaleo2,
+    imageAvant: images.imageFrontGestEPI,
+    imageApres: images.image2FrontGestEPI,
 
     imageGithub: images.RepoGestiEPI,
     imageFigma: images.figmaGestEPI,
     imageSlack: images.diagrammeGestEPI,
     imageAdnCron: images.JoRole,
+  },
+
+  {
+    type: "ecole",
+    logo: gestionEntretiens,
+    title: "Gestion Entretiens",
+    description:
+      "Développement d'une API pour la gestion des avions et des techniciens de la base aérienne d'Istres",
+    link: "https://example.com/school-project-three",
+    details: [
+      {
+        description: `Développement d'une API en Node.js et TypeScript pour la gestion des maintenances aéronautiques. Cette application permet de suivre les entretiens d'avions réalisés par les techniciens de la base aérienne d'Istres.`,
+        public: `Utilisateur local`,
+        duree: `30 septembre 2024 - 24 octobre 2024`,
+      },
+    ],
+    technologies: [
+      { name: "Node.js", logo: nodeJs },
+      { name: "TypeScript", logo: typeScript },
+      { name: "MySQL", logo: mysql },
+      { name: "Postman", logo: postmanLogo },
+    ],
+
+    patrimoineInformatique: "Structure et Développement du Projet",
+    githubFeatures: [
+      {
+        title: "Architecture Backend",
+        subtitle: "Conception Modèle-Manager-Contrôleur",
+        description2:
+          "L'API a été développée en suivant une architecture MVC rigoureuse pour assurer la maintenabilité et la séparation des responsabilités.",
+      },
+      {
+        description1: `Chaque étape du développement a été versionnée avec Git, permettant un suivi précis des modifications et facilitant la collaboration au sein de l'équipe de développement.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `L'implémentation a été réalisée en TypeScript pour garantir une meilleure robustesse du code, avec une définition claire des interfaces et des types pour chaque entité du système.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Le projet a été structuré en modules distincts (avions, techniciens, maintenances) permettant une évolution indépendante de chaque partie du système et facilitant les tests unitaires.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    figmaFeatures: [
+      {
+        title: "Modélisation des Données",
+        subtitle: "Conception de la Base de Données",
+        description2: `Un modèle conceptuel de données a été établi pour définir clairement les relations entre les différentes entités: avions, techniciens et maintenances.`,
+      },
+      {
+        description1: `La table Maintenance constitue le cœur du système, reliant les techniciens aux avions qu'ils entretiennent, avec des clés étrangères assurant l'intégrité référentielle.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `La modélisation inclut des champs spécifiques comme les immatriculations d'avions (format standardisé), les heures de vol, et les différentes spécialisations des techniciens.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Cette structure permet un suivi précis de l'historique des maintenances, avec la possibilité d'analyser les interventions par technicien ou par avion.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    slackFeatures: [
+      {
+        title: "Interface API",
+        subtitle: "Endpoints RESTful",
+        description2: `L'API expose un ensemble complet d'endpoints RESTful pour la gestion des trois entités principales: avions, techniciens et maintenances.`,
+      },
+      {
+        description1: `Les opérations CRUD (Create, Read, Update, Delete) sont implémentées pour chaque ressource, permettant une gestion complète des données via des requêtes HTTP standards.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Les endpoints suivent les conventions RESTful, avec des URL cohérentes et des méthodes HTTP appropriées (GET pour récupérer, POST pour créer, PUT pour mettre à jour, DELETE pour supprimer).`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Chaque endpoint est documenté avec sa fonction, ses paramètres attendus et ses réponses possibles, facilitant l'intégration avec des applications frontend.`,
+        icon: projectsIllustration1,
+      },
+    ],
+
+    mesMissions2images: `<p>Dans le cadre de ce projet d'API pour la base aérienne,</p>
+    <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+      <li style="margin-bottom: 10px;">J'ai rédigé la note de conception d'architecture, en définissant le modèle de données relationnel</li>
+      <li style="margin-bottom: 10px;">J'ai conçu et implémenté l'ensemble des 15 endpoints couvrant toutes les opérations CRUD</li>
+      <li style="margin-bottom: 10px;">J'ai mis en place une gestion d'erreurs standardisée avec des codes HTTP et des messages explicites facilitant le débogage.</li>
+      <li style="margin-bottom: 10px;">J'ai assuré la documentation technique des l'API, permettant de comprendre l'utilisation de chaque API.</li>
+    </ul>`,
+
+    showLabels: false,
+    imageAvant: images.enonce,
+    imageApres: images.postman,
+
+    imageGithub: images.GestionsEntretiensRepo,
+    imageFigma: images.GestionEntretiensDiagrammeConceptuel,
+    imageSlack: images.GestionEntretienslisteEndpoint,
+    imageAdnCron: images.JoRole,
+  },
+
+  {
+    type: "ecole",
+    logo: billetterie,
+    title: "Billetterie",
+    description: "Achat de billet pour se balader dans la ville de Fukuoka",
+    link: "https://example.com/school-project-three",
+    details: [
+      {
+        description: `Développement d'un système de billetterie de commande pour le métro de Fukuoka au Japon, permettant l'achat de billets selon les zones tarifaires et les types de voyageurs.`,
+        public: `Personnel de gare et agents de billetterie`,
+        duree: `4 Mars 2024 - 22 Avril 2024`,
+      },
+    ],
+    technologies: [{ name: "Python", logo: logoPython }],
+
+    patrimoineInformatique: "Structure et Fonctionnalités du Projet",
+    githubFeatures: [
+      {
+        title: "Gestion de Version",
+        subtitle: "Développement avec GitHub",
+        description2:
+          "Le projet a été sauvegardé sur GitHub, permettant un suivi précis des modifications du code à chaque étape de développement.",
+      },
+      {
+        description1: `Des commits réguliers et descriptifs, documentant systématiquement les fonctionnalités ajoutées et les corrections apportées pour faciliter la compréhension de l'évolution du projet.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Cette méthode de travail a permis de maintenir un historique complet du développement et offre la possibilité de revenir à des versions antérieures en cas de besoin`,
+        icon: projectsIllustration1,
+      },
+    ],
+    slackFeatures: [
+      {
+        title: "Système Tarifaire",
+        subtitle: "Zones et tarifs du métro de Fukuoka",
+        description2: `Le système implémente la grille tarifaire officielle du métro de Fukuoka`,
+      },
+      {
+        description1: `La tarification est basée sur quatre zones distinctes`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Les tarifs réduits pour enfants et personnes handicapées sont automatiquement calculés à 50% du tarif normal`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Le système gère intelligemment le calcul des distances entre les stations en fonction du sens du trajet, permettant d'utiliser l'application dans les deux directions`,
+        icon: projectsIllustration1,
+      },
+    ],
+    figmaFeatures: [
+      {
+        title: "Modèle du Réseau",
+        subtitle: "Plan officiel du métro de Fukuoka",
+        description2: `Le système est basé sur la cartographie exacte du réseau de métro de Fukuoka, en respectant précisément les distances entre les stations et la numérotation officielle.`,
+      },
+      {
+        description1: `J'ai utilisé le plan officiel de la ligne Airport pour implémenter un système de calcul précis des distances entre stations.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Les stations sont référencées selon leur numérotation officielle, facilitant ainsi l'identification et la correspondance avec le système réel utilisé dans le métro.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    mesMissions: [
+      {
+        title: "Mon Rôle dans le Projet",
+        subtitle: "Missions et Contributions",
+        description2: `Dans ce projet, j’ai travaillé en autonomie et développé un système complet offrant les fonctionnalités suivantes :`,
+      },
+      {
+        description1: `
+    <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+      <li style="margin-bottom: 10px;">J'ai implémenté un algorithme précis de calcul de distance permettant de déterminer la zone tarifaire applicable quel que soit le sens du trajet sur la ligne Airport.</li>
+      <li style="margin-bottom: 10px;">J'ai développé un système de sélection des stations par numéro, conforme à la numérotation officielle, pour minimiser les erreurs de saisie dans un contexte d'urgence.</li>
+      <li style="margin-bottom: 10px;">J'ai créé une gestion complète des tarifs différenciés (normal et réduit) avec application automatique des règles spécifiques à chaque zone.</li>
+      <li style="margin-bottom: 10px;">J'ai optimisé l'expérience utilisateur avec un affichage clair des informations essentielles (prix, distance, voie à emprunter)</li>
+    </ul>`,
+        icon: projectsIllustration1,
+      },
+    ],
+
+    showLabels: false,
+    imageAvant: images.BilletterieRendu,
+    imageApres: images.postman,
+
+    imageGithub: images.billeterieRepo,
+    imageFigma: images.CarteFukuoka,
+    imageSlack: images.BilleterieTarif,
+    imageAdnCron: images.BilletterieRendu,
   },
 ];

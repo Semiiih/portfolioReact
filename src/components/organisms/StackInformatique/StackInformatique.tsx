@@ -131,8 +131,8 @@ export default function StackInformatique() {
                   </h3>
 
                   <p className="mt-2 max-w-lg text-sm/6 text-gray-400">
-                    Docker, Mailhog, Make, Storybook, Firebase, PhpMyAdmin,
-                    Mocky Vitejs, PosgreAdmin, Adminer
+                    Docker, Mailhog, Make, Storybook, Firebase, MySQL, Mocky
+                    Vitejs, PosgreAdmin, Adminer
                   </p>
                 </span>
               </div>
