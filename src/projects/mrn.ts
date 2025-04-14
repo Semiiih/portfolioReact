@@ -50,13 +50,10 @@ import JoRole from "@/assets/JoRole.webp";
 import murat from "@/assets/team/murat.png";
 import stephane from "@/assets/team/stephane.png";
 import anthony from "@/assets/team/anthony.png";
-import alexandre from "@/assets/team/alexandre.png";
-import fahmi from "@/assets/team/fahmi.png";
 import semih from "@/assets/team/semih.png";
 import kabir from "@/assets/team/kabir.png";
-import farid from "@/assets/team/farid.png";
+import fatih from "@/assets/team/fatih.png";
 import emir from "@/assets/team/emir.png";
-import yasin from "@/assets/team/yasin.png";
 import mohamed from "@/assets/team/mohammed.png";
 import helioFitnessGitHub from "@/assets/helioFitnessGitHub.webp";
 import helioFitnessFigma from "@/assets/helioFitnessFigma.webp";
@@ -93,6 +90,20 @@ import billeterieRepo from "@/assets/billeterieRepo.webp";
 import CarteFukuoka from "@/assets/CarteFukuoka.webp";
 import BilleterieTarif from "@/assets/BilleterieTarif.webp";
 import BilletterieRendu from "@/assets/BilletterieRendu.webp";
+import signaleoFullScreenshot from "@/assets/signaleoFullScreenshot.webp";
+import signaleoFullScreenshot2 from "@/assets/signaleoFullScreenshot2.webp";
+import signaleoFullScreenshot3 from "@/assets/signaleoFullScreenshot3.png";
+import signaleoFullScreenshot4 from "@/assets/signaleoFullScreenshot4.webp";
+import signaleoFullScreenshot5 from "@/assets/signaleoFullScreenshot5.webp";
+import snowpactFullScreenshot from "@/assets/snowpactFullScreenshot.webp";
+import snowpactFullScreenshot2 from "@/assets/snowpactFullScreenshot2.webp";
+import snowpactFullScreenshot3 from "@/assets/snowpactFullScreenshot3.png";
+import snowpactFullScreenshot4 from "@/assets/snowpactFullScreenshot4.webp";
+import snowpactFullScreenshot5 from "@/assets/snowpactFullScreenshot5.png";
+import heliofitnessFullScreenshot from "@/assets/heliofitnessFullScreenshot.webp";
+import heliofitnessFullScreenshot2 from "@/assets/heliofitnessFullScreenshot2.webp";
+import heliofitnessFullScreenshot3 from "@/assets/heliofitnessFullScreenshot3.png";
+import heliofitnessFullScreenshot4 from "@/assets/heliofitnessFullScreenshot4.webp";
 
 const images = {
   signaleoGithub,
@@ -148,6 +159,20 @@ const images = {
   CarteFukuoka,
   BilleterieTarif,
   BilletterieRendu,
+  signaleoFullScreenshot,
+  signaleoFullScreenshot2,
+  signaleoFullScreenshot3,
+  signaleoFullScreenshot4,
+  signaleoFullScreenshot5,
+  snowpactFullScreenshot,
+  snowpactFullScreenshot2,
+  snowpactFullScreenshot3,
+  snowpactFullScreenshot4,
+  snowpactFullScreenshot5,
+  heliofitnessFullScreenshot,
+  heliofitnessFullScreenshot2,
+  heliofitnessFullScreenshot3,
+  heliofitnessFullScreenshot4,
 };
 
 export const projectsData = [
@@ -192,22 +217,10 @@ export const projectsData = [
         image: mohamed,
       },
       {
-        id: 4,
-        name: "Yasin",
-        designation: "Développeur Front",
-        image: yasin,
-      },
-      {
         id: 5,
         name: "Emir",
         designation: "Apprenti développeur",
         image: emir,
-      },
-      {
-        id: 6,
-        name: "Farid",
-        designation: "Développeur Front / Mobile / Back",
-        image: farid,
       },
       {
         id: 7,
@@ -216,16 +229,10 @@ export const projectsData = [
         image: semih,
       },
       {
-        id: 8,
-        name: "Fahmi",
-        designation: "Développeur Front / Mobile / Back",
-        image: fahmi,
-      },
-      {
         id: 9,
-        name: "Alexandre",
-        designation: "Développeur Back",
-        image: alexandre,
+        name: "Fatih",
+        designation: "Apprenti développeur",
+        image: fatih,
       },
       {
         id: 10,
@@ -293,6 +300,7 @@ export const projectsData = [
   <li style="margin-top: 10px;">J'ai intégré et configuré des API externes pour récupérer automatiquement les informations des mairies</li>
   <li style="margin-top: 10px;">J'ai collaboré avec l'équipe pour créer une expérience de signalement fluide et intuitive, permettant aux citoyens de contribuer facilement à l'amélioration de leur cadre de vie.</li>
 </ul>`,
+
     showLabels: false,
     imageAvant: images.signaleo1,
     imageApres: images.signaleo2,
@@ -301,6 +309,33 @@ export const projectsData = [
     imageFigma: images.signaleoFigma,
     imageSlack: images.signaleoSlack,
     imageLinear: images.LinearSignaleo,
+    webScreenshots: [
+      {
+        label: "Accueil",
+        src: images.signaleoFullScreenshot,
+        path: "",
+      },
+      {
+        label: "Application mobile",
+        src: images.signaleoFullScreenshot2,
+        path: "application-mobile",
+      },
+      {
+        label: "FAQ",
+        src: images.signaleoFullScreenshot3,
+        path: "faq",
+      },
+      {
+        label: "A propos",
+        src: images.signaleoFullScreenshot4,
+        path: "a-propos",
+      },
+      {
+        label: "Mairie",
+        src: images.signaleoFullScreenshot5,
+        path: "mairie",
+      },
+    ],
   },
   {
     title: "Snowpact",
@@ -382,6 +417,34 @@ export const projectsData = [
     imageGithub: images.snowpactGithub,
     imageFigma: images.snowpactFigma,
     imageSlack: images.snowpactSlack,
+
+    webScreenshots: [
+      {
+        label: "Accueil",
+        src: images.snowpactFullScreenshot,
+        path: "",
+      },
+      {
+        label: "Expertise",
+        src: images.snowpactFullScreenshot2,
+        path: "expertise",
+      },
+      {
+        label: "développement web",
+        src: images.snowpactFullScreenshot3,
+        path: "developpement-web",
+      },
+      {
+        label: "L'équipe",
+        src: images.snowpactFullScreenshot4,
+        path: "l-equipe",
+      },
+      {
+        label: "Blog",
+        src: images.snowpactFullScreenshot5,
+        path: "blog",
+      },
+    ],
   },
   {
     title: "ADN",
@@ -392,7 +455,7 @@ export const projectsData = [
     details: [
       {
         description: `Site français au service du stream d'animation et anime en vostfr et vf`,
-        public: `Citoyens`,
+        public: `Utilisateurs d'ADN`,
         duree: `10 Sept 2024 - 10 Oct 2024`,
       },
     ],
@@ -404,6 +467,26 @@ export const projectsData = [
       { name: "TypeScript", logo: typeScript },
       { name: "Npm", logo: logoNpm },
       { name: "Yarn", logo: logoYarn },
+    ],
+    teamMembers: [
+      {
+        id: 1,
+        name: "Murat",
+        designation: "Développeur Front / Mobile / Back",
+        image: murat,
+      },
+      {
+        id: 2,
+        name: "Kabir",
+        designation: "Développeur Back",
+        image: kabir,
+      },
+      {
+        id: 3,
+        name: "Emir",
+        designation: "Apprenti développeur",
+        image: emir,
+      },
     ],
     patrimoineInformatique: "Patrimoine informatique",
     githubFeatures: [
@@ -422,7 +505,7 @@ export const projectsData = [
         icon: projectsIllustration1,
       },
     ],
-    slackFeatures: [
+    figmaFeatures: [
       {
         title: "Slack",
         subtitle: "Communication sur Slack",
@@ -519,7 +602,7 @@ export const projectsData = [
       },
     ],
     imageGithub: images.adnRepo,
-    imageSlack: images.adnSlack,
+    imageFigma: images.adnSlack,
     imageLinear: images.adnLinear,
     imageAdnCron: images.adnCron,
   },
@@ -636,6 +719,29 @@ export const projectsData = [
     imageSlack: images.helioFitnessSlack,
     imageAvant: images.HelioFitness_avant_audit,
     imageApres: images.HelioFitness_apres_audit,
+
+    webScreenshots: [
+      {
+        label: "Accueil",
+        src: images.heliofitnessFullScreenshot,
+        path: "",
+      },
+      {
+        label: "La Team",
+        src: images.heliofitnessFullScreenshot2,
+        path: "team",
+      },
+      {
+        label: "Concept",
+        src: images.heliofitnessFullScreenshot3,
+        path: "cours-de-crossfit",
+      },
+      {
+        label: "Nos Clubs",
+        src: images.heliofitnessFullScreenshot4,
+        path: "cergy-pontoise",
+      },
+    ],
   },
   {
     type: "entreprise",

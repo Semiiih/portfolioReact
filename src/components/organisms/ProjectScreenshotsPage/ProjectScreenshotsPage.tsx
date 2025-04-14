@@ -1,0 +1,109 @@
+import { useState } from "react";
+import FancyText from "@carefully-coded/react-text-gradient";
+
+export const ProjectScreenshotsPage = ({ project }: any) => {
+  const [activePage, setActivePage] = useState(0);
+
+  const screenshots = project.webScreenshots;
+
+  return (
+    <div className="mx-auto my-10 w-full max-w-4xl">
+      <h2 className="mb-4 text-center text-2xl font-bold">
+        <FancyText
+          gradient={{ from: "#FFFF", to: "#808080", type: "linear" }}
+          animateTo={{ from: "#8a8a8a", to: "#FFFF" }}
+          animateDuration={1000}
+        >
+          Aperçu du site
+        </FancyText>
+      </h2>
+
+      {/* Boutons des pages*/}
+      <div className="mb-4 flex flex-wrap justify-center gap-2">
+        {screenshots.map((screenshot: any, index: any) => (
+          <button
+            key={index}
+            onClick={() => setActivePage(index)}
+            className={`rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ${
+              activePage === index
+                ? "scale-105 transform bg-violet-600 text-white shadow-lg"
+                : "bg-slate-700 text-gray-300 hover:bg-slate-600 hover:text-white"
+            }`}
+          >
+            {screenshot.label || `Page ${index + 1}`}
+          </button>
+        ))}
+      </div>
+
+      <div className="relative">
+        <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl border-4 border-violet-500 bg-slate-200 shadow-xl shadow-violet-500/30">
+          <div className="scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-slate-700 h-[600px] overflow-auto">
+            {screenshots[activePage].src ? (
+              <img
+                src={screenshots[activePage].src}
+                alt={`Capture d'écran ${screenshots[activePage].label} - ${project.title}`}
+                className="w-full object-contain"
+                style={{ minWidth: "100%", minHeight: "100%" }}
+              />
+            ) : (
+              <div className="flex h-full flex-col items-center justify-center bg-slate-200 p-10">
+                <div className="mb-4 text-4xl text-gray-400">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-20 w-20"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1}
+                      d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div className="text-center text-lg font-semibold text-gray-600">
+                  {project.title} - {screenshots[activePage].label}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Barre navigateur */}
+          <div className="absolute left-0 top-0 flex w-full items-center justify-between bg-slate-800 px-4 py-2">
+            <div className="flex space-x-2">
+              <div className="h-3 w-3 rounded-full bg-red-500"></div>
+              <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
+              <div className="h-3 w-3 rounded-full bg-green-500"></div>
+            </div>
+            <div className="mx-4 flex-1">
+              <div className="mx-auto w-full max-w-md truncate rounded-full bg-slate-700 px-4 py-1 text-center text-xs text-white">
+                {project.title.toLowerCase().replace(/\s+/g, "")}.com
+                {screenshots[activePage].path
+                  ? "/" + screenshots[activePage].path
+                  : ""}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Pagination  */}
+      <div className="mt-4 flex justify-center space-x-1">
+        {screenshots.map((_: any, index: any) => (
+          <button
+            key={index}
+            onClick={() => setActivePage(index)}
+            className={`h-2.5 w-2.5 rounded-full transition-colors ${
+              activePage === index
+                ? "bg-violet-600"
+                : "bg-slate-600 hover:bg-slate-500"
+            }`}
+            aria-label={`Aller à la page ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};

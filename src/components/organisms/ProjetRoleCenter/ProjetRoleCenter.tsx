@@ -36,7 +36,7 @@ export function ProjetRoleCenter({ features, image }: ProjetRoleProps) {
 
   return (
     <div className="bg-slate-800 py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl rounded-xl bg-white p-20 px-6 shadow-2xl shadow-violet-500 lg:px-8">
+      <div className=" mx-auto max-w-7xl rounded-xl bg-white p-20 shadow-2xl shadow-violet-500 lg:px-8">
         <div className="mx-auto max-w-2xl text-center lg:max-w-none">
           {image && (
             <img

@@ -7,6 +7,7 @@ import { HeroScroll } from "@/components/atoms/HeroScroll/HeroScroll";
 import { ProjetRoleCenter } from "@/components/organisms/ProjetRoleCenter/ProjetRoleCenter";
 import { Colaboration } from "@/components/atoms/Colaboration";
 import { useState } from "react";
+import { ProjectScreenshotsPage } from "@/components/organisms/ProjectScreenshotsPage";
 
 export const ProjectDetail = () => {
   const location = useLocation();
@@ -23,9 +24,9 @@ export const ProjectDetail = () => {
 
   return (
     <PublicLayout>
-      <div className="flex flex-col items-center overflow-hidden bg-slate-800 pt-20 font-bold text-white">
-        <div className="flex flex-col items-center gap-7 text-center text-[50px]">
-          <h1>
+      <div className="flex flex-col items-center overflow-hidden bg-slate-800 px-4 pt-20 font-bold text-white sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center gap-4 text-center sm:gap-7">
+          <h1 className="text-3xl sm:text-[50px]">
             <FancyText
               gradient={{ from: "#FFFF", to: "#808080", type: "linear" }}
               animateTo={{ from: "#8a8a8a", to: "#FFFF" }}
@@ -37,20 +38,20 @@ export const ProjectDetail = () => {
           <img
             src={project.logo}
             alt={project.title}
-            className="w-32 animate-wiggle rounded-full animate-duration-[2000ms] animate-fill-backwards animate-infinite animate-ease-linear"
+            className="w-24 animate-wiggle rounded-full animate-duration-[2000ms] animate-fill-backwards animate-infinite animate-ease-linear sm:w-32"
           />
         </div>
-        <p className="pb-20 pt-6">
+        <p className="max-w-3xl pb-12 pt-6 text-center sm:pb-20">
           {typeof project.details === "string"
             ? project.details
             : project.description}
         </p>
-        {/* <a href={project.link} target="_blank" rel="noopener noreferrer">
-          Visit Project
-        </a> */}
-        <div className="text-center">
-          <p className="mb-4 border-b-2 pb-2 text-[25px] ">Description</p>
-          <p>
+
+        <div className="w-full max-w-4xl text-center">
+          <p className="mb-4 border-b-2 pb-2 text-xl sm:text-[25px]">
+            Description
+          </p>
+          <p className="px-4">
             <FancyText
               gradient={{ from: "#FFFF", to: "#8a8a8a", type: "linear" }}
               animateTo={{ from: "#8a8a8a", to: "#FFFF" }}
@@ -62,9 +63,10 @@ export const ProjectDetail = () => {
             </FancyText>
           </p>
         </div>
-        <div className="flex flex-row gap-20 pt-20 text-center">
-          <div className="flex-1text-center">
-            <p className="mx-24 mb-4 border-b-2 pb-2 text-[25px]">
+
+        <div className="flex w-full max-w-4xl flex-col gap-8 pt-12 text-center sm:flex-row sm:gap-20 sm:pt-20">
+          <div className="flex-1 text-center">
+            <p className="mx-auto mb-4 max-w-xs border-b-2 pb-2 text-xl sm:text-[25px]">
               Durée de la mission
             </p>
             <p>
@@ -76,11 +78,11 @@ export const ProjectDetail = () => {
                 {typeof project.details === "string"
                   ? project.details
                   : project.details[0]?.duree}
-              </FancyText>{" "}
+              </FancyText>
             </p>
           </div>
           <div className="flex-1 text-center">
-            <p className=" mx-24 mb-4 border-b-2 pb-2 text-[25px]">
+            <p className="mx-auto mb-4 max-w-xs border-b-2 pb-2 text-xl sm:text-[25px]">
               Public ciblé
             </p>
             <p>
@@ -157,10 +159,16 @@ export const ProjectDetail = () => {
             />
           )}
         </div>
+
         {project.imageLinear && <HeroScroll image={project.imageLinear} />}
+
+        {project.webScreenshots && project.webScreenshots.length > 0 && (
+          <ProjectScreenshotsPage project={project} />
+        )}
+
         <div className="flex flex-row gap-20 pt-32 text-center ">
           <div className="flex-1 text-center">
-            <p className="mx-24 mb-4 pb-2 text-[50px]">
+            <p className="mb-4 pb-2 text-[50px] md:mx-24">
               <FancyText
                 gradient={{ from: "#FFFF", to: "#808080", type: "linear" }}
                 animateTo={{ from: "#8a8a8a", to: "#FFFF" }}
@@ -180,7 +188,7 @@ export const ProjectDetail = () => {
               </div>
             )}
             {project.mesMissions2images && (
-              <div className="flex flex-col items-center justify-center gap-8 px-10">
+              <div className="flex flex-col items-center justify-center gap-8 md:px-10">
                 {project.mesMissions2images && (
                   <div className="mt-8 max-w-4xl rounded-xl bg-slate-800/30 p-6 text-white">
                     <h3 className="mb-4 text-center text-xl font-semibold">
