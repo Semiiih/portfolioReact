@@ -78,7 +78,7 @@ export const Bilan = () => {
       description:
         "Apprentissage des fondamentaux du développement web, algorithmique, programmation orientée objet et bases de données.",
       skills: ["HTML/CSS", "JavaScript", "Git", "Algorithmique"],
-      projects: [" "],
+      projects: ["formation Udemy, OpenClassrooms "],
     },
     {
       period: "Deuxième semestre",
@@ -94,7 +94,7 @@ export const Bilan = () => {
       description:
         "Stage en entreprise et développement de compétences avancées en développement web et mobile.",
       skills: ["Tests unitaires", "Méthodes agiles"],
-      projects: [""],
+      projects: ["Signaleo"],
     },
     {
       period: "Quatrième semestre",
@@ -102,7 +102,7 @@ export const Bilan = () => {
       description:
         "Réalisation du projet final de BTS et préparation à l'insertion professionnelle.",
       skills: ["CRUD"],
-      projects: [""],
+      projects: ["ADN"],
     },
   ];
 
@@ -110,25 +110,27 @@ export const Bilan = () => {
     {
       title: "Signaleo",
       description:
-        "Développement d'une application de gestion pour une entreprise locale pendant mon stage de première année.",
-      tech: ["Next.JS", "Node.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
+        "Application pour contribuer au bien être de sa ville en signalant les incidents",
+      tech: [
+        "Next.JS",
+        "Node.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "Docker",
+        "PostgreSQL",
+      ],
       role: "Développement back-end front-end",
-      impact: "finirrrr",
+      impact:
+        "Améliorations de mon niveau dans le développement front et back, découverte de React Native,",
     },
     {
       title: "GestEPI",
       description:
-        "Création d'une plateforme e-learning pour un établissement scolaire dans le cadre d'un projet de groupe.",
+        "Une gestion efficace des EPI pour garantir la sécurité de vos cordistes",
       tech: ["React", "TypeScript", "Node.js", "Tailwind CSS", "MySQL"],
       role: "Développement back-end front-end",
-      impact: "finirrrr ",
-    },
-    {
-      title: "",
-      description: "",
-      tech: ["Node.js", "Express", "PostgreSQL", "Docker"],
-      role: "",
-      impact: "finirrrr",
+      impact: "meilleure interpretations des api, création d'un back-office",
     },
   ];
 
@@ -411,9 +413,8 @@ export const Bilan = () => {
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
               Ces deux années de BTS m'ont permis d acquérir des connaissances
-              et de compétences. Je me sens désormais prêt à relever de nouveaux
-              défis, que ce soit en poursuivant mes études ou en intégrant le
-              monde professionnel.
+              et de compétences. Je me sens désormais prêt à poursuivre mes
+              études, avec l’objectif d’intégrer un bachelor, puis un master.
             </p>
 
             <div className="mt-10 flex flex-col items-center space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0">

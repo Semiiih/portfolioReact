@@ -13,6 +13,10 @@ import logoTailwind from "@/assets/TailwindCSS.png";
 import logoReact from "@/assets/react.png";
 import logoNpm from "@/assets/npm.png";
 import php from "@/assets/PHP.svg";
+import java from "@/assets/java.png";
+import intellij_idea from "@/assets/intellij-idea.svg";
+import alwaysdata from "@/assets/alwaysdataLogo.webp";
+import javafxscenebuilder from "@/assets/javafxscenebuilder.svg";
 import typeScript from "@/assets/typeScript.svg";
 import logoYarn from "@/assets/yarn.png";
 import logoSql from "@/assets/logoSql.svg";
@@ -50,10 +54,12 @@ import JoRole from "@/assets/JoRole.webp";
 import murat from "@/assets/team/murat.png";
 import stephane from "@/assets/team/stephane.png";
 import anthony from "@/assets/team/anthony.png";
+import farid from "@/assets/team/farid.png";
 import semih from "@/assets/team/semih.png";
 import kabir from "@/assets/team/kabir.png";
 import fatih from "@/assets/team/fatih.png";
 import emir from "@/assets/team/emir.png";
+import yasin from "@/assets/team/yasin.png";
 import mohamed from "@/assets/team/mohammed.png";
 import helioFitnessGitHub from "@/assets/helioFitnessGitHub.webp";
 import helioFitnessFigma from "@/assets/helioFitnessFigma.webp";
@@ -104,6 +110,24 @@ import heliofitnessFullScreenshot from "@/assets/heliofitnessFullScreenshot.webp
 import heliofitnessFullScreenshot2 from "@/assets/heliofitnessFullScreenshot2.webp";
 import heliofitnessFullScreenshot3 from "@/assets/heliofitnessFullScreenshot3.png";
 import heliofitnessFullScreenshot4 from "@/assets/heliofitnessFullScreenshot4.webp";
+import slackMSW from "@/assets/slackMSW.webp";
+import figmaMSW from "@/assets/figmaMSW.webp";
+import githubMSW from "@/assets/githubMSW.webp";
+import MSWscreenshotPage from "@/assets/MSWscreenshotPage.webp";
+import MSWscreenshotPage2 from "@/assets/MSWscreenshotPage2.webp";
+import MSWscreenshotPage3 from "@/assets/MSWscreenshotPage3.webp";
+import MSWscreenshotPage4 from "@/assets/MSWscreenshotPage4.webp";
+import mswSEO from "@/assets/mswSEO.webp";
+import mswSite from "@/assets/mswSite.webp";
+import logoComindLab from "@/assets/logoComindLab.avif";
+import comindLabExcel from "@/assets/comindLabExcel.webp";
+import comindLab_homepage from "@/assets/comindLab_homepage.webp";
+import comindLab_services from "@/assets/comindLabServices.webp";
+import comindLabFigma from "@/assets/maquetteComindLab.webp";
+import treiinquille from "@/assets/treiinquille-logo.webp";
+import avatarNoir from "@/assets/team/avatarNoir.webp";
+import CahierTechnique from "@/assets/CahierTechnique.pdf";
+import treiinquilleGitHub from "@/assets/treiinquilleGitHub.webp";
 
 const images = {
   signaleoGithub,
@@ -173,6 +197,21 @@ const images = {
   heliofitnessFullScreenshot2,
   heliofitnessFullScreenshot3,
   heliofitnessFullScreenshot4,
+  figmaMSW,
+  slackMSW,
+  githubMSW,
+  MSWscreenshotPage,
+  MSWscreenshotPage2,
+  MSWscreenshotPage3,
+  MSWscreenshotPage4,
+  mswSEO,
+  mswSite,
+  comindLabExcel,
+  comindLab_homepage,
+  comindLab_services,
+  comindLabFigma,
+  treiinquilleGitHub,
+  CahierTechnique,
 };
 
 export const projectsData = [
@@ -294,12 +333,12 @@ export const projectsData = [
       },
     ],
     mesMissions2images: `En partant de la conception visuelle établie dans Figma, j'ai contribué activement au développement de Signaleo :
-<ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
-  <li style="margin-top: 10px;">J'ai développé des interfaces en respectant les maquettes Figma tout en optimisant leur implémentation technique pour garantir fluidité et réactivité.</li>
-  <li style="margin-top: 10px;">J'ai mis en place une SEO complète, optimisant les balises méta, la structure du code et les temps de chargement</li>
-  <li style="margin-top: 10px;">J'ai intégré et configuré des API externes pour récupérer automatiquement les informations des mairies</li>
-  <li style="margin-top: 10px;">J'ai collaboré avec l'équipe pour créer une expérience de signalement fluide et intuitive, permettant aux citoyens de contribuer facilement à l'amélioration de leur cadre de vie.</li>
-</ul>`,
+    <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+      <li style="margin-top: 10px;">J'ai développé des interfaces en respectant les maquettes Figma tout en optimisant leur implémentation technique pour garantir fluidité et réactivité.</li>
+      <li style="margin-top: 10px;">J'ai mis en place une SEO complète, optimisant les balises méta, la structure du code et les temps de chargement</li>
+      <li style="margin-top: 10px;">J'ai intégré et configuré des API externes pour récupérer automatiquement les informations des mairies</li>
+      <li style="margin-top: 10px;">J'ai collaboré avec l'équipe pour créer une expérience de signalement fluide et intuitive, permettant aux citoyens de contribuer facilement à l'amélioration de leur cadre de vie.</li>
+    </ul>`,
 
     showLabels: false,
     imageAvant: images.signaleo1,
@@ -346,7 +385,7 @@ export const projectsData = [
     details: [
       {
         description: `Accompagne dans la conception, le développement et le déploiement de vos applications web et mobile.`,
-        public: `Citoyens`,
+        public: `Entreprises`,
         duree: `13 Fév 2025 - 10 mars 2025`,
       },
     ],
@@ -611,34 +650,156 @@ export const projectsData = [
     title: "MySocialWorker",
     type: "entreprise",
     logo: logoMSW,
-    description: "faire une descriptionProject Two.",
-    link: "https://example.com/project-two",
-    details: "Detailed description of MySocialWorker.",
+    description:
+      "Plateforme de mise en relation entre particuliers et professionnels facilitant la délégation des démarches administratives",
+    link: "https://mysocialworker.fr/",
+    details: [
+      {
+        description: `MySocialWorker est une plateforme innovante qui met en relation les particuliers avec des professionnels pour simplifier leurs démarches administratives. Ce service permet aux utilisateurs de déléguer des tâches comme les demandes d'aides sociales, la recherche de logement, ou les formalités liées à l'emploi à des experts qui les accompagnent de manière personnalisée.`,
+        public: `Particuliers ayant besoin d'aide pour leurs démarches administratives`,
+        duree: `15 Septembre 2023 - 10 décembre 2023`,
+      },
+    ],
+    teamMembers: [
+      {
+        id: 1,
+        name: "Murat",
+        designation: "Développeur Front / Mobile / Back",
+        image: murat,
+      },
+      {
+        id: 2,
+        name: "Stephane",
+        designation: "Développeur Back / DevOps",
+        image: stephane,
+      },
+      {
+        id: 3,
+        name: "Kabir",
+        designation: "Développeur Back",
+        image: kabir,
+      },
+      {
+        id: 4,
+        name: "Farid",
+        designation: "Développeur Back / Front",
+        image: farid,
+      },
+      {
+        id: 5,
+        name: "Emir",
+        designation: "Apprenti développeur",
+        image: emir,
+      },
+      {
+        id: 6,
+        name: "Tuan",
+        designation: "développeur junior",
+        image: anthony,
+      },
+      {
+        id: 7,
+        name: "Semih",
+        designation: "Apprenti développeur",
+        image: semih,
+      },
+      {
+        id: 8,
+        name: "Yasin",
+        designation: "Développeur Front",
+        image: yasin,
+      },
+    ],
     technologies: [
       { name: "Next.js", logo: logoNext },
       { name: "JavaScript", logo: logoJS },
+      { name: "TypeScript", logo: typeScript },
+      { name: "Npm", logo: logoNpm },
+      { name: "Yarn", logo: logoYarn },
     ],
+    patrimoineInformatique: "Patrimoine informatique",
     githubFeatures: [
       {
-        name: "Push to deploy.",
-        description:
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+        title: "GitHub",
+        subtitle: "Gestion du Code Source",
+        description2:
+          "Le code de MySocialWorker est versionné sur GitHub avec une organisation rigoureuse des repositories pour séparer le frontend, le backend et les microservices.",
+      },
+      {
+        description1: `Nous utilisons une approche de développement basée sur les branches de fonctionnalités (feature branches), où chaque nouvelle fonction ou correction est développée dans une branche isolée avant d'être fusionnée via des pull requests soigneusement révisées.`,
         icon: projectsIllustration1,
       },
       {
-        name: "SSL certificates.",
-        description:
-          "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-        icon: projectsIllustration1,
-      },
-      {
-        name: "Database backups.",
-        description:
-          "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+        description1: `Un système de CI/CD est en place pour automatiser les tests et déploiements, garantissant que chaque modification passe par une batterie de tests avant d'être mise en production.`,
         icon: projectsIllustration1,
       },
     ],
-    image: images.snowpactSlack,
+    figmaFeatures: [
+      {
+        title: "Figma",
+        subtitle: "Design UX/UI Centré Utilisateur",
+        description2: `Les maquettes de MySocialWorker ont été conçues sur Figma avec une attention particulière portée à l'expérience utilisateur, visant à simplifier des processus administratifs souvent complexes.`,
+      },
+      {
+        description1: `L'interface a été pensée pour être accessible à tous, avec un design épuré utilisant des codes couleurs intuitifs (violet, blanc et nuances de gris) qui guident l'utilisateur à travers les différentes étapes de son parcours.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Des prototypes interactifs ont été créés pour tester les parcours utilisateurs avant le développement, permettant d'identifier et de résoudre les problèmes d'ergonomie en amont.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    slackFeatures: [
+      {
+        title: "Communication",
+        subtitle: "Collaboration et Suivi de Projet",
+        description2: `La communication au sein du projet MySocialWorker s'effectue via un canal Slack central qui regroupe tous les membres de l'équipe `,
+      },
+      {
+        description1: `Nous utilisons un système où chaque développeur partage sa branche dans le canal une fois son travail terminé.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Des code reviews (CR) sont systématiquement réalisées sur les branches épinglées, garantissant que chaque modification est examinée par au moins un autre membre de l'équipe avant d'être fusionnée dans la branche principale.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    mesMissions2images: `En partant de la conception visuelle initiale,<br /><br />
+       - J'ai développé et implémenté le design en respectant l'identité de la marque tout en optimisant l'expérience utilisateur. <br />
+       - J'ai amélioré les performances SEO du site en optimisant la structure du code, les métadonnées et les temps de chargement. <br />
+       - J'ai également porté une attention particulière à l'accessibilité, pour garantir une navigation fluide pour tous les utilisateurs.<br />
+       - Enfin, j'ai appliqué les bonnes pratiques de développement web (responsive design, optimisation des images, code propre et maintenable) pour assurer la pérennité et l'évolutivité du projet.`,
+
+    webScreenshots: [
+      {
+        label: "Accueil",
+        src: MSWscreenshotPage,
+        path: "",
+      },
+      {
+        label: "Particuliers",
+        src: MSWscreenshotPage2,
+        path: "particuliers",
+      },
+      {
+        label: "Travailleur sociaux",
+        src: MSWscreenshotPage3,
+        path: "travailleur-sociaux",
+      },
+      {
+        label: "Entreprises",
+        src: MSWscreenshotPage4,
+        path: "entreprises",
+      },
+    ],
+
+    imageGithub: images.githubMSW,
+    imageFigma: images.figmaMSW,
+    imageSlack: images.slackMSW,
+
+    imageAvant: images.mswSite,
+    imageApres: images.mswSEO,
+    showLabels: false,
   },
 
   {
@@ -650,8 +811,34 @@ export const projectsData = [
     details: [
       {
         description: `Le site présente une interface élégante et intuitive, conçue pour mettre en valeur les différents services et programmes personnalisés offerts par le centre de santé`,
-        public: `Citoyens`,
+        public: `Sportifs, Particuliers`,
         duree: `13 Janvier 2025 - 12 Février 2025`,
+      },
+    ],
+    teamMembers: [
+      {
+        id: 1,
+        name: "Murat",
+        designation: "Développeur Front / Mobile / Back",
+        image: murat,
+      },
+      {
+        id: 2,
+        name: "Stephane",
+        designation: "Développeur Back / DevOps",
+        image: stephane,
+      },
+      {
+        id: 5,
+        name: "Emir",
+        designation: "Apprenti développeur",
+        image: emir,
+      },
+      {
+        id: 7,
+        name: "Semih",
+        designation: "Apprenti développeur",
+        image: semih,
       },
     ],
     technologies: [
@@ -840,6 +1027,121 @@ export const projectsData = [
     imageAvant: images.testUnitaireMrh,
     imageApres: images.renduMrh,
   },
+
+  {
+    title: "Comind Lab",
+    type: "entreprise",
+    logo: logoComindLab,
+    description:
+      "Espace de coworking innovant à Cergy pour entrepreneurs et indépendants",
+    details: [
+      {
+        description: `Comind Lab est un espace de coworking situé à Cergy qui offre un environnement de travail moderne et convivial pour les entrepreneurs, freelances et télétravailleurs. L'espace propose des postes de travail flexibles, des salles de réunion équipées et de nombreux événements pour favoriser le networking et l'innovation.`,
+        public: `Freelances, Entrepreneurs, Télétravailleurs`,
+        duree: `28 Fév 2025 - 14 mars 2025`,
+      },
+    ],
+    technologies: [
+      { name: "WordPress", logo: logoWordPress },
+      { name: "o2switch", logo: logoO2Switch },
+    ],
+    teamMembers: [
+      {
+        id: 1,
+        name: "Murat",
+        designation: "Développeur Front / Mobile / Back",
+        image: murat,
+      },
+      {
+        id: 2,
+        name: "Stephane",
+        designation: "Développeur Back / DevOps",
+        image: stephane,
+      },
+      {
+        id: 7,
+        name: "Semih",
+        designation: "Apprenti développeur",
+        image: semih,
+      },
+      {
+        id: 3,
+        name: "Kabir",
+        designation: "Développeur Back",
+        image: kabir,
+      },
+    ],
+    patrimoineInformatique: "Patrimoine informatique",
+    figmaFeatures: [
+      {
+        title: "maquette",
+        subtitle: "modèle visuel",
+        description2: `Pour le projet Comind Lab, j'ai travaillé à partir de captures d'écran des pages existantes, qui ont servi de référence visuelle pour recréer l'ensemble du site sous WordPress.`,
+      },
+      {
+        description1: `J'ai analysé en détail chaque capture d'écran pour identifier les éléments clés du design, afin de l'implémenter dans le nouveau site WordPress.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `J'ai veillé à préserver l'identité visuelle de Comind Lab tout en améliorant l'ergonomie et l'expérience utilisateur`,
+        icon: projectsIllustration1,
+      },
+    ],
+    githubFeatures: [
+      {
+        title: "Excel",
+        subtitle: "Plannification",
+        description2: `Pour assurer un suivi précis du projet, j'ai mis en place un tableau Excel de progression qui m'a permis de :`,
+      },
+      {
+        description1: `Diviser le projet en tâches spécifiques par 4 catégories`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Suivre la progression de chaque fonctionnalité et page`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `avoir une vision globale des tâches manquantes `,
+        icon: projectsIllustration1,
+      },
+    ],
+    slackFeatures: [
+      {
+        title: "Slack",
+        subtitle: "Communication sur Slack",
+        description2: `On communique sur Slack en cas de besoin et surtout pour suivre l'avancement du projet ainsi que des tâches`,
+      },
+      {
+        description1: `Chaque aspect du projet dispose de son propre canal, permettant une organisation structurée et la séparation des discussions importantes.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Des notifications régulières nous informent des mises à jour et rappels de réunions, assurant une synchronisation de l'équipe.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    mesMissions2images: `<p class="mb-4">Pour le projet Comind Lab,Ma mission principale consistait à implémenter fidèlement le design fourni par l'équipe créative tout en développant un back-office WordPress intuitif permettant au client de gérer facilement son contenu après la livraison du projet.</p>
+
+    <p class="mb-4">Points clés de ma contribution :</p>
+
+    <ul class="list-disc pl-6 mb-4 space-y-2">
+      <li>Développement d'un thème WordPress personnalisé respectant l'identité visuelle de l'espace de coworking</li>
+      <li>Mise en place d'un système de gestion des événements avec des champs personnalisés</li>
+      <li>Optimisation des performances et du référencement du site</li>
+    </ul>
+
+    <p>Le résultat final est un site web professionnel qui met parfaitement en valeur les espaces et services de Comind Lab, tout en offrant une expérience d'administration simple qui permet au client de maintenir son site à jour sans intervention technique extérieure.</p>
+    `,
+
+    imageAvant: images.comindLab_homepage,
+    imageApres: images.comindLab_services,
+    showLabels: false,
+
+    imageFigma: images.comindLabFigma,
+    imageGithub: images.comindLabExcel,
+    imageSlack: images.snowpactSlack,
+  },
   //////////////////////////// ECOLE //////////////////////
   {
     type: "ecole",
@@ -938,6 +1240,150 @@ export const projectsData = [
     ],
     imageGithub: images.textAdventureRepo,
     imageFigma: images.textAdventureReadMe,
+    imageSlack: images.textAdventurePlan,
+    imageAdnCron: images.textAdventureExemple,
+  },
+  {
+    type: "ecole",
+    logo: treiinquille,
+    title: "Treiinquille",
+    description: "Un jeu d'aventure, résolvez des énigmes captivantes.",
+    link: "https://example.com/school-project-one",
+    details: [
+      {
+        description: `Jeu d'aventure textuel en Python où le joueur explore un lycée, interagit avec l’environnement et combat dans un système dynamique.`,
+        public: `Utilisateur en local`,
+        duree: `29 Octobre 2025 - 14 Avril 2025`,
+      },
+    ],
+    teamMembers: [
+      {
+        id: 1,
+        name: "Semih",
+        image: semih,
+      },
+      {
+        id: 2,
+        name: "Emir",
+        image: emir,
+      },
+      {
+        id: 3,
+        name: "Semih S",
+        image: avatarNoir,
+      },
+    ],
+    technologies: [
+      { name: "Alwaysdata", logo: alwaysdata },
+      { name: "Java", logo: java },
+      { name: "javafx scene builder", logo: javafxscenebuilder },
+      { name: "intellij idea", logo: intellij_idea },
+    ],
+    patrimoineInformatique: "Structure et Développement du Projet",
+    githubFeatures: [
+      {
+        title: "GitLab",
+        subtitle: "Gestion du Code Source",
+        description2:
+          "Le code est hébergé sur GitLab pour assurer la sauvegarde des données.",
+      },
+      {
+        description1: `Je développe directement sur la branche principale tout en effectuant des tests pour garantir la stabilité du projet.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Les versions majeures du projet sont étiquetées pour assurer un historique clair et permettre des retours en arrière si nécessaire.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    figmaFeatures: [
+      {
+        title: "ReadMe",
+        subtitle: "Mise en situation",
+        description2: `Le projet a été initialement structuré autour d’un fichier README détaillant les étapes à suivre. Celui-ci définissait le contexte du jeu, inspiré d’un manga, et les mécaniques de base à implémenter.`,
+      },
+      {
+        description1: `J’ai suivi ces étapes méthodiquement pour développer les fonctionnalités et assurer la progression du projet. Le gameplay repose sur un jeu textuel où le joueur peut se déplacer dans un lycée fictif et interagir avec son environnement.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Le jeu intègre un système de gestion d’objets, incluant un smartphone comme objet clé et un inventaire permettant de stocker divers éléments collectés au fil du jeu.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Les actions possibles sont limitées à la saisie d’un lieu ou d’une action par l’utilisateur. Cependant, il est possible d'ajouter des interactions supplémentaires pour enrichir l’expérience.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    slackFeatures: [
+      {
+        title: "Plan du Projet",
+        subtitle: "Représentation visuelle",
+        description2: `Pour structurer le développement du jeu, j’ai élaboré un plan visuel détaillé à l'aide de schémas. Ces représentations graphiques m'ont permis d'organiser les différentes interactions possibles ainsi que les connexions entre les lieux et les actions du joueur.`,
+      },
+      {
+        description1: `Les images ont servi de guide pour la conception du système de navigation et d'interaction dans le jeu. Elles illustrent les transitions entre les différentes zones du lycée et les actions disponibles à chaque étape.`,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `Grâce à ces schémas, j’ai pu mieux comprendre la logique du gameplay et m’assurer que chaque élément du jeu soit bien intégré et cohérent.`,
+        icon: projectsIllustration1,
+      },
+    ],
+    webScreenshots: [
+      {
+        label: "Accueil",
+        src: images.CahierTechnique,
+        path: "",
+      },
+      {
+        label: "La Team",
+        src: images.heliofitnessFullScreenshot2,
+        path: "team",
+      },
+      {
+        label: "Concept",
+        src: images.heliofitnessFullScreenshot3,
+        path: "cours-de-crossfit",
+      },
+      {
+        label: "Nos Clubs",
+        src: images.heliofitnessFullScreenshot4,
+        path: "cergy-pontoise",
+      },
+    ],
+    mesMissions: [
+      {
+        title: "Mon rôle dans le projet",
+        description2: `Dans ce projet, j'avais plusieurs objectifs à atteindre pour structurer et développer un jeu textuel interactif. J'ai travaillé seul sur la conception, le développement et l'intégration des différentes mécaniques du jeu.`,
+      },
+      {
+        description1: `
+        - Mise en place d'un système de navigation permettant au joueur de se déplacer entre plusieurs lieux du lycée A.U.<br/>
+        - Intégration d'un inventaire pour stocker des objets clés et des consommables.<br/>
+        - Développement d'un système de combat où le joueur peut affronter des mannequins et obtenir des récompenses.
+        `,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `
+        - Gestion des actions du joueur via des choix interactifs en terminal.<br/>
+        - Utilisation de Colorama pour améliorer l'affichage avec des couleurs dynamiques.<br/>
+        - Optimisation du code pour une meilleure organisation et évolutivité.
+        `,
+        icon: projectsIllustration1,
+      },
+      {
+        description1: `
+        - Ajout d'un système d'objets récupérables et interactifs (ex : obtenir une arme, récupérer un badge, etc.).<br/>
+        - Possibilité d'étendre facilement le jeu avec de nouveaux lieux et actions.<br/>
+        - Respect des consignes du README initial en y ajoutant une touche personnelle.
+        `,
+        icon: projectsIllustration1,
+      },
+    ],
+    imageGithub: images.treiinquilleGitHub,
+    imageFigma: images.CahierTechnique,
     imageSlack: images.textAdventurePlan,
     imageAdnCron: images.textAdventureExemple,
   },

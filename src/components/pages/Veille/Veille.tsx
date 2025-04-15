@@ -50,40 +50,43 @@ export const Veille = () => {
     },
     {
       image: veille3b,
-      title: "Article 3",
-      description: "Node.js prend en charge TypeScript par défaut",
+      title: "Node.js prend en charge TypeScript par défaut",
+      description:
+        "Node.js prend en charge TypeScript par défaut, en raison de sa popularité croissante",
       href: "https://typescript.developpez.com/actu/368264/A-partir-de-la-version-23-6-0-Node-js-prend-en-charge-TypeScript-par-defaut-en-raison-de-sa-popularite-croissante-TypeScript-etant-la-fonctionnalite-la-plus-demandee-sur-Node-js/",
-      rating: 3,
+      rating: 5,
       date: "21 janvier 2025",
       source: "Jade Emy",
     },
     {
       image: veille4,
-      title: "Article 4",
-      description: "Les langages de programmation (et leur utilité)",
-      href: "https://typescript.developpez.com/actu/368264/A-partir-de-la-version-23-6-0-Node-js-prend-en-charge-TypeScript-par-defaut-en-raison-de-sa-popularite-croissante-TypeScript-etant-la-fonctionnalite-la-plus-demandee-sur-Node-js/",
-      rating: 4,
-      date: "2024-01-30",
-      source: "fffff",
+      title: "Nouveau Framework Rio",
+      description:
+        "un framework facile à utiliser pour créer des sites web et des applications modernes entièrement basés sur Python, sans avoir besoin d'une seule ligne de HTML, CSS ou JavaScript",
+      href: "https://python.developpez.com/actu/362896/Rio-un-framework-facile-a-utiliser-pour-creer-des-sites-web-et-des-applications-modernes-entierement-bases-sur-Python-sans-avoir-besoin-d-une-seule-ligne-de-HTML-CSS-ou-JavaScript/",
+      rating: 3,
+      date: "19 septembre 2024",
+      source: "Jade Emy",
     },
     {
       image: veille5,
-      title: "Node.js prend en charge TypeScript par défaut",
+      title: "Un TypeScript 10x plus rapide",
       description:
-        "À partir de la version 23.6.0, Node.js prend en charge TypeScript par défaut, en raison de sa popularité croissante",
-      href: "https://www.hays.fr/conseils-carriere/article/les-meilleurs-langages-de-programmation-%C3%80-apprendre-en-2024",
+        "Anders Hejlsberg, architecte principal de Microsoft pour TypeScript, présente un nouveau portage de TypeScript",
+      href: "https://typescript.developpez.com/actu/369976/Un-TypeScript-10x-plus-rapide-Anders-Hejlsberg-architecte-principal-de-Microsoft-pour-TypeScript-presente-un-nouveau-portage-de-TypeScript-qui-offrira-aux-developpeurs-un-outil-de-haute-performance/",
       rating: 5,
       date: "21 janvier 2025",
       source: "Jade Emy",
     },
     {
       image: veille6,
-      title: "Article 6",
-      description: "Découvrez les langages et frameworks en tendance",
-      href: "https://www.geeketteandgreluche.fr/decouvrez-les-langages-de-programmation-et-frameworks-les-plus-tendance-du-moment/",
-      rating: 2,
-      date: "2024-02-10",
-      source: "fffff",
+      title: "Sortie de la version 5 de Svelte",
+      description:
+        "cette version est le résultat de la réécriture complète du framework JavaScript pour le rendre plus rapide, plus facile à utiliser et plus robuste",
+      href: "https://javascript.developpez.com/actu/363972/Sortie-de-la-version-5-de-Svelte-cette-version-est-le-resultat-de-la-reecriture-complete-du-framework-JavaScript-pour-le-rendre-plus-rapide-plus-facile-a-utiliser-et-plus-robuste/",
+      rating: 3,
+      date: "21 octobre 2024",
+      source: "Jade Emy",
     },
   ];
 
@@ -250,10 +253,10 @@ export const Veille = () => {
               source={article.source}
             />
           ))}
-
           {filteredArticles.length === 0 && (
             <p className="text-white">Aucun article trouvé</p>
           )}
+          <p className="text-gray-500">developpez.com</p>
         </div>
       </main>
     </PublicLayout>

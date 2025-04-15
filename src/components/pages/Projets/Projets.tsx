@@ -8,6 +8,7 @@ import logoMRH from "@/assets/logoMRH.jpg";
 import logoADN from "@/assets/logoADN.webp";
 import logoComindLab from "@/assets/logoComindLab.avif";
 import joTickets from "@/assets/joTickets.webp";
+import treiinquille from "@/assets/treiinquille-logo.webp";
 import les4Fantastiques from "@/assets/Les4Fantastiques.png";
 import billetterie from "@/assets/billetterie.png";
 import gestEPI from "@/assets/gestEPI.webp";
@@ -68,9 +69,9 @@ export const Projets = () => {
     },
     {
       logo: logoComindLab,
-      title: "Comind LAB",
+      title: "Comind Lab",
       description:
-        "Plateforme de mise en relation entre particuliers et professionnels facilitant la délégation des démarches administratives",
+        "Espace de coworking innovant à Cergy pour entrepreneurs et indépendants",
       link: "https://example.com/project-two",
     },
     {
@@ -87,6 +88,12 @@ export const Projets = () => {
       logo: textAdventure,
       title: "Text Adventure",
       description: "Un jeu d'aventure, résolvez des énigmes captivantes ",
+      link: "https://example.com/school-project-one",
+    },
+    {
+      logo: treiinquille,
+      title: "Treiinquille",
+      description: "",
       link: "https://example.com/school-project-one",
     },
     {

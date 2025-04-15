@@ -15,6 +15,7 @@ import anthony from "@/assets/team/anthony.png";
 import amira from "@/assets/team/amira.png";
 import emir from "@/assets/team/emir.png";
 import siham from "@/assets/team/siham.png";
+import avatarNoir from "@/assets/team/avatarNoir.webp";
 
 export const teamData = [
   {
@@ -138,5 +139,9 @@ export const teamData = [
     name: "Siham",
     skills: "Apprentie",
     position: "",
+  },
+  {
+    image: avatarNoir,
+    alt: "Member",
   },
 ];
