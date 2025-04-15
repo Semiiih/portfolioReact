@@ -8,13 +8,13 @@ import logoMRH from "@/assets/logoMRH.jpg";
 import logoADN from "@/assets/logoADN.webp";
 import logoComindLab from "@/assets/logoComindLab.avif";
 import joTickets from "@/assets/joTickets.webp";
-import treiinquille from "@/assets/treiinquille-logo.webp";
 import les4Fantastiques from "@/assets/Les4Fantastiques.png";
 import billetterie from "@/assets/billetterie.png";
 import gestEPI from "@/assets/gestEPI.webp";
 import gestionEntretiens from "@/assets/gestionEntretiens.webp";
 import logoSnowpact from "@/assets/main-logo.png";
 import logoHelioFitness from "@/assets/logoHelioFitness.png";
+import treiinquille from "@/assets/treiinquille-logo.webp";
 import FancyText from "@carefully-coded/react-text-gradient";
 
 import textAdventure from "@/assets/textAdventure.jpeg";
@@ -85,15 +85,17 @@ export const Projets = () => {
 
   const projetsEcole = [
     {
-      logo: textAdventure,
-      title: "Text Adventure",
-      description: "Un jeu d'aventure, résolvez des énigmes captivantes ",
-      link: "https://example.com/school-project-one",
+      logo: joTickets,
+      title: "JO Tickets",
+      description:
+        "Plateforme de billetterie pour les Jeux Olympiques, achat et de gestion des billets pour assister aux événements.",
+      link: "https://example.com/school-project-three",
     },
     {
       logo: treiinquille,
       title: "Treiinquille",
-      description: "",
+      description:
+        "Application de gestion des voyages temporels pour l'agence TempoTrain",
       link: "https://example.com/school-project-one",
     },
     {
@@ -102,13 +104,6 @@ export const Projets = () => {
       description:
         "site qui reference les personnages et les séries de l'univers de Marvel",
       link: "https://example.com/school-project-two",
-    },
-    {
-      logo: joTickets,
-      title: "JO Tickets",
-      description:
-        "Plateforme de billetterie pour les Jeux Olympiques, achat et de gestion des billets pour assister aux événements.",
-      link: "https://example.com/school-project-three",
     },
     {
       logo: gestEPI,
@@ -123,6 +118,12 @@ export const Projets = () => {
       description:
         "Développement d'une API pour la gestion des avions et des techniciens de la base aérienne d’Istres",
       link: "https://example.com/school-project-three",
+    },
+    {
+      logo: textAdventure,
+      title: "Text Adventure",
+      description: "Un jeu d'aventure, résolvez des énigmes captivantes ",
+      link: "https://example.com/school-project-one",
     },
     {
       logo: billetterie,

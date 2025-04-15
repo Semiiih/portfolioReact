@@ -29,12 +29,22 @@ export const MentionsLegales = () => {
               Hébergement
             </h2>
             <p>
-              Le site est hébergé par : <br />
+              <span className="font-semibold">Le site est hébergé par :</span>{" "}
+              <br />
               Github
               <br />
               Adresse : 88 Colin P Kelly Jr St San Francisco, CA 94107
               <br />
               numéro : (877) 448-4820
+            </p>
+            <p className="py-6">
+              <span className="font-semibold">Déployé via :</span> Vercel <br />
+              340 S Lemon Ave #4133 Walnut, CA 91789 United States
+            </p>
+            <p>
+              <span className="font-semibold">Nom de domaine :</span> OVHcloud{" "}
+              <br />
+              OVH SAS, 2 rue Kellermann 59100 Roubaix France
             </p>
           </div>
 

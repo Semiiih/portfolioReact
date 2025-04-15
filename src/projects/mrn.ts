@@ -24,6 +24,7 @@ import projectsIllustration1 from "@/assets/projects-illustration1.gif";
 import signaleoGithub from "@/assets/signaleoGithub.png";
 import snowpactGithub from "@/assets/snowpactGithub.png";
 import snowpactSlack from "@/assets/snowpactSlack.png";
+import snowpactSeo from "@/assets/snowpactSeo.webp";
 import signaleoFigma from "@/assets/signaleoFigma.png";
 import signaleoSlack from "@/assets/signaleoSlack.png";
 import textAdventure from "@/assets/textAdventure.jpeg";
@@ -69,8 +70,8 @@ import HelioFitness_apres_audit from "@/assets/HelioFitness_apres_audit.webp";
 import snowpactFigma from "@/assets/snowpactFigma.webp";
 import SnowpactAvant from "@/assets/Snowpact_avant.webp";
 import SnowpactApres from "@/assets/Snowpact_apres.webp";
-import signaleo1 from "@/assets/signaleo1.webp";
-import signaleo2 from "@/assets/signaleo2.webp";
+import signaleo1 from "@/assets/signaleoSeo.webp";
+import signaleo2 from "@/assets/signaleo1.webp";
 import gestEPI from "@/assets/gestEPI.webp";
 import RepoGestiEPI from "@/assets/RepoGestiEPI.webp";
 import diagrammeGestEPI from "@/assets/diagrammeGestEPI.webp";
@@ -101,6 +102,9 @@ import signaleoFullScreenshot2 from "@/assets/signaleoFullScreenshot2.webp";
 import signaleoFullScreenshot3 from "@/assets/signaleoFullScreenshot3.png";
 import signaleoFullScreenshot4 from "@/assets/signaleoFullScreenshot4.webp";
 import signaleoFullScreenshot5 from "@/assets/signaleoFullScreenshot5.webp";
+import signaleoFullScreenshot6 from "@/assets/SIgnaleoListesDesVilles.webp";
+import signaleoFullScreenshot7 from "@/assets/pageExempleCergy.webp";
+import signaleoFullScreenshot8 from "@/assets/SignaleolistesDesDepartement.webp";
 import snowpactFullScreenshot from "@/assets/snowpactFullScreenshot.webp";
 import snowpactFullScreenshot2 from "@/assets/snowpactFullScreenshot2.webp";
 import snowpactFullScreenshot3 from "@/assets/snowpactFullScreenshot3.png";
@@ -128,6 +132,15 @@ import treiinquille from "@/assets/treiinquille-logo.webp";
 import avatarNoir from "@/assets/team/avatarNoir.webp";
 import CahierTechnique from "@/assets/CahierTechnique.pdf";
 import treiinquilleGitHub from "@/assets/treiinquilleGitHub.webp";
+import TreiinQuille_diagramme_cas_utilisation from "@/assets/TreiinQuille_diagramme_cas_utilisation.webp";
+import TreiinQuille_diagramme_classes_métier from "@/assets/TreiinQuille_diagramme_classes_métier.webp";
+import treiinquilleMaquette from "@/assets/maquette.pdf";
+import treiinquilleGantt from "@/assets/TreiinQuille_gantt.webp";
+import treiinquilleFX from "@/assets/treiinquilleFX.webp";
+import crossfitL700 from "@/assets/crossfitL700.webp";
+import crossfitCP95 from "@/assets/crossfitCP95.webp";
+import crossfitTeranga from "@/assets/crossfitTeranga.webp";
+import crossfitWildSquad from "@/assets/crossfitWildSquad.webp";
 
 const images = {
   signaleoGithub,
@@ -188,11 +201,15 @@ const images = {
   signaleoFullScreenshot3,
   signaleoFullScreenshot4,
   signaleoFullScreenshot5,
+  signaleoFullScreenshot6,
+  signaleoFullScreenshot7,
+  signaleoFullScreenshot8,
   snowpactFullScreenshot,
   snowpactFullScreenshot2,
   snowpactFullScreenshot3,
   snowpactFullScreenshot4,
   snowpactFullScreenshot5,
+  snowpactSeo,
   heliofitnessFullScreenshot,
   heliofitnessFullScreenshot2,
   heliofitnessFullScreenshot3,
@@ -212,6 +229,15 @@ const images = {
   comindLabFigma,
   treiinquilleGitHub,
   CahierTechnique,
+  TreiinQuille_diagramme_cas_utilisation,
+  TreiinQuille_diagramme_classes_métier,
+  treiinquilleMaquette,
+  treiinquilleGantt,
+  treiinquilleFX,
+  crossfitL700,
+  crossfitCP95,
+  crossfitTeranga,
+  crossfitWildSquad,
 };
 
 export const projectsData = [
@@ -374,6 +400,21 @@ export const projectsData = [
         src: images.signaleoFullScreenshot5,
         path: "mairie",
       },
+      {
+        label: "Listes des départements",
+        src: images.signaleoFullScreenshot8,
+        path: "listes-des-departements",
+      },
+      {
+        label: "Listes des villes de val d'oise",
+        src: images.signaleoFullScreenshot6,
+        path: "listes-des-villes-de-val-d-oise",
+      },
+      {
+        label: "Cergy",
+        src: images.signaleoFullScreenshot7,
+        path: "cergy",
+      },
     ],
   },
   {
@@ -458,6 +499,11 @@ export const projectsData = [
     imageSlack: images.snowpactSlack,
 
     webScreenshots: [
+      {
+        label: "SEO",
+        src: images.snowpactSeo,
+        path: "SEO",
+      },
       {
         label: "Accueil",
         src: images.snowpactFullScreenshot,
@@ -928,6 +974,26 @@ export const projectsData = [
         src: images.heliofitnessFullScreenshot4,
         path: "cergy-pontoise",
       },
+      {
+        label: "crossfitCP95",
+        src: images.crossfitCP95,
+        path: "crossfit-cp95",
+      },
+      {
+        label: "crossfitL700",
+        src: images.crossfitL700,
+        path: "crossfit-l700",
+      },
+      {
+        label: "crossfitTeranga",
+        src: images.crossfitTeranga,
+        path: "crossfit-teranga",
+      },
+      {
+        label: "crossfitWildSquad",
+        src: images.crossfitWildSquad,
+        path: "crossfit-wildsquad",
+      },
     ],
   },
   {
@@ -1247,19 +1313,20 @@ export const projectsData = [
     type: "ecole",
     logo: treiinquille,
     title: "Treiinquille",
-    description: "Un jeu d'aventure, résolvez des énigmes captivantes.",
-    link: "https://example.com/school-project-one",
+    description:
+      "Application de gestion des voyages temporels pour l'agence TempoTrain",
+    link: "https://github.com/Semiiih/Treiinquille",
     details: [
       {
-        description: `Jeu d'aventure textuel en Python où le joueur explore un lycée, interagit avec l’environnement et combat dans un système dynamique.`,
-        public: `Utilisateur en local`,
-        duree: `29 Octobre 2025 - 14 Avril 2025`,
+        description: `Treiinquille est une application Java de gestion de voyages temporels développée pour l'agence fictive TempoTrain, permettant aux managers et conducteurs d'organiser des trajets dans différentes époques en suivant leurs plannings et la disponibilité des billets en temps réel. `,
+        public: `Utilisateur local (Managers et conducteurs)`,
+        duree: `29 Octobre 2024 - 14 Avril 2025`,
       },
     ],
     teamMembers: [
       {
         id: 1,
-        name: "Semih",
+        name: "Semih C",
         image: semih,
       },
       {
@@ -1276,116 +1343,90 @@ export const projectsData = [
     technologies: [
       { name: "Alwaysdata", logo: alwaysdata },
       { name: "Java", logo: java },
-      { name: "javafx scene builder", logo: javafxscenebuilder },
-      { name: "intellij idea", logo: intellij_idea },
+      { name: "JavaFX Scene Builder", logo: javafxscenebuilder },
+      { name: "IntelliJ IDEA", logo: intellij_idea },
     ],
     patrimoineInformatique: "Structure et Développement du Projet",
     githubFeatures: [
       {
-        title: "GitLab",
+        title: "GitHub",
         subtitle: "Gestion du Code Source",
         description2:
-          "Le code est hébergé sur GitLab pour assurer la sauvegarde des données.",
+          "Le code du projet Treiinquille est versionné sur GitHub, permettant une collaboration efficace entre les membres de l'équipe",
       },
       {
-        description1: `Je développe directement sur la branche principale tout en effectuant des tests pour garantir la stabilité du projet.`,
+        description1: `Nous avons organisé notre dépôt avec une structure claire pour séparer les composants de l'application`,
         icon: projectsIllustration1,
       },
       {
-        description1: `Les versions majeures du projet sont étiquetées pour assurer un historique clair et permettre des retours en arrière si nécessaire.`,
+        description1: `Nous avons développés directement sur la branche principale tout en effectuant des tests pour garantir la stabilité du projet.`,
         icon: projectsIllustration1,
       },
     ],
     figmaFeatures: [
       {
-        title: "ReadMe",
-        subtitle: "Mise en situation",
-        description2: `Le projet a été initialement structuré autour d’un fichier README détaillant les étapes à suivre. Celui-ci définissait le contexte du jeu, inspiré d’un manga, et les mécaniques de base à implémenter.`,
+        title: "Conception UML",
+        subtitle: "Diagramme de cas d'utilisation",
+        description2: `Pour comprendre et définir clairement les interactions entre les utilisateurs et notre système, nous avons créé un diagramme de cas d'utilisation qui modélise les fonctionnalités accessibles selon les rôles.`,
       },
       {
-        description1: `J’ai suivi ces étapes méthodiquement pour développer les fonctionnalités et assurer la progression du projet. Le gameplay repose sur un jeu textuel où le joueur peut se déplacer dans un lycée fictif et interagir avec son environnement.`,
+        description1: `Le diagramme distingue deux acteurs principaux : les Managers et les Conducteurs, chacun ayant accès à des fonctionnalités spécifiques dans l'application Treiinquille.`,
         icon: projectsIllustration1,
       },
       {
-        description1: `Le jeu intègre un système de gestion d’objets, incluant un smartphone comme objet clé et un inventaire permettant de stocker divers éléments collectés au fil du jeu.`,
+        description1: `Les cas d'utilisation incluent la consultation des trajets, la confirmation du statut d'un trajet, l'annulation d'un trajet, le suivi des places restantes et la consultation des billets, avec des relations claires indiquant qui peut effectuer quelles actions.`,
         icon: projectsIllustration1,
       },
       {
-        description1: `Les actions possibles sont limitées à la saisie d’un lieu ou d’une action par l’utilisateur. Cependant, il est possible d'ajouter des interactions supplémentaires pour enrichir l’expérience.`,
+        description1: `Cette représentation visuelle nous a servi de référence tout au long du développement pour nous assurer que l'implémentation des fonctionnalités respectait les besoins métier identifiés.`,
         icon: projectsIllustration1,
       },
     ],
     slackFeatures: [
       {
-        title: "Plan du Projet",
-        subtitle: "Représentation visuelle",
-        description2: `Pour structurer le développement du jeu, j’ai élaboré un plan visuel détaillé à l'aide de schémas. Ces représentations graphiques m'ont permis d'organiser les différentes interactions possibles ainsi que les connexions entre les lieux et les actions du joueur.`,
+        title: "Modélisation",
+        subtitle: "Diagramme de classes métier",
+        description2: `Pour établir une structure solide de notre application, nous avons conçu un diagramme de classes métier qui définit les entités principales et leurs relations.`,
       },
       {
-        description1: `Les images ont servi de guide pour la conception du système de navigation et d'interaction dans le jeu. Elles illustrent les transitions entre les différentes zones du lycée et les actions disponibles à chaque étape.`,
+        description1: `Le modèle comprend cinq classes principales : Utilisateur (avec les rôles Manager et Conducteur), Trajet , Billet, et Arrêt, chacune avec ses attributs spécifiques et ses relations avec les autres classes.`,
         icon: projectsIllustration1,
       },
       {
-        description1: `Grâce à ces schémas, j’ai pu mieux comprendre la logique du gameplay et m’assurer que chaque élément du jeu soit bien intégré et cohérent.`,
+        description1: `Cette modélisation nous a permis de créer une base de données relationnelle cohérente et d'organiser notre code .`,
         icon: projectsIllustration1,
       },
     ],
+    screenshotsTitle: "Documentation technique",
     webScreenshots: [
       {
-        label: "Accueil",
+        label: "Cahier technique",
         src: images.CahierTechnique,
-        path: "",
       },
       {
-        label: "La Team",
-        src: images.heliofitnessFullScreenshot2,
-        path: "team",
-      },
-      {
-        label: "Concept",
-        src: images.heliofitnessFullScreenshot3,
-        path: "cours-de-crossfit",
-      },
-      {
-        label: "Nos Clubs",
-        src: images.heliofitnessFullScreenshot4,
-        path: "cergy-pontoise",
+        label: "Maquette",
+        src: images.treiinquilleMaquette,
       },
     ],
-    mesMissions: [
-      {
-        title: "Mon rôle dans le projet",
-        description2: `Dans ce projet, j'avais plusieurs objectifs à atteindre pour structurer et développer un jeu textuel interactif. J'ai travaillé seul sur la conception, le développement et l'intégration des différentes mécaniques du jeu.`,
-      },
-      {
-        description1: `
-        - Mise en place d'un système de navigation permettant au joueur de se déplacer entre plusieurs lieux du lycée A.U.<br/>
-        - Intégration d'un inventaire pour stocker des objets clés et des consommables.<br/>
-        - Développement d'un système de combat où le joueur peut affronter des mannequins et obtenir des récompenses.
-        `,
-        icon: projectsIllustration1,
-      },
-      {
-        description1: `
-        - Gestion des actions du joueur via des choix interactifs en terminal.<br/>
-        - Utilisation de Colorama pour améliorer l'affichage avec des couleurs dynamiques.<br/>
-        - Optimisation du code pour une meilleure organisation et évolutivité.
-        `,
-        icon: projectsIllustration1,
-      },
-      {
-        description1: `
-        - Ajout d'un système d'objets récupérables et interactifs (ex : obtenir une arme, récupérer un badge, etc.).<br/>
-        - Possibilité d'étendre facilement le jeu avec de nouveaux lieux et actions.<br/>
-        - Respect des consignes du README initial en y ajoutant une touche personnelle.
-        `,
-        icon: projectsIllustration1,
-      },
-    ],
+    mesMissions2images: `
+    <p class="mb-4">Pour le projet Treiinquille, nous avons eu plusieurs rôles à jouer que ça soit dans la conception et le développement de l'application :</p>
+    
+    <ul class="list-disc pl-6 mb-4 space-y-2">
+      <li>Création des diagrammes (cas d'utilisation , classe métier )</li>
+      <li>faire un suivi et une plannification des tâches avec un gantt</li>
+      <li>Élaboré le modèle relationnel de la base de données pour stocker les informations </li>
+      <li>Développement de l'interface utilisateur avec JavaFX Scene Builder pour créer un rendu visuel similaire à la maquette</li>
+      <li>Mise en place des fonctionnalités de filtrage et d'affichage des trajets selon leur statut </li>
+    </ul>
+     `,
+
     imageGithub: images.treiinquilleGitHub,
-    imageFigma: images.CahierTechnique,
-    imageSlack: images.textAdventurePlan,
-    imageAdnCron: images.textAdventureExemple,
+    imageFigma: images.TreiinQuille_diagramme_cas_utilisation,
+    imageSlack: images.TreiinQuille_diagramme_classes_métier,
+
+    showLabels: false,
+    imageAvant: images.treiinquilleFX,
+    imageApres: images.treiinquilleGantt,
   },
   {
     type: "ecole",
@@ -1409,7 +1450,28 @@ export const projectsData = [
       { name: "JavaScript", logo: logoJavaScript },
       { name: "SQLite", logo: logoSQLite },
     ],
-
+    teamMembers: [
+      {
+        id: 1,
+        name: "Semih C",
+        image: semih,
+      },
+      {
+        id: 2,
+        name: "Emir",
+        image: emir,
+      },
+      {
+        id: 3,
+        name: "Semih S",
+        image: avatarNoir,
+      },
+      {
+        id: 4,
+        name: "Enzo",
+        image: avatarNoir,
+      },
+    ],
     patrimoineInformatique: "Structure et Développement du Projet",
     githubFeatures: [
       {
@@ -1634,6 +1696,7 @@ export const projectsData = [
       { name: "React", logo: logoReact },
       { name: "MySQL", logo: logoSql },
       { name: "Tailwind", logo: logoTailwind },
+      { name: "Node JS", logo: nodeJs },
     ],
 
     patrimoineInformatique: "Structure et Développement du Projet",
@@ -1645,15 +1708,11 @@ export const projectsData = [
           "Le projet est organisé en deux modules distincts dans un dépôt GitHub : GestEPIFront pour l'interface utilisateur et GestEPIBack pour la logique métier et l'API.",
       },
       {
-        description1: `La structure du projet est clairement divisée avec TypeScript offrant une base solide et maintenable. Les commits réguliers et la documentation permettent de suivre l'évolution du développement.`,
+        description1: `Les commits réguliers et la documentation permettent de suivre l'évolution du développement.`,
         icon: projectsIllustration1,
       },
       {
-        description1: `Le développement a suivi une approche méthodique avec des branches dédiées et des mises à jour régulières du README pour faciliter la prise en main du projet par d'autres développeurs.`,
-        icon: projectsIllustration1,
-      },
-      {
-        description1: `L'utilisation d'un dépôt centralisé a permis d'assurer une organisation optimale du code et une meilleure traçabilité des modifications, facilitant la collaboration et les revues de code.`,
+        description1: `Cette méthode de travail a permis de maintenir un historique complet du développement et offre la possibilité de revenir à des versions antérieures en cas de besoin`,
         icon: projectsIllustration1,
       },
     ],
@@ -1661,18 +1720,14 @@ export const projectsData = [
       {
         title: "Interface Utilisateur",
         subtitle: "Maquettes et Design System",
-        description2: `Les maquettes ont été soigneusement conçues pour offrir une expérience intuitive aux gestionnaires d'EPI, avec une organisation claire des informations et des actions possibles.`,
+        description2: `Les maquettes ont été données nous permettant d'avoir un rendu final du site`,
       },
       {
         description1: `L'interface principale présente un tableau de bord complet des EPI avec des colonnes bien structurées permettant de visualiser rapidement les informations essentielles : identifiant, marque, modèle, dates importantes et fréquence de contrôle.`,
         icon: projectsIllustration1,
       },
       {
-        description1: `Un système de couleurs intuitif est utilisé pour distinguer les différents statuts des équipements et des contrôles, facilitant la prise de décision pour les gestionnaires et cordistes.`,
-        icon: projectsIllustration1,
-      },
-      {
-        description1: `Des formulaires de saisie épurés et fonctionnels ont été conçus pour l'ajout et la modification des EPI ainsi que pour l'enregistrement des contrôles, assurant une expérience utilisateur optimale.`,
+        description1: `Des formulaires de saisie et fonctionnels ont été conçus pour l'ajout et la modification des EPI ainsi que pour l'enregistrement des contrôles`,
         icon: projectsIllustration1,
       },
     ],
@@ -1738,21 +1793,16 @@ export const projectsData = [
     patrimoineInformatique: "Structure et Développement du Projet",
     githubFeatures: [
       {
-        title: "Architecture Backend",
-        subtitle: "Conception Modèle-Manager-Contrôleur",
-        description2:
-          "L'API a été développée en suivant une architecture MVC rigoureuse pour assurer la maintenabilité et la séparation des responsabilités.",
+        title: "GitHub",
+        subtitle: "Gestion du Code Source",
+        description2: "Le projet est organisé dans un dépôt GitHub :",
       },
       {
-        description1: `Chaque étape du développement a été versionnée avec Git, permettant un suivi précis des modifications et facilitant la collaboration au sein de l'équipe de développement.`,
+        description1: `Chaque étape du développement a été versionnée avec Git, permettant un suivi précis des modifications.`,
         icon: projectsIllustration1,
       },
       {
-        description1: `L'implémentation a été réalisée en TypeScript pour garantir une meilleure robustesse du code, avec une définition claire des interfaces et des types pour chaque entité du système.`,
-        icon: projectsIllustration1,
-      },
-      {
-        description1: `Le projet a été structuré en modules distincts (avions, techniciens, maintenances) permettant une évolution indépendante de chaque partie du système et facilitant les tests unitaires.`,
+        description1: `Cette méthode de travail a permis de maintenir un historique complet du développement et offre la possibilité de revenir à des versions antérieures en cas de besoin`,
         icon: projectsIllustration1,
       },
     ],
@@ -1763,11 +1813,11 @@ export const projectsData = [
         description2: `Un modèle conceptuel de données a été établi pour définir clairement les relations entre les différentes entités: avions, techniciens et maintenances.`,
       },
       {
-        description1: `La table Maintenance constitue le cœur du système, reliant les techniciens aux avions qu'ils entretiennent, avec des clés étrangères assurant l'intégrité référentielle.`,
+        description1: `La table Maintenance constitue le cœur du système, reliant les techniciens aux avions qu'ils entretiennent, avec des clés étrangères.`,
         icon: projectsIllustration1,
       },
       {
-        description1: `La modélisation inclut des champs spécifiques comme les immatriculations d'avions (format standardisé), les heures de vol, et les différentes spécialisations des techniciens.`,
+        description1: `La modélisation inclut des champs spécifiques comme les immatriculations d'avions, les heures de vol, et les différentes spécialisations des techniciens.`,
         icon: projectsIllustration1,
       },
       {
@@ -1778,7 +1828,7 @@ export const projectsData = [
     slackFeatures: [
       {
         title: "Interface API",
-        subtitle: "Endpoints RESTful",
+        subtitle: "Endpoints",
         description2: `L'API expose un ensemble complet d'endpoints RESTful pour la gestion des trois entités principales: avions, techniciens et maintenances.`,
       },
       {

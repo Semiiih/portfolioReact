@@ -1,10 +1,25 @@
 import { useState } from "react";
 import FancyText from "@carefully-coded/react-text-gradient";
 
-export const ProjectScreenshotsPage = ({ project }: any) => {
+interface ProjectScreenshotsPageProps {
+  project: any;
+  title?: string;
+}
+
+export const ProjectScreenshotsPage = ({
+  project,
+  title = "Aperçu du site",
+}: ProjectScreenshotsPageProps) => {
   const [activePage, setActivePage] = useState(0);
 
+  if (!project.webScreenshots || project.webScreenshots.length === 0) {
+    return null;
+  }
+
   const screenshots = project.webScreenshots;
+
+  // Déterminer si le fichier est un PDF
+  const isPdf = screenshots[activePage].src?.toLowerCase().endsWith(".pdf");
 
   return (
     <div className="mx-auto my-10 w-full max-w-4xl">
@@ -14,11 +29,11 @@ export const ProjectScreenshotsPage = ({ project }: any) => {
           animateTo={{ from: "#8a8a8a", to: "#FFFF" }}
           animateDuration={1000}
         >
-          Aperçu du site
+          {title}
         </FancyText>
       </h2>
 
-      {/* Boutons des pages*/}
+      {/* Boutons des pages */}
       <div className="mb-4 flex flex-wrap justify-center gap-2">
         {screenshots.map((screenshot: any, index: any) => (
           <button
@@ -37,32 +52,38 @@ export const ProjectScreenshotsPage = ({ project }: any) => {
 
       <div className="relative">
         <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl border-4 border-violet-500 bg-slate-200 shadow-xl shadow-violet-500/30">
-          <div className="scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-slate-700 h-[600px] overflow-auto">
+          <div className="h-[600px] overflow-auto">
             {screenshots[activePage].src ? (
-              <img
-                src={screenshots[activePage].src}
-                alt={`Capture d'écran ${screenshots[activePage].label} - ${project.title}`}
-                className="w-full object-contain"
-                style={{ minWidth: "100%", minHeight: "100%" }}
-              />
+              isPdf ? (
+                <object
+                  data={screenshots[activePage].src}
+                  type="application/pdf"
+                  className="h-full w-full"
+                >
+                  <div className="flex h-full flex-col items-center justify-center bg-slate-200 p-10">
+                    <p className="text-lg text-gray-600">
+                      Votre navigateur ne peut pas afficher ce PDF.
+                      <a
+                        href={screenshots[activePage].src}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-2 text-violet-600 hover:underline"
+                      >
+                        Télécharger le PDF
+                      </a>
+                    </p>
+                  </div>
+                </object>
+              ) : (
+                <img
+                  src={screenshots[activePage].src}
+                  alt={`Capture d'écran ${screenshots[activePage].label} - ${project.title}`}
+                  className="w-full object-contain"
+                  style={{ minWidth: "100%", minHeight: "100%" }}
+                />
+              )
             ) : (
-              <div className="flex h-full flex-col items-center justify-center bg-slate-200 p-10">
-                <div className="mb-4 text-4xl text-gray-400">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-20 w-20"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1}
-                      d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
-                </div>
+              <div className="flex h-full flex-col items-center justify-center bg-red-200 p-10">
                 <div className="text-center text-lg font-semibold text-gray-600">
                   {project.title} - {screenshots[activePage].label}
                 </div>
@@ -79,17 +100,40 @@ export const ProjectScreenshotsPage = ({ project }: any) => {
             </div>
             <div className="mx-4 flex-1">
               <div className="mx-auto w-full max-w-md truncate rounded-full bg-slate-700 px-4 py-1 text-center text-xs text-white">
-                {project.title.toLowerCase().replace(/\s+/g, "")}.com
-                {screenshots[activePage].path
-                  ? "/" + screenshots[activePage].path
-                  : ""}
+                {isPdf ? (
+                  <span className="flex items-center justify-center space-x-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span>
+                      {screenshots[activePage].label ||
+                        `Document ${activePage + 1}`}
+                      .pdf
+                    </span>
+                  </span>
+                ) : (
+                  `${project.title.toLowerCase().replace(/\s+/g, "")}.com${
+                    screenshots[activePage].path
+                      ? "/" + screenshots[activePage].path
+                      : ""
+                  }`
+                )}
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Pagination  */}
+      {/* Pagination */}
       <div className="mt-4 flex justify-center space-x-1">
         {screenshots.map((_: any, index: any) => (
           <button

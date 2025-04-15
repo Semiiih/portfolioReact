@@ -64,7 +64,10 @@ export const ProjectDetail = () => {
         {project.imageLinear && <HeroScroll image={project.imageLinear} />}
 
         {project.webScreenshots && project.webScreenshots.length > 0 && (
-          <ProjectScreenshotsPage project={project} />
+          <ProjectScreenshotsPage
+            project={project}
+            title={project.screenshotsTitle || "Aperçu du site"}
+          />
         )}
 
         <div className="flex flex-row gap-20 pt-32 text-center ">
