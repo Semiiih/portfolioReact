@@ -34,7 +34,7 @@ export const Veille = () => {
       description:
         "Electrobun est disponible pour créer des applications de bureau multiplateformes écrites en TypeScript, Electrobun vise à être un framework inclus dans les piles pour la construction, le test et la mise à jour.",
       href: "https://typescript.developpez.com/actu/365027/Le-Framework-Electrobun-creer-des-applications-de-bureau-multiplateformes-ecrites-en-TypeScript/",
-      rating: 5,
+      rating: 4,
       date: "22 novembre 2024",
       source: "Jade Emy",
     },
