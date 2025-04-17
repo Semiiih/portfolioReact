@@ -414,7 +414,8 @@ export const Bilan = () => {
             <p className="mt-6 text-lg leading-8 text-gray-300">
               Ces deux années de BTS m'ont permis d acquérir des connaissances
               et de compétences. Je me sens désormais prêt à poursuivre mes
-              études, avec l’objectif d’intégrer un bachelor, puis un master.
+              études, avec l’objectif d’intégrer un Bachelor Ingénierie
+              logicielle & Devops, puis un master.
             </p>
 
             <div className="mt-10 flex flex-col items-center space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0">

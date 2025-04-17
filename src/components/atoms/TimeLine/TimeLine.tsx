@@ -11,7 +11,7 @@ export const TimeLine = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element--education  "
         contentStyle={{ background: "#8A53C7", color: "#fff" }}
-        date="2023 - bachelor"
+        date="2023 - Bachelor Ingénierie logicielle & Devops"
         iconStyle={{ background: "#8A53C7", color: "#fff" }}
         icon={<ImAccessibility />}
       >

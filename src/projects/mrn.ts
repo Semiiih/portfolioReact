@@ -250,7 +250,7 @@ export const projectsData = [
     link: "https://signaleo.co/",
     details: [
       {
-        description: `Application mobile pour faciliter la gestion des incidents dans les villes pour les citoyens et pour les mairies`,
+        description: `Signaleo est un outil qui permet aux citoyens de signaler directement à leur mairie les incidents du quotidien qu’ils rencontrent dans leur ville : un arbre tombé sur la chaussée, un lampadaire en panne, etc...`,
         public: `Mairies / Citoyens`,
         duree: `10 Déc 2023 - 2024`,
       },
@@ -261,6 +261,8 @@ export const projectsData = [
       { name: "Tailwind CSS", logo: logoTailwind },
       { name: "React", logo: logoReact },
       { name: "Npm", logo: logoNpm },
+      { name: "PostgreSQL", logo: logoSql },
+      { name: "Node JS", logo: nodeJs },
     ],
     teamMembers: [
       {
@@ -272,13 +274,13 @@ export const projectsData = [
       {
         id: 2,
         name: "Stephane",
-        designation: "Développeur Back / DevOps",
+        designation: "PO / Développeur Back / DevOps",
         image: stephane,
       },
       {
         id: 3,
         name: "Mohamed",
-        designation: "Business Analyst",
+        designation: "Designer",
         image: mohamed,
       },
       {
